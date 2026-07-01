@@ -1,0 +1,1538 @@
+{
+  "comparison_metrics": {
+    "per_node": [
+      {
+        "node": "ADHD",
+        "degree": 3,
+        "betweenness": 0.0346,
+        "btwn_rank": 7,
+        "orc_mean": 0.0602,
+        "orc_rank": 6,
+        "forman_mean": -5.33,
+        "forman_rank": 15,
+        "clustering": 0.3333,
+        "cc_rank": 13,
+        "edge_btwn_mean": 0.0501,
+        "eb_rank": 10
+      },
+      {
+        "node": "ASD",
+        "degree": 2,
+        "betweenness": 0.0,
+        "btwn_rank": 21,
+        "orc_mean": 0.2083,
+        "orc_rank": 19,
+        "forman_mean": -3.5,
+        "forman_rank": 17,
+        "clustering": 1.0,
+        "cc_rank": 23,
+        "edge_btwn_mean": 0.0435,
+        "eb_rank": 15
+      },
+      {
+        "node": "BIP",
+        "degree": 2,
+        "betweenness": 0.0,
+        "btwn_rank": 18,
+        "orc_mean": 0.1314,
+        "orc_rank": 10,
+        "forman_mean": -9.0,
+        "forman_rank": 4,
+        "clustering": 1.0,
+        "cc_rank": 21,
+        "edge_btwn_mean": 0.0435,
+        "eb_rank": 14
+      },
+      {
+        "node": "BPD",
+        "degree": 4,
+        "betweenness": 0.026,
+        "btwn_rank": 8,
+        "orc_mean": 0.1629,
+        "orc_rank": 14,
+        "forman_mean": -6.75,
+        "forman_rank": 10,
+        "clustering": 0.5,
+        "cc_rank": 14,
+        "edge_btwn_mean": 0.0336,
+        "eb_rank": 18
+      },
+      {
+        "node": "GAD",
+        "degree": 8,
+        "betweenness": 0.469,
+        "btwn_rank": 2,
+        "orc_mean": -0.1425,
+        "orc_rank": 1,
+        "forman_mean": -7.75,
+        "forman_rank": 7,
+        "clustering": 0.1071,
+        "cc_rank": 9,
+        "edge_btwn_mean": 0.1179,
+        "eb_rank": 3
+      },
+      {
+        "node": "MDD",
+        "degree": 13,
+        "betweenness": 0.5079,
+        "btwn_rank": 1,
+        "orc_mean": -0.0094,
+        "orc_rank": 2,
+        "forman_mean": -12.77,
+        "forman_rank": 1,
+        "clustering": 0.1667,
+        "cc_rank": 10,
+        "edge_btwn_mean": 0.078,
+        "eb_rank": 7
+      },
+      {
+        "node": "OCD",
+        "degree": 2,
+        "betweenness": 0.0,
+        "btwn_rank": 19,
+        "orc_mean": 0.0024,
+        "orc_rank": 3,
+        "forman_mean": -8.5,
+        "forman_rank": 5,
+        "clustering": 1.0,
+        "cc_rank": 22,
+        "edge_btwn_mean": 0.0435,
+        "eb_rank": 16
+      },
+      {
+        "node": "PTSD",
+        "degree": 5,
+        "betweenness": 0.0967,
+        "btwn_rank": 4,
+        "orc_mean": 0.0106,
+        "orc_rank": 4,
+        "forman_mean": -8.0,
+        "forman_rank": 6,
+        "clustering": 0.3,
+        "cc_rank": 12,
+        "edge_btwn_mean": 0.0527,
+        "eb_rank": 9
+      },
+      {
+        "node": "SCZ",
+        "degree": 2,
+        "betweenness": 0.0159,
+        "btwn_rank": 9,
+        "orc_mean": 0.1827,
+        "orc_rank": 15,
+        "forman_mean": -5.5,
+        "forman_rank": 12,
+        "clustering": 0,
+        "cc_rank": 1,
+        "edge_btwn_mean": 0.058,
+        "eb_rank": 8
+      },
+      {
+        "node": "SUD",
+        "degree": 9,
+        "betweenness": 0.1566,
+        "btwn_rank": 3,
+        "orc_mean": 0.028,
+        "orc_rank": 5,
+        "forman_mean": -9.11,
+        "forman_rank": 2,
+        "clustering": 0.1944,
+        "cc_rank": 11,
+        "edge_btwn_mean": 0.0414,
+        "eb_rank": 17
+      },
+      {
+        "node": "agoraphobia",
+        "degree": 1,
+        "betweenness": 0.0,
+        "btwn_rank": 22,
+        "orc_mean": 0.5,
+        "orc_rank": 22,
+        "forman_mean": 1.0,
+        "forman_rank": 22,
+        "clustering": 0,
+        "cc_rank": 5,
+        "edge_btwn_mean": 0.087,
+        "eb_rank": 5
+      },
+      {
+        "node": "anhedonia",
+        "degree": 2,
+        "betweenness": 0.0,
+        "btwn_rank": 16,
+        "orc_mean": 0.1314,
+        "orc_rank": 11,
+        "forman_mean": -9.0,
+        "forman_rank": 3,
+        "clustering": 1.0,
+        "cc_rank": 19,
+        "edge_btwn_mean": 0.0435,
+        "eb_rank": 13
+      },
+      {
+        "node": "avoidance",
+        "degree": 1,
+        "betweenness": 0.0,
+        "btwn_rank": 23,
+        "orc_mean": 0.5,
+        "orc_rank": 23,
+        "forman_mean": 1.0,
+        "forman_rank": 23,
+        "clustering": 0,
+        "cc_rank": 8,
+        "edge_btwn_mean": 0.087,
+        "eb_rank": 6
+      },
+      {
+        "node": "cortisol",
+        "degree": 3,
+        "betweenness": 0.0036,
+        "btwn_rank": 11,
+        "orc_mean": 0.1487,
+        "orc_rank": 13,
+        "forman_mean": -6.0,
+        "forman_rank": 11,
+        "clustering": 0.6667,
+        "cc_rank": 17,
+        "edge_btwn_mean": 0.0312,
+        "eb_rank": 20
+      },
+      {
+        "node": "dissociation",
+        "degree": 2,
+        "betweenness": 0.0014,
+        "btwn_rank": 15,
+        "orc_mean": 0.2,
+        "orc_rank": 17,
+        "forman_mean": -2.5,
+        "forman_rank": 21,
+        "clustering": 0,
+        "cc_rank": 7,
+        "edge_btwn_mean": 0.0448,
+        "eb_rank": 12
+      },
+      {
+        "node": "fatigue",
+        "degree": 3,
+        "betweenness": 0.0022,
+        "btwn_rank": 14,
+        "orc_mean": 0.2137,
+        "orc_rank": 20,
+        "forman_mean": -5.33,
+        "forman_rank": 14,
+        "clustering": 0.6667,
+        "cc_rank": 16,
+        "edge_btwn_mean": 0.0303,
+        "eb_rank": 22
+      },
+      {
+        "node": "inflammation",
+        "degree": 3,
+        "betweenness": 0.0051,
+        "btwn_rank": 10,
+        "orc_mean": 0.1325,
+        "orc_rank": 12,
+        "forman_mean": -7.33,
+        "forman_rank": 9,
+        "clustering": 0.6667,
+        "cc_rank": 18,
+        "edge_btwn_mean": 0.0321,
+        "eb_rank": 19
+      },
+      {
+        "node": "insomnia",
+        "degree": 3,
+        "betweenness": 0.0022,
+        "btwn_rank": 13,
+        "orc_mean": 0.2137,
+        "orc_rank": 21,
+        "forman_mean": -5.33,
+        "forman_rank": 13,
+        "clustering": 0.6667,
+        "cc_rank": 15,
+        "edge_btwn_mean": 0.0303,
+        "eb_rank": 21
+      },
+      {
+        "node": "panic",
+        "degree": 2,
+        "betweenness": 0.0909,
+        "btwn_rank": 5,
+        "orc_mean": 0.0625,
+        "orc_rank": 7,
+        "forman_mean": -2.5,
+        "forman_rank": 19,
+        "clustering": 0,
+        "cc_rank": 2,
+        "edge_btwn_mean": 0.1265,
+        "eb_rank": 1
+      },
+      {
+        "node": "psychosis",
+        "degree": 2,
+        "betweenness": 0.0036,
+        "btwn_rank": 12,
+        "orc_mean": 0.2083,
+        "orc_rank": 18,
+        "forman_mean": -3.5,
+        "forman_rank": 18,
+        "clustering": 0,
+        "cc_rank": 6,
+        "edge_btwn_mean": 0.0468,
+        "eb_rank": 11
+      },
+      {
+        "node": "social_anxiety",
+        "degree": 2,
+        "betweenness": 0.0909,
+        "btwn_rank": 6,
+        "orc_mean": 0.0625,
+        "orc_rank": 8,
+        "forman_mean": -2.5,
+        "forman_rank": 20,
+        "clustering": 0,
+        "cc_rank": 4,
+        "edge_btwn_mean": 0.1265,
+        "eb_rank": 2
+      },
+      {
+        "node": "somatic",
+        "degree": 1,
+        "betweenness": 0.0,
+        "btwn_rank": 20,
+        "orc_mean": 0.125,
+        "orc_rank": 9,
+        "forman_mean": -5.0,
+        "forman_rank": 16,
+        "clustering": 0,
+        "cc_rank": 3,
+        "edge_btwn_mean": 0.087,
+        "eb_rank": 4
+      },
+      {
+        "node": "suicide_ideation",
+        "degree": 3,
+        "betweenness": 0.0,
+        "btwn_rank": 17,
+        "orc_mean": 0.1845,
+        "orc_rank": 16,
+        "forman_mean": -7.67,
+        "forman_rank": 8,
+        "clustering": 1.0,
+        "cc_rank": 20,
+        "edge_btwn_mean": 0.029,
+        "eb_rank": 23
+      }
+    ],
+    "top_bridge_by_metric": {
+      "ORC": "GAD",
+      "Forman": "MDD",
+      "clustering_coeff": "SCZ",
+      "edge_betweenness": "panic",
+      "betweenness": "MDD"
+    },
+    "orc_top3": [
+      "GAD",
+      "MDD",
+      "OCD"
+    ],
+    "forman_top3": [
+      "MDD",
+      "SUD",
+      "anhedonia"
+    ],
+    "cc_bottom3": [
+      "SCZ",
+      "panic",
+      "somatic"
+    ],
+    "eb_top3": [
+      "panic",
+      "social_anxiety",
+      "GAD"
+    ],
+    "gad_hub_bridge_test": {
+      "ORC": {
+        "rank": 1,
+        "value": -0.1425,
+        "distinguishes": true
+      },
+      "Forman": {
+        "rank": 7,
+        "value": -7.75,
+        "distinguishes": false
+      },
+      "clustering": {
+        "rank": 9,
+        "value": 0.1071,
+        "distinguishes": true
+      },
+      "edge_betweenness": {
+        "rank": 3,
+        "value": 0.1179,
+        "distinguishes": true
+      }
+    },
+    "mdd_values": {
+      "ORC": -0.0094,
+      "Forman": -12.77,
+      "clustering": 0.1667,
+      "edge_betweenness": 0.078
+    }
+  },
+  "curvature_distributions": {
+    "ADHD": {
+      "degree": 3,
+      "edges": [
+        {
+          "neighbor": "GAD",
+          "kappa": 0.0417
+        },
+        {
+          "neighbor": "SUD",
+          "kappa": -0.2778
+        },
+        {
+          "neighbor": "ASD",
+          "kappa": 0.4167
+        }
+      ],
+      "mean": 0.0602,
+      "std": 0.2838,
+      "min": -0.2778,
+      "max": 0.4167,
+      "n_negative": 1,
+      "n_positive": 2,
+      "fraction_negative": 0.333
+    },
+    "ASD": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "GAD",
+          "kappa": 0.0
+        },
+        {
+          "neighbor": "ADHD",
+          "kappa": 0.4167
+        }
+      ],
+      "mean": 0.2084,
+      "std": 0.2084,
+      "min": 0.0,
+      "max": 0.4167,
+      "n_negative": 0,
+      "n_positive": 1,
+      "fraction_negative": 0.0
+    },
+    "BIP": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": 0.0962
+        },
+        {
+          "neighbor": "SUD",
+          "kappa": 0.1667
+        }
+      ],
+      "mean": 0.1314,
+      "std": 0.0352,
+      "min": 0.0962,
+      "max": 0.1667,
+      "n_negative": 0,
+      "n_positive": 2,
+      "fraction_negative": 0.0
+    },
+    "BPD": {
+      "degree": 4,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": -0.0288
+        },
+        {
+          "neighbor": "SUD",
+          "kappa": 0.0139
+        },
+        {
+          "neighbor": "dissociation",
+          "kappa": 0.25
+        },
+        {
+          "neighbor": "suicide_ideation",
+          "kappa": 0.4167
+        }
+      ],
+      "mean": 0.163,
+      "std": 0.1809,
+      "min": -0.0288,
+      "max": 0.4167,
+      "n_negative": 1,
+      "n_positive": 3,
+      "fraction_negative": 0.25
+    },
+    "GAD": {
+      "degree": 8,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": -0.3942
+        },
+        {
+          "neighbor": "panic",
+          "kappa": -0.375
+        },
+        {
+          "neighbor": "somatic",
+          "kappa": 0.125
+        },
+        {
+          "neighbor": "social_anxiety",
+          "kappa": -0.375
+        },
+        {
+          "neighbor": "PTSD",
+          "kappa": -0.225
+        },
+        {
+          "neighbor": "ADHD",
+          "kappa": 0.0417
+        },
+        {
+          "neighbor": "ASD",
+          "kappa": 0.0
+        },
+        {
+          "neighbor": "OCD",
+          "kappa": 0.0625
+        }
+      ],
+      "mean": -0.1425,
+      "std": 0.208,
+      "min": -0.3942,
+      "max": 0.125,
+      "n_negative": 4,
+      "n_positive": 3,
+      "fraction_negative": 0.5
+    },
+    "MDD": {
+      "degree": 13,
+      "edges": [
+        {
+          "neighbor": "GAD",
+          "kappa": -0.3942
+        },
+        {
+          "neighbor": "insomnia",
+          "kappa": -0.0256
+        },
+        {
+          "neighbor": "SUD",
+          "kappa": 0.188
+        },
+        {
+          "neighbor": "anhedonia",
+          "kappa": 0.0962
+        },
+        {
+          "neighbor": "suicide_ideation",
+          "kappa": 0.0256
+        },
+        {
+          "neighbor": "PTSD",
+          "kappa": 0.0615
+        },
+        {
+          "neighbor": "SCZ",
+          "kappa": -0.1346
+        },
+        {
+          "neighbor": "BIP",
+          "kappa": 0.0962
+        },
+        {
+          "neighbor": "BPD",
+          "kappa": -0.0288
+        },
+        {
+          "neighbor": "fatigue",
+          "kappa": -0.0256
+        },
+        {
+          "neighbor": "cortisol",
+          "kappa": 0.0128
+        },
+        {
+          "neighbor": "inflammation",
+          "kappa": 0.0641
+        },
+        {
+          "neighbor": "OCD",
+          "kappa": -0.0577
+        }
+      ],
+      "mean": -0.0094,
+      "std": 0.136,
+      "min": -0.3942,
+      "max": 0.188,
+      "n_negative": 6,
+      "n_positive": 7,
+      "fraction_negative": 0.462
+    },
+    "OCD": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": -0.0577
+        },
+        {
+          "neighbor": "GAD",
+          "kappa": 0.0625
+        }
+      ],
+      "mean": 0.0024,
+      "std": 0.0601,
+      "min": -0.0577,
+      "max": 0.0625,
+      "n_negative": 1,
+      "n_positive": 1,
+      "fraction_negative": 0.5
+    },
+    "PTSD": {
+      "degree": 5,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": 0.0615
+        },
+        {
+          "neighbor": "GAD",
+          "kappa": -0.225
+        },
+        {
+          "neighbor": "SUD",
+          "kappa": -0.0333
+        },
+        {
+          "neighbor": "dissociation",
+          "kappa": 0.15
+        },
+        {
+          "neighbor": "cortisol",
+          "kappa": 0.1
+        }
+      ],
+      "mean": 0.0106,
+      "std": 0.1322,
+      "min": -0.225,
+      "max": 0.15,
+      "n_negative": 2,
+      "n_positive": 3,
+      "fraction_negative": 0.4
+    },
+    "SCZ": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": -0.1346
+        },
+        {
+          "neighbor": "psychosis",
+          "kappa": 0.5
+        }
+      ],
+      "mean": 0.1827,
+      "std": 0.3173,
+      "min": -0.1346,
+      "max": 0.5,
+      "n_negative": 1,
+      "n_positive": 1,
+      "fraction_negative": 0.5
+    },
+    "SUD": {
+      "degree": 9,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": 0.188
+        },
+        {
+          "neighbor": "psychosis",
+          "kappa": -0.0833
+        },
+        {
+          "neighbor": "suicide_ideation",
+          "kappa": 0.1111
+        },
+        {
+          "neighbor": "PTSD",
+          "kappa": -0.0333
+        },
+        {
+          "neighbor": "BIP",
+          "kappa": 0.1667
+        },
+        {
+          "neighbor": "ADHD",
+          "kappa": -0.2778
+        },
+        {
+          "neighbor": "anhedonia",
+          "kappa": 0.1667
+        },
+        {
+          "neighbor": "BPD",
+          "kappa": 0.0139
+        },
+        {
+          "neighbor": "inflammation",
+          "kappa": 0.0
+        }
+      ],
+      "mean": 0.028,
+      "std": 0.1421,
+      "min": -0.2778,
+      "max": 0.188,
+      "n_negative": 3,
+      "n_positive": 5,
+      "fraction_negative": 0.333
+    },
+    "agoraphobia": {
+      "degree": 1,
+      "edges": [
+        {
+          "neighbor": "panic",
+          "kappa": 0.5
+        }
+      ],
+      "mean": 0.5,
+      "std": 0.0,
+      "min": 0.5,
+      "max": 0.5,
+      "n_negative": 0,
+      "n_positive": 1,
+      "fraction_negative": 0.0
+    },
+    "anhedonia": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": 0.0962
+        },
+        {
+          "neighbor": "SUD",
+          "kappa": 0.1667
+        }
+      ],
+      "mean": 0.1314,
+      "std": 0.0352,
+      "min": 0.0962,
+      "max": 0.1667,
+      "n_negative": 0,
+      "n_positive": 2,
+      "fraction_negative": 0.0
+    },
+    "avoidance": {
+      "degree": 1,
+      "edges": [
+        {
+          "neighbor": "social_anxiety",
+          "kappa": 0.5
+        }
+      ],
+      "mean": 0.5,
+      "std": 0.0,
+      "min": 0.5,
+      "max": 0.5,
+      "n_negative": 0,
+      "n_positive": 1,
+      "fraction_negative": 0.0
+    },
+    "cortisol": {
+      "degree": 3,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": 0.0128
+        },
+        {
+          "neighbor": "insomnia",
+          "kappa": 0.3333
+        },
+        {
+          "neighbor": "PTSD",
+          "kappa": 0.1
+        }
+      ],
+      "mean": 0.1487,
+      "std": 0.1353,
+      "min": 0.0128,
+      "max": 0.3333,
+      "n_negative": 0,
+      "n_positive": 3,
+      "fraction_negative": 0.0
+    },
+    "dissociation": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "PTSD",
+          "kappa": 0.15
+        },
+        {
+          "neighbor": "BPD",
+          "kappa": 0.25
+        }
+      ],
+      "mean": 0.2,
+      "std": 0.05,
+      "min": 0.15,
+      "max": 0.25,
+      "n_negative": 0,
+      "n_positive": 2,
+      "fraction_negative": 0.0
+    },
+    "fatigue": {
+      "degree": 3,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": -0.0256
+        },
+        {
+          "neighbor": "insomnia",
+          "kappa": 0.3333
+        },
+        {
+          "neighbor": "inflammation",
+          "kappa": 0.3333
+        }
+      ],
+      "mean": 0.2137,
+      "std": 0.1692,
+      "min": -0.0256,
+      "max": 0.3333,
+      "n_negative": 1,
+      "n_positive": 2,
+      "fraction_negative": 0.333
+    },
+    "inflammation": {
+      "degree": 3,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": 0.0641
+        },
+        {
+          "neighbor": "SUD",
+          "kappa": 0.0
+        },
+        {
+          "neighbor": "fatigue",
+          "kappa": 0.3333
+        }
+      ],
+      "mean": 0.1325,
+      "std": 0.1444,
+      "min": 0.0,
+      "max": 0.3333,
+      "n_negative": 0,
+      "n_positive": 2,
+      "fraction_negative": 0.0
+    },
+    "insomnia": {
+      "degree": 3,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": -0.0256
+        },
+        {
+          "neighbor": "fatigue",
+          "kappa": 0.3333
+        },
+        {
+          "neighbor": "cortisol",
+          "kappa": 0.3333
+        }
+      ],
+      "mean": 0.2137,
+      "std": 0.1692,
+      "min": -0.0256,
+      "max": 0.3333,
+      "n_negative": 1,
+      "n_positive": 2,
+      "fraction_negative": 0.333
+    },
+    "panic": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "GAD",
+          "kappa": -0.375
+        },
+        {
+          "neighbor": "agoraphobia",
+          "kappa": 0.5
+        }
+      ],
+      "mean": 0.0625,
+      "std": 0.4375,
+      "min": -0.375,
+      "max": 0.5,
+      "n_negative": 1,
+      "n_positive": 1,
+      "fraction_negative": 0.5
+    },
+    "psychosis": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "SUD",
+          "kappa": -0.0833
+        },
+        {
+          "neighbor": "SCZ",
+          "kappa": 0.5
+        }
+      ],
+      "mean": 0.2084,
+      "std": 0.2916,
+      "min": -0.0833,
+      "max": 0.5,
+      "n_negative": 1,
+      "n_positive": 1,
+      "fraction_negative": 0.5
+    },
+    "social_anxiety": {
+      "degree": 2,
+      "edges": [
+        {
+          "neighbor": "GAD",
+          "kappa": -0.375
+        },
+        {
+          "neighbor": "avoidance",
+          "kappa": 0.5
+        }
+      ],
+      "mean": 0.0625,
+      "std": 0.4375,
+      "min": -0.375,
+      "max": 0.5,
+      "n_negative": 1,
+      "n_positive": 1,
+      "fraction_negative": 0.5
+    },
+    "somatic": {
+      "degree": 1,
+      "edges": [
+        {
+          "neighbor": "GAD",
+          "kappa": 0.125
+        }
+      ],
+      "mean": 0.125,
+      "std": 0.0,
+      "min": 0.125,
+      "max": 0.125,
+      "n_negative": 0,
+      "n_positive": 1,
+      "fraction_negative": 0.0
+    },
+    "suicide_ideation": {
+      "degree": 3,
+      "edges": [
+        {
+          "neighbor": "MDD",
+          "kappa": 0.0256
+        },
+        {
+          "neighbor": "SUD",
+          "kappa": 0.1111
+        },
+        {
+          "neighbor": "BPD",
+          "kappa": 0.4167
+        }
+      ],
+      "mean": 0.1845,
+      "std": 0.1679,
+      "min": 0.0256,
+      "max": 0.4167,
+      "n_negative": 0,
+      "n_positive": 3,
+      "fraction_negative": 0.0
+    }
+  },
+  "degree2_control": {
+    "degree2_nodes": [
+      {
+        "node": "anhedonia",
+        "neighbors": [
+          "MDD",
+          "SUD"
+        ],
+        "neighbor_communities": [
+          0,
+          0
+        ],
+        "cross_community": false,
+        "mean_kappa": 0.1314,
+        "orc_rank": 11,
+        "btwn_rank": 16,
+        "rank_change": 5,
+        "betweenness": 0.0
+      },
+      {
+        "node": "SCZ",
+        "neighbors": [
+          "MDD",
+          "psychosis"
+        ],
+        "neighbor_communities": [
+          0,
+          0
+        ],
+        "cross_community": false,
+        "mean_kappa": 0.1827,
+        "orc_rank": 15,
+        "btwn_rank": 9,
+        "rank_change": -6,
+        "betweenness": 0.0159
+      },
+      {
+        "node": "BIP",
+        "neighbors": [
+          "MDD",
+          "SUD"
+        ],
+        "neighbor_communities": [
+          0,
+          0
+        ],
+        "cross_community": false,
+        "mean_kappa": 0.1314,
+        "orc_rank": 10,
+        "btwn_rank": 18,
+        "rank_change": 8,
+        "betweenness": 0.0
+      },
+      {
+        "node": "OCD",
+        "neighbors": [
+          "MDD",
+          "GAD"
+        ],
+        "neighbor_communities": [
+          0,
+          1
+        ],
+        "cross_community": true,
+        "mean_kappa": 0.0024,
+        "orc_rank": 3,
+        "btwn_rank": 19,
+        "rank_change": 16,
+        "betweenness": 0.0
+      },
+      {
+        "node": "panic",
+        "neighbors": [
+          "GAD",
+          "agoraphobia"
+        ],
+        "neighbor_communities": [
+          1,
+          2
+        ],
+        "cross_community": true,
+        "mean_kappa": 0.0625,
+        "orc_rank": 7,
+        "btwn_rank": 5,
+        "rank_change": -2,
+        "betweenness": 0.0909
+      },
+      {
+        "node": "social_anxiety",
+        "neighbors": [
+          "GAD",
+          "avoidance"
+        ],
+        "neighbor_communities": [
+          1,
+          3
+        ],
+        "cross_community": true,
+        "mean_kappa": 0.0625,
+        "orc_rank": 8,
+        "btwn_rank": 6,
+        "rank_change": -2,
+        "betweenness": 0.0909
+      },
+      {
+        "node": "ASD",
+        "neighbors": [
+          "GAD",
+          "ADHD"
+        ],
+        "neighbor_communities": [
+          1,
+          1
+        ],
+        "cross_community": false,
+        "mean_kappa": 0.2083,
+        "orc_rank": 19,
+        "btwn_rank": 21,
+        "rank_change": 2,
+        "betweenness": 0.0
+      },
+      {
+        "node": "psychosis",
+        "neighbors": [
+          "SUD",
+          "SCZ"
+        ],
+        "neighbor_communities": [
+          0,
+          0
+        ],
+        "cross_community": false,
+        "mean_kappa": 0.2083,
+        "orc_rank": 18,
+        "btwn_rank": 12,
+        "rank_change": -6,
+        "betweenness": 0.0036
+      },
+      {
+        "node": "dissociation",
+        "neighbors": [
+          "PTSD",
+          "BPD"
+        ],
+        "neighbor_communities": [
+          0,
+          0
+        ],
+        "cross_community": false,
+        "mean_kappa": 0.2,
+        "orc_rank": 17,
+        "btwn_rank": 15,
+        "rank_change": -2,
+        "betweenness": 0.0014
+      }
+    ],
+    "n_degree2": 9,
+    "n_cross_community": 3,
+    "n_same_community": 6,
+    "cross_comm_mean_rank_change": 4.0,
+    "same_comm_mean_rank_change": 0.2,
+    "conclusion": "OCD rank jump is specific to cross-community degree-2 nodes"
+  },
+  "ricci_flow_sensitivity": [
+    {
+      "tau": 0.1,
+      "threshold": 10,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.1,
+      "threshold": 15,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.1,
+      "threshold": 20,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.1,
+      "threshold": 30,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.2,
+      "threshold": 10,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.2,
+      "threshold": 15,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.2,
+      "threshold": 20,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.2,
+      "threshold": 30,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.3,
+      "threshold": 10,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.3,
+      "threshold": 15,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.3,
+      "threshold": 20,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.3,
+      "threshold": 30,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.5,
+      "threshold": 10,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.5,
+      "threshold": 15,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.5,
+      "threshold": 20,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    },
+    {
+      "tau": 0.5,
+      "threshold": 30,
+      "n_communities": 1,
+      "community_sizes": [
+        23
+      ]
+    }
+  ],
+  "bootstrap_ci": {
+    "ADHD": {
+      "mean_kappa": 0.0604,
+      "ci_lower": -0.0911,
+      "ci_upper": 0.2597,
+      "std": 0.0864,
+      "mean_rank": 10.2,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 22.0,
+      "rank1_frac": 0.014,
+      "top3_frac": 0.127
+    },
+    "ASD": {
+      "mean_kappa": 0.136,
+      "ci_lower": -0.0521,
+      "ci_upper": 0.3333,
+      "std": 0.0915,
+      "mean_rank": 15.6,
+      "rank_ci_lower": 3.0,
+      "rank_ci_upper": 23.0,
+      "rank1_frac": 0.004,
+      "top3_frac": 0.03
+    },
+    "BIP": {
+      "mean_kappa": 0.107,
+      "ci_lower": -0.0648,
+      "ci_upper": 0.2192,
+      "std": 0.0658,
+      "mean_rank": 14.0,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 22.0,
+      "rank1_frac": 0.015,
+      "top3_frac": 0.043
+    },
+    "BPD": {
+      "mean_kappa": 0.1045,
+      "ci_lower": -0.059,
+      "ci_upper": 0.2339,
+      "std": 0.0709,
+      "mean_rank": 13.7,
+      "rank_ci_lower": 3.0,
+      "rank_ci_upper": 22.0,
+      "rank1_frac": 0.006,
+      "top3_frac": 0.043
+    },
+    "GAD": {
+      "mean_kappa": -0.0793,
+      "ci_lower": -0.1865,
+      "ci_upper": 0.0393,
+      "std": 0.0625,
+      "mean_rank": 2.3,
+      "rank_ci_lower": 1.0,
+      "rank_ci_upper": 8.0,
+      "rank1_frac": 0.552,
+      "top3_frac": 0.826
+    },
+    "MDD": {
+      "mean_kappa": 0.0008,
+      "ci_lower": -0.0835,
+      "ci_upper": 0.0868,
+      "std": 0.0445,
+      "mean_rank": 5.6,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 14.0,
+      "rank1_frac": 0.024,
+      "top3_frac": 0.335
+    },
+    "OCD": {
+      "mean_kappa": 0.0492,
+      "ci_lower": -0.0945,
+      "ci_upper": 0.1667,
+      "std": 0.0699,
+      "mean_rank": 9.7,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 21.0,
+      "rank1_frac": 0.022,
+      "top3_frac": 0.108
+    },
+    "PTSD": {
+      "mean_kappa": 0.0331,
+      "ci_lower": -0.0972,
+      "ci_upper": 0.1504,
+      "std": 0.0621,
+      "mean_rank": 8.4,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 19.0,
+      "rank1_frac": 0.016,
+      "top3_frac": 0.149
+    },
+    "SCZ": {
+      "mean_kappa": 0.0994,
+      "ci_lower": -0.0922,
+      "ci_upper": 0.3333,
+      "std": 0.1041,
+      "mean_rank": 12.7,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 22.0,
+      "rank1_frac": 0.022,
+      "top3_frac": 0.086
+    },
+    "SUD": {
+      "mean_kappa": 0.0221,
+      "ci_lower": -0.075,
+      "ci_upper": 0.1192,
+      "std": 0.0499,
+      "mean_rank": 7.1,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 16.0,
+      "rank1_frac": 0.02,
+      "top3_frac": 0.161
+    },
+    "agoraphobia": {
+      "mean_kappa": 0.2084,
+      "ci_lower": -0.089,
+      "ci_upper": 0.5,
+      "std": 0.1969,
+      "mean_rank": 16.0,
+      "rank_ci_lower": 1.0,
+      "rank_ci_upper": 23.0,
+      "rank1_frac": 0.027,
+      "top3_frac": 0.091
+    },
+    "anhedonia": {
+      "mean_kappa": 0.1055,
+      "ci_lower": -0.0521,
+      "ci_upper": 0.2212,
+      "std": 0.0654,
+      "mean_rank": 13.9,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 22.0,
+      "rank1_frac": 0.012,
+      "top3_frac": 0.044
+    },
+    "avoidance": {
+      "mean_kappa": 0.2199,
+      "ci_lower": -0.0893,
+      "ci_upper": 0.5,
+      "std": 0.1918,
+      "mean_rank": 16.8,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 23.0,
+      "rank1_frac": 0.023,
+      "top3_frac": 0.08
+    },
+    "cortisol": {
+      "mean_kappa": 0.1028,
+      "ci_lower": -0.0486,
+      "ci_upper": 0.2342,
+      "std": 0.0728,
+      "mean_rank": 13.6,
+      "rank_ci_lower": 3.0,
+      "rank_ci_upper": 22.0,
+      "rank1_frac": 0.009,
+      "top3_frac": 0.033
+    },
+    "dissociation": {
+      "mean_kappa": 0.1272,
+      "ci_lower": -0.0615,
+      "ci_upper": 0.2695,
+      "std": 0.0883,
+      "mean_rank": 15.2,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 23.0,
+      "rank1_frac": 0.012,
+      "top3_frac": 0.051
+    },
+    "fatigue": {
+      "mean_kappa": 0.1299,
+      "ci_lower": -0.0384,
+      "ci_upper": 0.2972,
+      "std": 0.0872,
+      "mean_rank": 15.3,
+      "rank_ci_lower": 3.0,
+      "rank_ci_upper": 23.0,
+      "rank1_frac": 0.005,
+      "top3_frac": 0.036
+    },
+    "inflammation": {
+      "mean_kappa": 0.1039,
+      "ci_lower": -0.0501,
+      "ci_upper": 0.2257,
+      "std": 0.0719,
+      "mean_rank": 13.7,
+      "rank_ci_lower": 3.0,
+      "rank_ci_upper": 22.0,
+      "rank1_frac": 0.007,
+      "top3_frac": 0.05
+    },
+    "insomnia": {
+      "mean_kappa": 0.1205,
+      "ci_lower": -0.0594,
+      "ci_upper": 0.2891,
+      "std": 0.0911,
+      "mean_rank": 14.6,
+      "rank_ci_lower": 3.0,
+      "rank_ci_upper": 23.0,
+      "rank1_frac": 0.011,
+      "top3_frac": 0.048
+    },
+    "panic": {
+      "mean_kappa": 0.0248,
+      "ci_lower": -0.1509,
+      "ci_upper": 0.1875,
+      "std": 0.0795,
+      "mean_rank": 7.5,
+      "rank_ci_lower": 1.0,
+      "rank_ci_upper": 21.0,
+      "rank1_frac": 0.088,
+      "top3_frac": 0.244
+    },
+    "psychosis": {
+      "mean_kappa": 0.1067,
+      "ci_lower": -0.1,
+      "ci_upper": 0.3337,
+      "std": 0.1134,
+      "mean_rank": 13.3,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 23.0,
+      "rank1_frac": 0.022,
+      "top3_frac": 0.081
+    },
+    "social_anxiety": {
+      "mean_kappa": 0.0291,
+      "ci_lower": -0.135,
+      "ci_upper": 0.1807,
+      "std": 0.0805,
+      "mean_rank": 7.9,
+      "rank_ci_lower": 1.0,
+      "rank_ci_upper": 20.0,
+      "rank1_frac": 0.072,
+      "top3_frac": 0.249
+    },
+    "somatic": {
+      "mean_kappa": 0.0981,
+      "ci_lower": -0.0625,
+      "ci_upper": 0.2293,
+      "std": 0.0731,
+      "mean_rank": 13.0,
+      "rank_ci_lower": 2.0,
+      "rank_ci_upper": 22.0,
+      "rank1_frac": 0.009,
+      "top3_frac": 0.06
+    },
+    "suicide_ideation": {
+      "mean_kappa": 0.1329,
+      "ci_lower": -0.0339,
+      "ci_upper": 0.2438,
+      "std": 0.0723,
+      "mean_rank": 16.0,
+      "rank_ci_lower": 4.0,
+      "rank_ci_upper": 23.0,
+      "rank1_frac": 0.008,
+      "top3_frac": 0.025
+    }
+  },
+  "null_models": {
+    "real_mean_curvature": 0.0501,
+    "er": {
+      "n_valid": 5580,
+      "mean": -0.0194,
+      "std": 0.0395,
+      "z": 1.76,
+      "p": 0.0254
+    },
+    "cm": {
+      "n_valid": 8102,
+      "mean": -0.0183,
+      "std": 0.035,
+      "z": 1.96,
+      "p": 0.0217
+    }
+  }
+}

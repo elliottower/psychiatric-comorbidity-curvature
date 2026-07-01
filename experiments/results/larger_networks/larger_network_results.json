@@ -1,0 +1,5902 @@
+{
+  "our_23node": {
+    "name": "Our 23-node comorbidity network",
+    "n_nodes": 23,
+    "n_edges": 39,
+    "n_bridge": 1,
+    "n_mixed": 4,
+    "n_cluster_internal": 18,
+    "mean_curvature": 0.14423645949461175,
+    "std_curvature": 0.1408268071583716,
+    "correlations": {
+      "orc_degree": {
+        "rho": -0.4665500109713521,
+        "p": 0.02482168742638676
+      },
+      "orc_betweenness": {
+        "rho": -0.5891734452427021,
+        "p": 0.00309478099232896
+      },
+      "orc_clustering": {
+        "rho": -0.04325254498203373,
+        "p": 0.8446450904588937
+      },
+      "forman_degree": {
+        "rho": -0.6492610288000688,
+        "p": 0.0008017568593974826
+      }
+    },
+    "top10_bridges": [
+      {
+        "node": "GAD",
+        "kappa": -0.14250801282051279
+      },
+      {
+        "node": "MDD",
+        "kappa": -0.009401709401709138
+      },
+      {
+        "node": "OCD",
+        "kappa": 0.0024038461538462563
+      },
+      {
+        "node": "PTSD",
+        "kappa": 0.010641025641025736
+      },
+      {
+        "node": "SUD",
+        "kappa": 0.02799145299145298
+      },
+      {
+        "node": "ADHD",
+        "kappa": 0.060185185185185154
+      },
+      {
+        "node": "panic",
+        "kappa": 0.0625
+      },
+      {
+        "node": "social_anxiety",
+        "kappa": 0.0625
+      },
+      {
+        "node": "somatic",
+        "kappa": 0.125
+      },
+      {
+        "node": "BIP",
+        "kappa": 0.1314102564102565
+      }
+    ],
+    "top10_cluster": [
+      {
+        "node": "avoidance",
+        "kappa": 0.5
+      },
+      {
+        "node": "agoraphobia",
+        "kappa": 0.5
+      },
+      {
+        "node": "insomnia",
+        "kappa": 0.21367521367521383
+      },
+      {
+        "node": "fatigue",
+        "kappa": 0.2136752136752138
+      },
+      {
+        "node": "ASD",
+        "kappa": 0.20833333333333337
+      },
+      {
+        "node": "psychosis",
+        "kappa": 0.20833333333333326
+      },
+      {
+        "node": "dissociation",
+        "kappa": 0.2
+      },
+      {
+        "node": "suicide_ideation",
+        "kappa": 0.18447293447293456
+      },
+      {
+        "node": "SCZ",
+        "kappa": 0.18269230769230793
+      },
+      {
+        "node": "BPD",
+        "kappa": 0.16292735042735043
+      }
+    ],
+    "per_node": [
+      {
+        "node": "ADHD",
+        "kappa": 0.060185185185185154,
+        "degree": 3,
+        "betweenness": 0.03463203463203463,
+        "clustering": 0.3333333333333333,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "ASD",
+        "kappa": 0.20833333333333337,
+        "degree": 2,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "BIP",
+        "kappa": 0.1314102564102565,
+        "degree": 2,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "BPD",
+        "kappa": 0.16292735042735043,
+        "degree": 4,
+        "betweenness": 0.025974025974025976,
+        "clustering": 0.5,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "GAD",
+        "kappa": -0.14250801282051279,
+        "degree": 8,
+        "betweenness": 0.46897546897546893,
+        "clustering": 0.10714285714285714,
+        "classification": "bridge"
+      },
+      {
+        "node": "MDD",
+        "kappa": -0.009401709401709138,
+        "degree": 13,
+        "betweenness": 0.507936507936508,
+        "clustering": 0.16666666666666666,
+        "classification": "mixed"
+      },
+      {
+        "node": "OCD",
+        "kappa": 0.0024038461538462563,
+        "degree": 2,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "mixed"
+      },
+      {
+        "node": "PTSD",
+        "kappa": 0.010641025641025736,
+        "degree": 5,
+        "betweenness": 0.09668109668109667,
+        "clustering": 0.3,
+        "classification": "mixed"
+      },
+      {
+        "node": "SCZ",
+        "kappa": 0.18269230769230793,
+        "degree": 2,
+        "betweenness": 0.015873015873015872,
+        "clustering": 0.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "SUD",
+        "kappa": 0.02799145299145298,
+        "degree": 9,
+        "betweenness": 0.15656565656565657,
+        "clustering": 0.19444444444444445,
+        "classification": "mixed"
+      },
+      {
+        "node": "agoraphobia",
+        "kappa": 0.5,
+        "degree": 1,
+        "betweenness": 0.0,
+        "clustering": 0.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "anhedonia",
+        "kappa": 0.13141025641025667,
+        "degree": 2,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "avoidance",
+        "kappa": 0.5,
+        "degree": 1,
+        "betweenness": 0.0,
+        "clustering": 0.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "cortisol",
+        "kappa": 0.14871794871794874,
+        "degree": 3,
+        "betweenness": 0.003607503607503607,
+        "clustering": 0.6666666666666666,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "dissociation",
+        "kappa": 0.2,
+        "degree": 2,
+        "betweenness": 0.001443001443001443,
+        "clustering": 0.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "fatigue",
+        "kappa": 0.2136752136752138,
+        "degree": 3,
+        "betweenness": 0.0021645021645021645,
+        "clustering": 0.6666666666666666,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "inflammation",
+        "kappa": 0.13247863247863265,
+        "degree": 3,
+        "betweenness": 0.00505050505050505,
+        "clustering": 0.6666666666666666,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "insomnia",
+        "kappa": 0.21367521367521383,
+        "degree": 3,
+        "betweenness": 0.0021645021645021645,
+        "clustering": 0.6666666666666666,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "panic",
+        "kappa": 0.0625,
+        "degree": 2,
+        "betweenness": 0.09090909090909091,
+        "clustering": 0.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "psychosis",
+        "kappa": 0.20833333333333326,
+        "degree": 2,
+        "betweenness": 0.003607503607503607,
+        "clustering": 0.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "social_anxiety",
+        "kappa": 0.0625,
+        "degree": 2,
+        "betweenness": 0.09090909090909091,
+        "clustering": 0.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "somatic",
+        "kappa": 0.125,
+        "degree": 1,
+        "betweenness": 0.0,
+        "clustering": 0.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "suicide_ideation",
+        "kappa": 0.18447293447293456,
+        "degree": 3,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      }
+    ],
+    "edge_curvatures": [
+      {
+        "edge": "MDD--GAD",
+        "curvature": -0.39423076923076894
+      },
+      {
+        "edge": "MDD--insomnia",
+        "curvature": -0.025641025641025328
+      },
+      {
+        "edge": "MDD--SUD",
+        "curvature": 0.18803418803418848
+      },
+      {
+        "edge": "MDD--anhedonia",
+        "curvature": 0.09615384615384659
+      },
+      {
+        "edge": "MDD--suicide_ideation",
+        "curvature": 0.025641025641025772
+      },
+      {
+        "edge": "MDD--PTSD",
+        "curvature": 0.061538461538461875
+      },
+      {
+        "edge": "MDD--SCZ",
+        "curvature": -0.13461538461538414
+      },
+      {
+        "edge": "MDD--BIP",
+        "curvature": 0.09615384615384648
+      },
+      {
+        "edge": "MDD--BPD",
+        "curvature": -0.028846153846153744
+      },
+      {
+        "edge": "MDD--fatigue",
+        "curvature": -0.02564102564102555
+      },
+      {
+        "edge": "MDD--cortisol",
+        "curvature": 0.012820512820512775
+      },
+      {
+        "edge": "MDD--inflammation",
+        "curvature": 0.06410256410256443
+      },
+      {
+        "edge": "MDD--OCD",
+        "curvature": -0.05769230769230749
+      },
+      {
+        "edge": "GAD--panic",
+        "curvature": -0.375
+      },
+      {
+        "edge": "GAD--somatic",
+        "curvature": 0.125
+      },
+      {
+        "edge": "GAD--social_anxiety",
+        "curvature": -0.375
+      },
+      {
+        "edge": "GAD--PTSD",
+        "curvature": -0.22499999999999987
+      },
+      {
+        "edge": "GAD--ADHD",
+        "curvature": 0.04166666666666663
+      },
+      {
+        "edge": "GAD--ASD",
+        "curvature": 0.0
+      },
+      {
+        "edge": "GAD--OCD",
+        "curvature": 0.0625
+      },
+      {
+        "edge": "insomnia--fatigue",
+        "curvature": 0.3333333333333335
+      },
+      {
+        "edge": "insomnia--cortisol",
+        "curvature": 0.33333333333333337
+      },
+      {
+        "edge": "SUD--psychosis",
+        "curvature": -0.08333333333333348
+      },
+      {
+        "edge": "SUD--suicide_ideation",
+        "curvature": 0.11111111111111116
+      },
+      {
+        "edge": "SUD--PTSD",
+        "curvature": -0.03333333333333344
+      },
+      {
+        "edge": "SUD--BIP",
+        "curvature": 0.16666666666666652
+      },
+      {
+        "edge": "SUD--ADHD",
+        "curvature": -0.2777777777777779
+      },
+      {
+        "edge": "SUD--anhedonia",
+        "curvature": 0.16666666666666674
+      },
+      {
+        "edge": "SUD--BPD",
+        "curvature": 0.013888888888888729
+      },
+      {
+        "edge": "SUD--inflammation",
+        "curvature": 0.0
+      },
+      {
+        "edge": "suicide_ideation--BPD",
+        "curvature": 0.41666666666666674
+      },
+      {
+        "edge": "PTSD--dissociation",
+        "curvature": 0.15000000000000002
+      },
+      {
+        "edge": "PTSD--cortisol",
+        "curvature": 0.10000000000000009
+      },
+      {
+        "edge": "SCZ--psychosis",
+        "curvature": 0.5
+      },
+      {
+        "edge": "BPD--dissociation",
+        "curvature": 0.25
+      },
+      {
+        "edge": "fatigue--inflammation",
+        "curvature": 0.3333333333333335
+      },
+      {
+        "edge": "panic--agoraphobia",
+        "curvature": 0.5
+      },
+      {
+        "edge": "social_anxiety--avoidance",
+        "curvature": 0.5
+      },
+      {
+        "edge": "ADHD--ASD",
+        "curvature": 0.41666666666666674
+      }
+    ]
+  },
+  "boschloo_120": {
+    "name": "Boschloo et al. (2015) 120-node DSM symptoms",
+    "n_nodes": 120,
+    "n_edges": 756,
+    "n_bridge": 9,
+    "n_mixed": 23,
+    "n_cluster_internal": 88,
+    "mean_curvature": 0.11398234150494549,
+    "std_curvature": 0.10849994417943722,
+    "correlations": {
+      "orc_degree": {
+        "rho": -0.2524676996471472,
+        "p": 0.0054039653757496295
+      },
+      "orc_betweenness": {
+        "rho": -0.7126933307577301,
+        "p": 6.890179485818509e-20
+      },
+      "orc_clustering": {
+        "rho": 0.881692725067952,
+        "p": 2.659380882222385e-40
+      },
+      "forman_degree": {
+        "rho": -0.9587888669026848,
+        "p": 2.489817446111482e-66
+      }
+    },
+    "top10_bridges": [
+      {
+        "node": "Panic disorder_1",
+        "kappa": -0.18786962296548684
+      },
+      {
+        "node": "Social phobia_3",
+        "kappa": -0.13279388466554232
+      },
+      {
+        "node": "Nicotine dependence_3",
+        "kappa": -0.09441881103645788
+      },
+      {
+        "node": "Mania or hypomania_10",
+        "kappa": -0.08948794261294239
+      },
+      {
+        "node": "Panic disorder_2",
+        "kappa": -0.08627329192546569
+      },
+      {
+        "node": "Nicotine dependence_4",
+        "kappa": -0.07663537911870923
+      },
+      {
+        "node": "Specific phobia_2",
+        "kappa": -0.07147710883483038
+      },
+      {
+        "node": "Social phobia_1",
+        "kappa": -0.05848953998075178
+      },
+      {
+        "node": "Specific phobia_3",
+        "kappa": -0.0559080070986372
+      },
+      {
+        "node": "Social phobia_2",
+        "kappa": -0.035753814865867206
+      }
+    ],
+    "top10_cluster": [
+      {
+        "node": "Generalised anxiety disorder_7",
+        "kappa": 0.33786848072562353
+      },
+      {
+        "node": "Alcohol abuse or dependence_4",
+        "kappa": 0.3202905680178408
+      },
+      {
+        "node": "Alcohol abuse or dependence_12",
+        "kappa": 0.31287202380952384
+      },
+      {
+        "node": "Dysthymia_8",
+        "kappa": 0.2967509920634922
+      },
+      {
+        "node": "Generalised anxiety disorder_4",
+        "kappa": 0.2926806139122316
+      },
+      {
+        "node": "Alcohol abuse or dependence_8",
+        "kappa": 0.2884244227994228
+      },
+      {
+        "node": "Generalised anxiety disorder_5",
+        "kappa": 0.28280009920634924
+      },
+      {
+        "node": "Alcohol abuse or dependence_10",
+        "kappa": 0.27041546416546436
+      },
+      {
+        "node": "Post-traumatic stres disorder_5",
+        "kappa": 0.26939372357442853
+      },
+      {
+        "node": "Alcohol abuse or dependence_1",
+        "kappa": 0.26858315295815294
+      }
+    ],
+    "per_node": [
+      {
+        "node": "Agoraphobia_1",
+        "kappa": 0.11774297131439991,
+        "degree": 7,
+        "betweenness": 0.002683458716620792,
+        "clustering": 0.38095238095238093,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Agoraphobia_2",
+        "kappa": 0.18775232919254667,
+        "degree": 8,
+        "betweenness": 0.002056640129593883,
+        "clustering": 0.5,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Agoraphobia_3",
+        "kappa": 0.055998737287557346,
+        "degree": 7,
+        "betweenness": 0.0020926997886325546,
+        "clustering": 0.38095238095238093,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Agoraphobia_4",
+        "kappa": 0.14967459810010975,
+        "degree": 8,
+        "betweenness": 0.0031084191906897056,
+        "clustering": 0.4642857142857143,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_1",
+        "kappa": 0.26858315295815294,
+        "degree": 8,
+        "betweenness": 0.0004757526215708062,
+        "clustering": 0.75,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_10",
+        "kappa": 0.27041546416546436,
+        "degree": 12,
+        "betweenness": 0.0020261774274073544,
+        "clustering": 0.6212121212121212,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_11",
+        "kappa": 0.06000893947322535,
+        "degree": 14,
+        "betweenness": 0.03467649662679156,
+        "clustering": 0.45054945054945056,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_12",
+        "kappa": 0.31287202380952384,
+        "degree": 8,
+        "betweenness": 0.00011800974982857904,
+        "clustering": 0.8571428571428571,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_13",
+        "kappa": 0.05654227195729183,
+        "degree": 11,
+        "betweenness": 0.016900461911615903,
+        "clustering": 0.4909090909090909,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_2",
+        "kappa": 0.19297438672438685,
+        "degree": 10,
+        "betweenness": 0.00401513742440538,
+        "clustering": 0.6444444444444445,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_3",
+        "kappa": 0.07800711193568347,
+        "degree": 7,
+        "betweenness": 0.00475089797572898,
+        "clustering": 0.42857142857142855,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_4",
+        "kappa": 0.3202905680178408,
+        "degree": 11,
+        "betweenness": 0.0006996031019824301,
+        "clustering": 0.7454545454545455,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_5",
+        "kappa": 0.2378755083300539,
+        "degree": 11,
+        "betweenness": 0.0021827574948640595,
+        "clustering": 0.5818181818181818,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_6",
+        "kappa": 0.20096801346801355,
+        "degree": 6,
+        "betweenness": 0.00014347421074607932,
+        "clustering": 0.8,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_7",
+        "kappa": -0.02389839920743571,
+        "degree": 18,
+        "betweenness": 0.05329693928533819,
+        "clustering": 0.32679738562091504,
+        "classification": "mixed"
+      },
+      {
+        "node": "Alcohol abuse or dependence_8",
+        "kappa": 0.2884244227994228,
+        "degree": 8,
+        "betweenness": 0.00012378562648804553,
+        "clustering": 0.8928571428571429,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse or dependence_9",
+        "kappa": 0.06395805884936336,
+        "degree": 15,
+        "betweenness": 0.019471581018888805,
+        "clustering": 0.41904761904761906,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_1",
+        "kappa": 0.25375541125541135,
+        "degree": 10,
+        "betweenness": 0.0004089294994363072,
+        "clustering": 0.7777777777777778,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_10",
+        "kappa": 0.10273723860680388,
+        "degree": 16,
+        "betweenness": 0.019963272369383445,
+        "clustering": 0.425,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_11",
+        "kappa": 0.22429567034523737,
+        "degree": 14,
+        "betweenness": 0.0021667681263782875,
+        "clustering": 0.6153846153846154,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_12",
+        "kappa": 0.11920006554203894,
+        "degree": 13,
+        "betweenness": 0.00451946215495983,
+        "clustering": 0.5128205128205128,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_13",
+        "kappa": 0.25054294035272323,
+        "degree": 12,
+        "betweenness": 0.0007178767095420874,
+        "clustering": 0.7424242424242424,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_14",
+        "kappa": -0.008240887446936426,
+        "degree": 23,
+        "betweenness": 0.03340260202222847,
+        "clustering": 0.31225296442687744,
+        "classification": "mixed"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_15",
+        "kappa": 0.014299292431443558,
+        "degree": 14,
+        "betweenness": 0.01742905504091395,
+        "clustering": 0.34065934065934067,
+        "classification": "mixed"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_16",
+        "kappa": 0.10319113857157351,
+        "degree": 10,
+        "betweenness": 0.0035291545912363577,
+        "clustering": 0.5777777777777777,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_17",
+        "kappa": 0.18193324640335518,
+        "degree": 12,
+        "betweenness": 0.0026599814010952808,
+        "clustering": 0.5606060606060606,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_18",
+        "kappa": 0.1164850311007145,
+        "degree": 14,
+        "betweenness": 0.007120038112038198,
+        "clustering": 0.46153846153846156,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_2",
+        "kappa": 0.05851038581301753,
+        "degree": 14,
+        "betweenness": 0.014969173300321839,
+        "clustering": 0.4175824175824176,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_3",
+        "kappa": 0.15548076542069694,
+        "degree": 18,
+        "betweenness": 0.01000615285345535,
+        "clustering": 0.47058823529411764,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_4",
+        "kappa": -0.00904711374431835,
+        "degree": 21,
+        "betweenness": 0.03762284545800097,
+        "clustering": 0.3142857142857143,
+        "classification": "mixed"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_5",
+        "kappa": 0.023352431881843928,
+        "degree": 20,
+        "betweenness": 0.027941761943528265,
+        "clustering": 0.32105263157894737,
+        "classification": "mixed"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_6",
+        "kappa": 0.18255501086528775,
+        "degree": 11,
+        "betweenness": 0.0020637563454709087,
+        "clustering": 0.6545454545454545,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_7",
+        "kappa": 0.09514546111956156,
+        "degree": 11,
+        "betweenness": 0.003649192301164196,
+        "clustering": 0.41818181818181815,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_8",
+        "kappa": 0.225412497109668,
+        "degree": 16,
+        "betweenness": 0.004107048597588438,
+        "clustering": 0.5833333333333334,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Attention-deficit/hyperactivity disorder_9",
+        "kappa": 0.1311056998557,
+        "degree": 10,
+        "betweenness": 0.003990187848207928,
+        "clustering": 0.5777777777777777,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia_1",
+        "kappa": 0.2275545634920636,
+        "degree": 8,
+        "betweenness": 0.001956168957851231,
+        "clustering": 0.42857142857142855,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia_10",
+        "kappa": 0.15972222222222227,
+        "degree": 7,
+        "betweenness": 0.0057523753715621705,
+        "clustering": 0.47619047619047616,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia_2",
+        "kappa": 0.039025950292397735,
+        "degree": 8,
+        "betweenness": 0.007962361028050568,
+        "clustering": 0.42857142857142855,
+        "classification": "mixed"
+      },
+      {
+        "node": "Dysthymia_3",
+        "kappa": 0.2655423280423281,
+        "degree": 9,
+        "betweenness": 0.0052515550279140484,
+        "clustering": 0.5555555555555556,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia_4",
+        "kappa": 0.1360670194003528,
+        "degree": 9,
+        "betweenness": 0.0069260869273416945,
+        "clustering": 0.4444444444444444,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia_5",
+        "kappa": 0.2427437641723357,
+        "degree": 7,
+        "betweenness": 0.0027815522530993137,
+        "clustering": 0.5238095238095238,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia_6",
+        "kappa": 0.24979991996798728,
+        "degree": 7,
+        "betweenness": 0.003145776093557848,
+        "clustering": 0.5714285714285714,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia_7",
+        "kappa": 0.035376814543481294,
+        "degree": 9,
+        "betweenness": 0.013995257112346294,
+        "clustering": 0.3333333333333333,
+        "classification": "mixed"
+      },
+      {
+        "node": "Dysthymia_8",
+        "kappa": 0.2967509920634922,
+        "degree": 8,
+        "betweenness": 0.0005801079903760804,
+        "clustering": 0.6785714285714286,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia_9",
+        "kappa": 0.24770463741051982,
+        "degree": 9,
+        "betweenness": 0.005214180054885142,
+        "clustering": 0.5277777777777778,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Generalised anxiety disorder_1",
+        "kappa": 0.08909632034632042,
+        "degree": 10,
+        "betweenness": 0.01096169087759877,
+        "clustering": 0.4888888888888889,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Generalised anxiety disorder_2",
+        "kappa": 0.22476851851851856,
+        "degree": 9,
+        "betweenness": 0.0037274243482329533,
+        "clustering": 0.6388888888888888,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Generalised anxiety disorder_3",
+        "kappa": 0.08221230158730156,
+        "degree": 10,
+        "betweenness": 0.016155650844067948,
+        "clustering": 0.5111111111111111,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Generalised anxiety disorder_4",
+        "kappa": 0.2926806139122316,
+        "degree": 8,
+        "betweenness": 0.0018494274015680337,
+        "clustering": 0.75,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Generalised anxiety disorder_5",
+        "kappa": 0.28280009920634924,
+        "degree": 8,
+        "betweenness": 0.003151810866579342,
+        "clustering": 0.75,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Generalised anxiety disorder_6",
+        "kappa": 0.09575396825396831,
+        "degree": 10,
+        "betweenness": 0.014305724500997144,
+        "clustering": 0.4888888888888889,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Generalised anxiety disorder_7",
+        "kappa": 0.33786848072562353,
+        "degree": 7,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Generalised anxiety disorder_8",
+        "kappa": 0.07892857142857149,
+        "degree": 10,
+        "betweenness": 0.01335983654081084,
+        "clustering": 0.5111111111111111,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_1",
+        "kappa": 0.09211859866247449,
+        "degree": 16,
+        "betweenness": 0.02232186996946012,
+        "clustering": 0.4083333333333333,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_10",
+        "kappa": 0.0469402534934012,
+        "degree": 18,
+        "betweenness": 0.02553564551178875,
+        "clustering": 0.35947712418300654,
+        "classification": "mixed"
+      },
+      {
+        "node": "Major depressive episode_11",
+        "kappa": 0.15460316158309256,
+        "degree": 16,
+        "betweenness": 0.011182939940479095,
+        "clustering": 0.5333333333333333,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_12",
+        "kappa": 0.043097960127033375,
+        "degree": 16,
+        "betweenness": 0.032582418162701104,
+        "clustering": 0.4083333333333333,
+        "classification": "mixed"
+      },
+      {
+        "node": "Major depressive episode_13",
+        "kappa": 0.08540821683122739,
+        "degree": 17,
+        "betweenness": 0.025862631104041408,
+        "clustering": 0.40441176470588236,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_14",
+        "kappa": 0.08210486762776881,
+        "degree": 17,
+        "betweenness": 0.012369332953547352,
+        "clustering": 0.38235294117647056,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_15",
+        "kappa": -0.031225101469966994,
+        "degree": 14,
+        "betweenness": 0.02866113758798441,
+        "clustering": 0.3076923076923077,
+        "classification": "mixed"
+      },
+      {
+        "node": "Major depressive episode_16",
+        "kappa": -0.027604531592088106,
+        "degree": 13,
+        "betweenness": 0.02652624365764554,
+        "clustering": 0.34615384615384615,
+        "classification": "mixed"
+      },
+      {
+        "node": "Major depressive episode_17",
+        "kappa": 0.05364618017599589,
+        "degree": 5,
+        "betweenness": 0.0004884843217054198,
+        "clustering": 0.6,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_2",
+        "kappa": 0.06375943539809108,
+        "degree": 21,
+        "betweenness": 0.036919530177384086,
+        "clustering": 0.3619047619047619,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_3",
+        "kappa": 0.07257931335045557,
+        "degree": 19,
+        "betweenness": 0.027077085310959044,
+        "clustering": 0.3684210526315789,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_4",
+        "kappa": 0.09416872834660188,
+        "degree": 16,
+        "betweenness": 0.024089411561365157,
+        "clustering": 0.4583333333333333,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_5",
+        "kappa": 0.07522585788701464,
+        "degree": 14,
+        "betweenness": 0.018773188166852462,
+        "clustering": 0.43956043956043955,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_6",
+        "kappa": 0.10211900887210497,
+        "degree": 15,
+        "betweenness": 0.020694245250540932,
+        "clustering": 0.4666666666666667,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_7",
+        "kappa": 0.08372758854368104,
+        "degree": 15,
+        "betweenness": 0.012875470009075858,
+        "clustering": 0.4380952380952381,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_8",
+        "kappa": 0.21687229716448,
+        "degree": 12,
+        "betweenness": 0.0012198568194304326,
+        "clustering": 0.7424242424242424,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Major depressive episode_9",
+        "kappa": 0.11727818477415657,
+        "degree": 17,
+        "betweenness": 0.03089272716115891,
+        "clustering": 0.47794117647058826,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Mania or hypomania_1",
+        "kappa": 0.01379381081272537,
+        "degree": 16,
+        "betweenness": 0.021236633560876614,
+        "clustering": 0.325,
+        "classification": "mixed"
+      },
+      {
+        "node": "Mania or hypomania_10",
+        "kappa": -0.08948794261294239,
+        "degree": 20,
+        "betweenness": 0.054267435621587985,
+        "clustering": 0.24210526315789474,
+        "classification": "bridge"
+      },
+      {
+        "node": "Mania or hypomania_2",
+        "kappa": 0.003053542673108097,
+        "degree": 15,
+        "betweenness": 0.02220368238223147,
+        "clustering": 0.3333333333333333,
+        "classification": "mixed"
+      },
+      {
+        "node": "Mania or hypomania_3",
+        "kappa": 0.19097222222222224,
+        "degree": 6,
+        "betweenness": 3.823931930915329e-05,
+        "clustering": 0.9333333333333333,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Mania or hypomania_4",
+        "kappa": 0.179431216931217,
+        "degree": 9,
+        "betweenness": 0.0025293491542428886,
+        "clustering": 0.7222222222222222,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Mania or hypomania_5",
+        "kappa": 0.13062499999999996,
+        "degree": 10,
+        "betweenness": 0.003953536196359696,
+        "clustering": 0.5777777777777777,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Mania or hypomania_6",
+        "kappa": 0.14010524165806687,
+        "degree": 12,
+        "betweenness": 0.005013428787228134,
+        "clustering": 0.5151515151515151,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Mania or hypomania_7",
+        "kappa": 0.02614914021164037,
+        "degree": 12,
+        "betweenness": 0.009908955326349372,
+        "clustering": 0.36363636363636365,
+        "classification": "mixed"
+      },
+      {
+        "node": "Mania or hypomania_8",
+        "kappa": 0.24192708333333335,
+        "degree": 8,
+        "betweenness": 0.00015428773269245277,
+        "clustering": 0.8928571428571429,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Mania or hypomania_9",
+        "kappa": 0.029066022544283494,
+        "degree": 12,
+        "betweenness": 0.013769322862069899,
+        "clustering": 0.42424242424242425,
+        "classification": "mixed"
+      },
+      {
+        "node": "Nicotine dependence_1",
+        "kappa": 0.1465677179962896,
+        "degree": 7,
+        "betweenness": 0.0010994514023022484,
+        "clustering": 0.7142857142857143,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Nicotine dependence_2",
+        "kappa": 0.023828345567476112,
+        "degree": 9,
+        "betweenness": 0.009106898108047814,
+        "clustering": 0.4722222222222222,
+        "classification": "mixed"
+      },
+      {
+        "node": "Nicotine dependence_3",
+        "kappa": -0.09441881103645788,
+        "degree": 15,
+        "betweenness": 0.027623373110694165,
+        "clustering": 0.23809523809523808,
+        "classification": "bridge"
+      },
+      {
+        "node": "Nicotine dependence_4",
+        "kappa": -0.07663537911870923,
+        "degree": 14,
+        "betweenness": 0.029837515025373906,
+        "clustering": 0.2857142857142857,
+        "classification": "bridge"
+      },
+      {
+        "node": "Nicotine dependence_5",
+        "kappa": 0.056310279531623535,
+        "degree": 11,
+        "betweenness": 0.0077930049899184815,
+        "clustering": 0.41818181818181815,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Nicotine dependence_6",
+        "kappa": 0.20082972582972602,
+        "degree": 6,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Nicotine dependence_7",
+        "kappa": -0.004216819631839296,
+        "degree": 11,
+        "betweenness": 0.007993253753422988,
+        "clustering": 0.4,
+        "classification": "mixed"
+      },
+      {
+        "node": "Panic disorder_1",
+        "kappa": -0.18786962296548684,
+        "degree": 23,
+        "betweenness": 0.09335897379610594,
+        "clustering": 0.1225296442687747,
+        "classification": "bridge"
+      },
+      {
+        "node": "Panic disorder_2",
+        "kappa": -0.08627329192546569,
+        "degree": 5,
+        "betweenness": 0.006485790582973058,
+        "clustering": 0.4,
+        "classification": "bridge"
+      },
+      {
+        "node": "Panic disorder_3",
+        "kappa": 0.037939045183291,
+        "degree": 10,
+        "betweenness": 0.008158872678078818,
+        "clustering": 0.35555555555555557,
+        "classification": "mixed"
+      },
+      {
+        "node": "Panic disorder_4",
+        "kappa": 0.018604352496147256,
+        "degree": 7,
+        "betweenness": 0.003946958512859199,
+        "clustering": 0.38095238095238093,
+        "classification": "mixed"
+      },
+      {
+        "node": "Post-traumatic stres disorder_1",
+        "kappa": 0.23947119835614258,
+        "degree": 12,
+        "betweenness": 0.000840577484079222,
+        "clustering": 0.7727272727272727,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_10",
+        "kappa": 0.22563024729979758,
+        "degree": 17,
+        "betweenness": 0.004011064912543307,
+        "clustering": 0.6029411764705882,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_11",
+        "kappa": 0.21771510066014718,
+        "degree": 15,
+        "betweenness": 0.0049862922906025306,
+        "clustering": 0.6,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_12",
+        "kappa": 0.20025484462790982,
+        "degree": 15,
+        "betweenness": 0.007732171254051961,
+        "clustering": 0.6190476190476191,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_13",
+        "kappa": 0.13509951473057777,
+        "degree": 18,
+        "betweenness": 0.014347307224997179,
+        "clustering": 0.46405228758169936,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_14",
+        "kappa": 0.08888573930369617,
+        "degree": 15,
+        "betweenness": 0.011581787489939911,
+        "clustering": 0.45714285714285713,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_15",
+        "kappa": 0.16494870631222552,
+        "degree": 18,
+        "betweenness": 0.01933897797069784,
+        "clustering": 0.5686274509803921,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_16",
+        "kappa": 0.09541218644998337,
+        "degree": 18,
+        "betweenness": 0.026100266917195657,
+        "clustering": 0.49673202614379086,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_17",
+        "kappa": 0.10885511678532854,
+        "degree": 18,
+        "betweenness": 0.017524894735360532,
+        "clustering": 0.4444444444444444,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_18",
+        "kappa": 0.13410284226671806,
+        "degree": 22,
+        "betweenness": 0.015589805577051263,
+        "clustering": 0.43722943722943725,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_19",
+        "kappa": 0.06872924439681428,
+        "degree": 20,
+        "betweenness": 0.023200299764431324,
+        "clustering": 0.37894736842105264,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_2",
+        "kappa": 0.20297073300097182,
+        "degree": 14,
+        "betweenness": 0.0027289195593205536,
+        "clustering": 0.6373626373626373,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_3",
+        "kappa": 0.2172639588392047,
+        "degree": 12,
+        "betweenness": 0.0012273033500986557,
+        "clustering": 0.7272727272727273,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_4",
+        "kappa": 0.11349768082290139,
+        "degree": 20,
+        "betweenness": 0.02174473836652473,
+        "clustering": 0.46842105263157896,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_5",
+        "kappa": 0.26939372357442853,
+        "degree": 17,
+        "betweenness": 0.002211860286638649,
+        "clustering": 0.6617647058823529,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_6",
+        "kappa": 0.19199798362295453,
+        "degree": 19,
+        "betweenness": 0.008306631335020135,
+        "clustering": 0.5263157894736842,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_7",
+        "kappa": 0.23281296420083197,
+        "degree": 16,
+        "betweenness": 0.004254443772345804,
+        "clustering": 0.6583333333333333,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_8",
+        "kappa": 0.21773690285350686,
+        "degree": 18,
+        "betweenness": 0.006029025630791704,
+        "clustering": 0.5555555555555556,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Post-traumatic stres disorder_9",
+        "kappa": 0.11930288343407555,
+        "degree": 20,
+        "betweenness": 0.017219399222355044,
+        "clustering": 0.45263157894736844,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Social phobia_1",
+        "kappa": -0.05848953998075178,
+        "degree": 14,
+        "betweenness": 0.02283396553378358,
+        "clustering": 0.21978021978021978,
+        "classification": "bridge"
+      },
+      {
+        "node": "Social phobia_2",
+        "kappa": -0.035753814865867206,
+        "degree": 8,
+        "betweenness": 0.0065091573131087,
+        "clustering": 0.2857142857142857,
+        "classification": "mixed"
+      },
+      {
+        "node": "Social phobia_3",
+        "kappa": -0.13279388466554232,
+        "degree": 11,
+        "betweenness": 0.021497974288934074,
+        "clustering": 0.21818181818181817,
+        "classification": "bridge"
+      },
+      {
+        "node": "Social phobia_4",
+        "kappa": 0.06338126159554737,
+        "degree": 7,
+        "betweenness": 0.002116374421557501,
+        "clustering": 0.3333333333333333,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Social phobia_5",
+        "kappa": 0.08748196248196279,
+        "degree": 3,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Specific phobia_1",
+        "kappa": -0.017412343153127757,
+        "degree": 19,
+        "betweenness": 0.029762275414735494,
+        "clustering": 0.2046783625730994,
+        "classification": "mixed"
+      },
+      {
+        "node": "Specific phobia_2",
+        "kappa": -0.07147710883483038,
+        "degree": 17,
+        "betweenness": 0.03333328800187487,
+        "clustering": 0.17647058823529413,
+        "classification": "bridge"
+      },
+      {
+        "node": "Specific phobia_3",
+        "kappa": -0.0559080070986372,
+        "degree": 13,
+        "betweenness": 0.020191608800098508,
+        "clustering": 0.21794871794871795,
+        "classification": "bridge"
+      },
+      {
+        "node": "Specific phobia_4",
+        "kappa": -0.003064593752480693,
+        "degree": 8,
+        "betweenness": 0.005852184283552606,
+        "clustering": 0.32142857142857145,
+        "classification": "mixed"
+      },
+      {
+        "node": "Specific phobia_5",
+        "kappa": -0.010586952392292792,
+        "degree": 8,
+        "betweenness": 0.0038416483155615843,
+        "clustering": 0.32142857142857145,
+        "classification": "mixed"
+      }
+    ],
+    "edge_curvatures": [
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_2",
+        "curvature": 0.22172619047619058
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_3",
+        "curvature": 0.16940789473684248
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_4",
+        "curvature": 0.1875
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_5",
+        "curvature": 0.2008928571428571
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_6",
+        "curvature": 0.21666666666666679
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_9",
+        "curvature": 0.2555147058823529
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_10",
+        "curvature": 0.22916666666666685
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_12",
+        "curvature": 0.15625
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_13",
+        "curvature": 0.14889705882352955
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_14",
+        "curvature": 0.12499999999999989
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_15",
+        "curvature": 0.07589285714285698
+      },
+      {
+        "edge": "Major depressive episode_1--Major depressive episode_16",
+        "curvature": 0.13701923076923084
+      },
+      {
+        "edge": "Major depressive episode_1--Dysthymia_1",
+        "curvature": -0.125
+      },
+      {
+        "edge": "Major depressive episode_1--Generalised anxiety disorder_1",
+        "curvature": -0.12499999999999978
+      },
+      {
+        "edge": "Major depressive episode_1--Generalised anxiety disorder_2",
+        "curvature": -0.16319444444444464
+      },
+      {
+        "edge": "Major depressive episode_1--Specific phobia_1",
+        "curvature": -0.23684210526315774
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_3",
+        "curvature": 0.2142857142857142
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_4",
+        "curvature": 0.14880952380952417
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_5",
+        "curvature": 0.16666666666666696
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_6",
+        "curvature": 0.21428571428571452
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_8",
+        "curvature": 0.22023809523809568
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_9",
+        "curvature": 0.19887955182072858
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_10",
+        "curvature": 0.21428571428571452
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_11",
+        "curvature": 0.26934523809523814
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_12",
+        "curvature": 0.22619047619047639
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_13",
+        "curvature": 0.20588235294117652
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_14",
+        "curvature": 0.17927170868347386
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_15",
+        "curvature": 0.07142857142857162
+      },
+      {
+        "edge": "Major depressive episode_2--Major depressive episode_16",
+        "curvature": 0.09340659340659352
+      },
+      {
+        "edge": "Major depressive episode_2--Mania or hypomania_1",
+        "curvature": -0.08035714285714302
+      },
+      {
+        "edge": "Major depressive episode_2--Mania or hypomania_2",
+        "curvature": -0.03333333333333299
+      },
+      {
+        "edge": "Major depressive episode_2--Generalised anxiety disorder_2",
+        "curvature": -0.25396825396825395
+      },
+      {
+        "edge": "Major depressive episode_2--Social phobia_1",
+        "curvature": -0.011904761904761862
+      },
+      {
+        "edge": "Major depressive episode_2--Post-traumatic stres disorder_11",
+        "curvature": -0.29523809523809486
+      },
+      {
+        "edge": "Major depressive episode_2--Attention-deficit/hyperactivity disorder_4",
+        "curvature": -0.30952380952380887
+      },
+      {
+        "edge": "Major depressive episode_2--Nicotine dependence_4",
+        "curvature": -0.32142857142857095
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_4",
+        "curvature": 0.22532894736842102
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_5",
+        "curvature": 0.15789473684210542
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_6",
+        "curvature": 0.1842105263157896
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_7",
+        "curvature": 0.20350877192982442
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_8",
+        "curvature": 0.2412280701754388
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_9",
+        "curvature": 0.19969040247678005
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_10",
+        "curvature": 0.17251461988304073
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_11",
+        "curvature": 0.2927631578947367
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_12",
+        "curvature": 0.14309210526315796
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_14",
+        "curvature": 0.19969040247678027
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_15",
+        "curvature": 0.11090225563909772
+      },
+      {
+        "edge": "Major depressive episode_3--Major depressive episode_17",
+        "curvature": 0.021052631578947434
+      },
+      {
+        "edge": "Major depressive episode_3--Dysthymia_2",
+        "curvature": -0.26973684210526283
+      },
+      {
+        "edge": "Major depressive episode_3--Mania or hypomania_1",
+        "curvature": -0.13651315789473717
+      },
+      {
+        "edge": "Major depressive episode_3--Mania or hypomania_6",
+        "curvature": -0.16885964912280715
+      },
+      {
+        "edge": "Major depressive episode_3--Panic disorder_4",
+        "curvature": -0.3270676691729326
+      },
+      {
+        "edge": "Major depressive episode_3--Post-traumatic stres disorder_13",
+        "curvature": -0.25438596491228105
+      },
+      {
+        "edge": "Major depressive episode_4--Major depressive episode_5",
+        "curvature": 0.1919642857142858
+      },
+      {
+        "edge": "Major depressive episode_4--Major depressive episode_6",
+        "curvature": 0.17291666666666705
+      },
+      {
+        "edge": "Major depressive episode_4--Major depressive episode_7",
+        "curvature": 0.18333333333333335
+      },
+      {
+        "edge": "Major depressive episode_4--Major depressive episode_8",
+        "curvature": 0.26041666666666663
+      },
+      {
+        "edge": "Major depressive episode_4--Major depressive episode_9",
+        "curvature": 0.28676470588235314
+      },
+      {
+        "edge": "Major depressive episode_4--Major depressive episode_11",
+        "curvature": 0.25
+      },
+      {
+        "edge": "Major depressive episode_4--Major depressive episode_12",
+        "curvature": 0.21875
+      },
+      {
+        "edge": "Major depressive episode_4--Major depressive episode_13",
+        "curvature": 0.2794117647058826
+      },
+      {
+        "edge": "Major depressive episode_4--Dysthymia_3",
+        "curvature": -0.25
+      },
+      {
+        "edge": "Major depressive episode_4--Social phobia_1",
+        "curvature": -0.044642857142856984
+      },
+      {
+        "edge": "Major depressive episode_4--Specific phobia_1",
+        "curvature": -0.1217105263157896
+      },
+      {
+        "edge": "Major depressive episode_4--Post-traumatic stres disorder_19",
+        "curvature": -0.15624999999999978
+      },
+      {
+        "edge": "Major depressive episode_4--Attention-deficit/hyperactivity disorder_15",
+        "curvature": -0.32589285714285743
+      },
+      {
+        "edge": "Major depressive episode_5--Major depressive episode_7",
+        "curvature": 0.20476190476190514
+      },
+      {
+        "edge": "Major depressive episode_5--Major depressive episode_9",
+        "curvature": 0.23319327731092476
+      },
+      {
+        "edge": "Major depressive episode_5--Major depressive episode_11",
+        "curvature": 0.18750000000000044
+      },
+      {
+        "edge": "Major depressive episode_5--Major depressive episode_12",
+        "curvature": 0.20982142857142871
+      },
+      {
+        "edge": "Major depressive episode_5--Major depressive episode_13",
+        "curvature": 0.19957983193277318
+      },
+      {
+        "edge": "Major depressive episode_5--Major depressive episode_14",
+        "curvature": 0.05882352941176483
+      },
+      {
+        "edge": "Major depressive episode_5--Dysthymia_4",
+        "curvature": -0.1587301587301586
+      },
+      {
+        "edge": "Major depressive episode_5--Mania or hypomania_4",
+        "curvature": -0.2142857142857144
+      },
+      {
+        "edge": "Major depressive episode_5--Generalised anxiety disorder_8",
+        "curvature": -0.10714285714285698
+      },
+      {
+        "edge": "Major depressive episode_5--Post-traumatic stres disorder_15",
+        "curvature": -0.27777777777777746
+      },
+      {
+        "edge": "Major depressive episode_6--Major depressive episode_8",
+        "curvature": 0.21666666666666679
+      },
+      {
+        "edge": "Major depressive episode_6--Major depressive episode_9",
+        "curvature": 0.2235294117647061
+      },
+      {
+        "edge": "Major depressive episode_6--Major depressive episode_10",
+        "curvature": 0.13333333333333353
+      },
+      {
+        "edge": "Major depressive episode_6--Major depressive episode_11",
+        "curvature": 0.2333333333333334
+      },
+      {
+        "edge": "Major depressive episode_6--Major depressive episode_12",
+        "curvature": 0.1708333333333334
+      },
+      {
+        "edge": "Major depressive episode_6--Major depressive episode_13",
+        "curvature": 0.2705882352941178
+      },
+      {
+        "edge": "Major depressive episode_6--Major depressive episode_16",
+        "curvature": 0.10256410256410275
+      },
+      {
+        "edge": "Major depressive episode_6--Dysthymia_5",
+        "curvature": -0.2571428571428571
+      },
+      {
+        "edge": "Major depressive episode_6--Mania or hypomania_2",
+        "curvature": -0.06666666666666665
+      },
+      {
+        "edge": "Major depressive episode_6--Mania or hypomania_5",
+        "curvature": -0.16666666666666674
+      },
+      {
+        "edge": "Major depressive episode_6--Mania or hypomania_10",
+        "curvature": -0.11666666666666647
+      },
+      {
+        "edge": "Major depressive episode_9--Major depressive episode_7",
+        "curvature": 0.2235294117647061
+      },
+      {
+        "edge": "Major depressive episode_9--Major depressive episode_8",
+        "curvature": 0.27696078431372595
+      },
+      {
+        "edge": "Major depressive episode_9--Major depressive episode_10",
+        "curvature": 0.1748366013071897
+      },
+      {
+        "edge": "Major depressive episode_9--Major depressive episode_11",
+        "curvature": 0.3198529411764708
+      },
+      {
+        "edge": "Major depressive episode_9--Major depressive episode_12",
+        "curvature": 0.19852941176470584
+      },
+      {
+        "edge": "Major depressive episode_9--Major depressive episode_13",
+        "curvature": 0.2647058823529411
+      },
+      {
+        "edge": "Major depressive episode_9--Major depressive episode_14",
+        "curvature": 0.1470588235294117
+      },
+      {
+        "edge": "Major depressive episode_9--Dysthymia_6",
+        "curvature": -0.23949579831932755
+      },
+      {
+        "edge": "Major depressive episode_9--Generalised anxiety disorder_4",
+        "curvature": -0.2647058823529409
+      },
+      {
+        "edge": "Major depressive episode_9--Specific phobia_2",
+        "curvature": -0.3235294117647056
+      },
+      {
+        "edge": "Major depressive episode_9--Panic disorder_1",
+        "curvature": -0.18158567774936096
+      },
+      {
+        "edge": "Major depressive episode_10--Major depressive episode_7",
+        "curvature": 0.10555555555555585
+      },
+      {
+        "edge": "Major depressive episode_10--Major depressive episode_8",
+        "curvature": 0.16666666666666663
+      },
+      {
+        "edge": "Major depressive episode_10--Major depressive episode_11",
+        "curvature": 0.15972222222222254
+      },
+      {
+        "edge": "Major depressive episode_10--Major depressive episode_13",
+        "curvature": 0.17810457516339884
+      },
+      {
+        "edge": "Major depressive episode_10--Major depressive episode_14",
+        "curvature": 0.261437908496732
+      },
+      {
+        "edge": "Major depressive episode_10--Major depressive episode_15",
+        "curvature": 0.12698412698412698
+      },
+      {
+        "edge": "Major depressive episode_10--Major depressive episode_16",
+        "curvature": 0.16880341880341876
+      },
+      {
+        "edge": "Major depressive episode_10--Dysthymia_7",
+        "curvature": -0.16666666666666652
+      },
+      {
+        "edge": "Major depressive episode_10--Generalised anxiety disorder_6",
+        "curvature": -0.22222222222222188
+      },
+      {
+        "edge": "Major depressive episode_10--Social phobia_3",
+        "curvature": -0.17676767676767668
+      },
+      {
+        "edge": "Major depressive episode_10--Specific phobia_3",
+        "curvature": -0.23717948717948678
+      },
+      {
+        "edge": "Major depressive episode_10--Post-traumatic stres disorder_14",
+        "curvature": -0.12222222222222223
+      },
+      {
+        "edge": "Major depressive episode_10--Attention-deficit/hyperactivity disorder_2",
+        "curvature": -0.3214285714285712
+      },
+      {
+        "edge": "Major depressive episode_12--Major depressive episode_7",
+        "curvature": 0.18125000000000024
+      },
+      {
+        "edge": "Major depressive episode_12--Major depressive episode_8",
+        "curvature": 0.20833333333333348
+      },
+      {
+        "edge": "Major depressive episode_12--Major depressive episode_11",
+        "curvature": 0.21875
+      },
+      {
+        "edge": "Major depressive episode_12--Major depressive episode_13",
+        "curvature": 0.2683823529411766
+      },
+      {
+        "edge": "Major depressive episode_12--Mania or hypomania_7",
+        "curvature": -0.02083333333333348
+      },
+      {
+        "edge": "Major depressive episode_12--Generalised anxiety disorder_5",
+        "curvature": -0.28125
+      },
+      {
+        "edge": "Major depressive episode_12--Post-traumatic stres disorder_17",
+        "curvature": -0.26388888888888884
+      },
+      {
+        "edge": "Major depressive episode_12--Attention-deficit/hyperactivity disorder_9",
+        "curvature": -0.3999999999999997
+      },
+      {
+        "edge": "Major depressive episode_12--Alcohol abuse or dependence_11",
+        "curvature": -0.5446428571428568
+      },
+      {
+        "edge": "Major depressive episode_13--Major depressive episode_7",
+        "curvature": 0.16470588235294126
+      },
+      {
+        "edge": "Major depressive episode_13--Major depressive episode_8",
+        "curvature": 0.25490196078431393
+      },
+      {
+        "edge": "Major depressive episode_13--Major depressive episode_11",
+        "curvature": 0.24264705882352944
+      },
+      {
+        "edge": "Major depressive episode_13--Major depressive episode_16",
+        "curvature": 0.03393665158371029
+      },
+      {
+        "edge": "Major depressive episode_13--Dysthymia_9",
+        "curvature": -0.2647058823529409
+      },
+      {
+        "edge": "Major depressive episode_13--Mania or hypomania_6",
+        "curvature": -0.1519607843137254
+      },
+      {
+        "edge": "Major depressive episode_13--Post-traumatic stres disorder_17",
+        "curvature": -0.25490196078431326
+      },
+      {
+        "edge": "Major depressive episode_13--Post-traumatic stres disorder_19",
+        "curvature": -0.1573529411764698
+      },
+      {
+        "edge": "Major depressive episode_13--Attention-deficit/hyperactivity disorder_5",
+        "curvature": -0.2308823529411761
+      },
+      {
+        "edge": "Major depressive episode_14--Major depressive episode_7",
+        "curvature": 0.18039215686274535
+      },
+      {
+        "edge": "Major depressive episode_14--Major depressive episode_8",
+        "curvature": 0.1740196078431372
+      },
+      {
+        "edge": "Major depressive episode_14--Major depressive episode_11",
+        "curvature": 0.20772058823529416
+      },
+      {
+        "edge": "Major depressive episode_14--Major depressive episode_15",
+        "curvature": 0.1617647058823528
+      },
+      {
+        "edge": "Major depressive episode_14--Major depressive episode_16",
+        "curvature": 0.061085972850678294
+      },
+      {
+        "edge": "Major depressive episode_14--Major depressive episode_17",
+        "curvature": 0.1470588235294118
+      },
+      {
+        "edge": "Major depressive episode_14--Social phobia_1",
+        "curvature": 0.014705882352941235
+      },
+      {
+        "edge": "Major depressive episode_14--Social phobia_3",
+        "curvature": -0.058823529411764275
+      },
+      {
+        "edge": "Major depressive episode_14--Specific phobia_3",
+        "curvature": -0.14479638009049767
+      },
+      {
+        "edge": "Major depressive episode_14--Panic disorder_3",
+        "curvature": -0.1970588235294113
+      },
+      {
+        "edge": "Major depressive episode_14--Post-traumatic stres disorder_14",
+        "curvature": -0.12156862745098018
+      },
+      {
+        "edge": "Major depressive episode_15--Major depressive episode_11",
+        "curvature": 0.07589285714285743
+      },
+      {
+        "edge": "Major depressive episode_15--Major depressive episode_16",
+        "curvature": 0.19230769230769273
+      },
+      {
+        "edge": "Major depressive episode_15--Major depressive episode_17",
+        "curvature": 0.2071428571428574
+      },
+      {
+        "edge": "Major depressive episode_15--Dysthymia_10",
+        "curvature": -0.3928571428571428
+      },
+      {
+        "edge": "Major depressive episode_15--Mania or hypomania_7",
+        "curvature": -0.12499999999999978
+      },
+      {
+        "edge": "Major depressive episode_15--Mania or hypomania_10",
+        "curvature": -0.139285714285714
+      },
+      {
+        "edge": "Major depressive episode_15--Panic disorder_1",
+        "curvature": -0.12267080745341641
+      },
+      {
+        "edge": "Major depressive episode_15--Post-traumatic stres disorder_14",
+        "curvature": -0.20238095238095188
+      },
+      {
+        "edge": "Major depressive episode_15--Alcohol abuse or dependence_13",
+        "curvature": -0.47727272727272685
+      },
+      {
+        "edge": "Major depressive episode_16--Major depressive episode_17",
+        "curvature": 0.05384615384615388
+      },
+      {
+        "edge": "Major depressive episode_16--Dysthymia_7",
+        "curvature": -0.2008547008547008
+      },
+      {
+        "edge": "Major depressive episode_16--Mania or hypomania_10",
+        "curvature": -0.1288461538461536
+      },
+      {
+        "edge": "Major depressive episode_16--Social phobia_3",
+        "curvature": -0.22377622377622353
+      },
+      {
+        "edge": "Major depressive episode_16--Alcohol abuse or dependence_11",
+        "curvature": -0.37912087912087933
+      },
+      {
+        "edge": "Major depressive episode_16--Nicotine dependence_3",
+        "curvature": -0.26923076923076916
+      },
+      {
+        "edge": "Dysthymia_1--Dysthymia_2",
+        "curvature": 0.1875
+      },
+      {
+        "edge": "Dysthymia_1--Dysthymia_3",
+        "curvature": 0.38194444444444486
+      },
+      {
+        "edge": "Dysthymia_1--Dysthymia_4",
+        "curvature": 0.2847222222222223
+      },
+      {
+        "edge": "Dysthymia_1--Dysthymia_5",
+        "curvature": 0.3035714285714287
+      },
+      {
+        "edge": "Dysthymia_1--Dysthymia_6",
+        "curvature": 0.3035714285714286
+      },
+      {
+        "edge": "Dysthymia_1--Dysthymia_7",
+        "curvature": 0.1805555555555557
+      },
+      {
+        "edge": "Dysthymia_1--Dysthymia_10",
+        "curvature": 0.3035714285714286
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Dysthymia_7",
+        "curvature": -0.42222222222222205
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Generalised anxiety disorder_2",
+        "curvature": 0.35555555555555585
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Generalised anxiety disorder_3",
+        "curvature": 0.15000000000000002
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Generalised anxiety disorder_4",
+        "curvature": 0.3125
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Generalised anxiety disorder_5",
+        "curvature": 0.29999999999999993
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Generalised anxiety disorder_6",
+        "curvature": 0.25
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Generalised anxiety disorder_7",
+        "curvature": 0.2928571428571428
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Generalised anxiety disorder_8",
+        "curvature": 0.25
+      },
+      {
+        "edge": "Generalised anxiety disorder_1--Social phobia_3",
+        "curvature": -0.47272727272727266
+      },
+      {
+        "edge": "Generalised anxiety disorder_2--Generalised anxiety disorder_3",
+        "curvature": 0.24444444444444446
+      },
+      {
+        "edge": "Generalised anxiety disorder_2--Generalised anxiety disorder_4",
+        "curvature": 0.4097222222222223
+      },
+      {
+        "edge": "Generalised anxiety disorder_2--Generalised anxiety disorder_5",
+        "curvature": 0.4097222222222223
+      },
+      {
+        "edge": "Generalised anxiety disorder_2--Generalised anxiety disorder_6",
+        "curvature": 0.3500000000000001
+      },
+      {
+        "edge": "Generalised anxiety disorder_2--Generalised anxiety disorder_7",
+        "curvature": 0.3650793650793651
+      },
+      {
+        "edge": "Generalised anxiety disorder_2--Generalised anxiety disorder_8",
+        "curvature": 0.3055555555555556
+      },
+      {
+        "edge": "Specific phobia_1--Mania or hypomania_1",
+        "curvature": -0.17763157894736858
+      },
+      {
+        "edge": "Specific phobia_1--Social phobia_1",
+        "curvature": -0.03195488721804485
+      },
+      {
+        "edge": "Specific phobia_1--Specific phobia_2",
+        "curvature": 0.05417956656346734
+      },
+      {
+        "edge": "Specific phobia_1--Specific phobia_3",
+        "curvature": 0.02429149797570862
+      },
+      {
+        "edge": "Specific phobia_1--Specific phobia_4",
+        "curvature": -0.01644736842105221
+      },
+      {
+        "edge": "Specific phobia_1--Specific phobia_5",
+        "curvature": -0.016447368421052655
+      },
+      {
+        "edge": "Specific phobia_1--Panic disorder_1",
+        "curvature": -0.07437070938215062
+      },
+      {
+        "edge": "Specific phobia_1--Post-traumatic stres disorder_8",
+        "curvature": -0.024853801169590906
+      },
+      {
+        "edge": "Specific phobia_1--Post-traumatic stres disorder_9",
+        "curvature": 0.08552631578947378
+      },
+      {
+        "edge": "Specific phobia_1--Post-traumatic stres disorder_14",
+        "curvature": 0.0017543859649123972
+      },
+      {
+        "edge": "Specific phobia_1--Post-traumatic stres disorder_19",
+        "curvature": 0.0855263157894739
+      },
+      {
+        "edge": "Specific phobia_1--Attention-deficit/hyperactivity disorder_2",
+        "curvature": -0.03195488721804529
+      },
+      {
+        "edge": "Specific phobia_1--Attention-deficit/hyperactivity disorder_3",
+        "curvature": -0.029239766081871288
+      },
+      {
+        "edge": "Specific phobia_1--Attention-deficit/hyperactivity disorder_5",
+        "curvature": 0.12500000000000044
+      },
+      {
+        "edge": "Specific phobia_1--Attention-deficit/hyperactivity disorder_7",
+        "curvature": 0.016746411483253842
+      },
+      {
+        "edge": "Specific phobia_1--Attention-deficit/hyperactivity disorder_11",
+        "curvature": -0.015037593984962294
+      },
+      {
+        "edge": "Specific phobia_1--Attention-deficit/hyperactivity disorder_15",
+        "curvature": 0.05263157894736836
+      },
+      {
+        "edge": "Major depressive episode_8--Major depressive episode_7",
+        "curvature": 0.2333333333333335
+      },
+      {
+        "edge": "Major depressive episode_8--Major depressive episode_11",
+        "curvature": 0.3437500000000002
+      },
+      {
+        "edge": "Major depressive episode_8--Social phobia_1",
+        "curvature": 0.005952380952381153
+      },
+      {
+        "edge": "Major depressive episode_11--Major depressive episode_7",
+        "curvature": 0.26250000000000007
+      },
+      {
+        "edge": "Major depressive episode_11--Mania or hypomania_6",
+        "curvature": -0.11458333333333326
+      },
+      {
+        "edge": "Major depressive episode_11--Panic disorder_1",
+        "curvature": -0.1317934782608694
+      },
+      {
+        "edge": "Major depressive episode_11--Nicotine dependence_4",
+        "curvature": -0.3437499999999998
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_2",
+        "curvature": 0.23541666666666683
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_3",
+        "curvature": 0.08333333333333348
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_4",
+        "curvature": 0.17361111111111116
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_5",
+        "curvature": 0.1937500000000001
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_6",
+        "curvature": 0.2083333333333337
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_7",
+        "curvature": 0.15625
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_8",
+        "curvature": 0.15625
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_9",
+        "curvature": 0.17708333333333337
+      },
+      {
+        "edge": "Mania or hypomania_1--Mania or hypomania_10",
+        "curvature": 0.17500000000000027
+      },
+      {
+        "edge": "Mania or hypomania_1--Social phobia_1",
+        "curvature": -0.17857142857142838
+      },
+      {
+        "edge": "Mania or hypomania_1--Post-traumatic stres disorder_9",
+        "curvature": -0.2687499999999996
+      },
+      {
+        "edge": "Mania or hypomania_1--Attention-deficit/hyperactivity disorder_7",
+        "curvature": -0.2272727272727273
+      },
+      {
+        "edge": "Mania or hypomania_1--Attention-deficit/hyperactivity disorder_12",
+        "curvature": -0.26923076923076894
+      },
+      {
+        "edge": "Mania or hypomania_2--Mania or hypomania_4",
+        "curvature": 0.188888888888889
+      },
+      {
+        "edge": "Mania or hypomania_2--Mania or hypomania_5",
+        "curvature": 0.21666666666666667
+      },
+      {
+        "edge": "Mania or hypomania_2--Mania or hypomania_6",
+        "curvature": 0.16666666666666718
+      },
+      {
+        "edge": "Mania or hypomania_2--Mania or hypomania_7",
+        "curvature": 0.17500000000000027
+      },
+      {
+        "edge": "Mania or hypomania_2--Mania or hypomania_8",
+        "curvature": 0.13333333333333341
+      },
+      {
+        "edge": "Mania or hypomania_2--Mania or hypomania_9",
+        "curvature": 0.19166666666666698
+      },
+      {
+        "edge": "Mania or hypomania_2--Mania or hypomania_10",
+        "curvature": 0.16666666666666674
+      },
+      {
+        "edge": "Mania or hypomania_2--Generalised anxiety disorder_6",
+        "curvature": -0.3666666666666667
+      },
+      {
+        "edge": "Mania or hypomania_2--Panic disorder_1",
+        "curvature": -0.2507246376811596
+      },
+      {
+        "edge": "Mania or hypomania_2--Post-traumatic stres disorder_16",
+        "curvature": -0.2277777777777772
+      },
+      {
+        "edge": "Mania or hypomania_2--Attention-deficit/hyperactivity disorder_4",
+        "curvature": -0.27619047619047565
+      },
+      {
+        "edge": "Mania or hypomania_2--Attention-deficit/hyperactivity disorder_18",
+        "curvature": -0.20714285714285685
+      },
+      {
+        "edge": "Social phobia_1--Mania or hypomania_7",
+        "curvature": -0.09523809523809512
+      },
+      {
+        "edge": "Social phobia_1--Social phobia_2",
+        "curvature": 0.06249999999999989
+      },
+      {
+        "edge": "Social phobia_1--Social phobia_3",
+        "curvature": 1.1102230246251565e-16
+      },
+      {
+        "edge": "Social phobia_1--Social phobia_4",
+        "curvature": -0.10714285714285698
+      },
+      {
+        "edge": "Social phobia_1--Social phobia_5",
+        "curvature": 0.02380952380952428
+      },
+      {
+        "edge": "Social phobia_1--Panic disorder_1",
+        "curvature": -0.08850931677018603
+      },
+      {
+        "edge": "Social phobia_1--Post-traumatic stres disorder_13",
+        "curvature": -0.17857142857142794
+      },
+      {
+        "edge": "Social phobia_1--Attention-deficit/hyperactivity disorder_5",
+        "curvature": -0.1892857142857134
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_1",
+        "curvature": 0.24166666666666659
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_2",
+        "curvature": 0.1880952380952382
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_3",
+        "curvature": 0.18333333333333346
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_5",
+        "curvature": 0.34901960784313746
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_6",
+        "curvature": 0.27192982456140347
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_7",
+        "curvature": 0.28541666666666654
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_9",
+        "curvature": 0.18333333333333346
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_10",
+        "curvature": 0.3137254901960784
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_12",
+        "curvature": 0.33333333333333337
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_13",
+        "curvature": 0.21666666666666667
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_14",
+        "curvature": 0.16666666666666663
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_15",
+        "curvature": 0.338888888888889
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_16",
+        "curvature": 0.2277777777777783
+      },
+      {
+        "edge": "Post-traumatic stres disorder_11--Post-traumatic stres disorder_17",
+        "curvature": 0.2611111111111112
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Specific phobia_5",
+        "curvature": -0.2738095238095235
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.12142857142857166
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_2",
+        "curvature": 0.16666666666666685
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_3",
+        "curvature": 0.25000000000000033
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_5",
+        "curvature": 0.06428571428571472
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_6",
+        "curvature": 0.15800865800865838
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_7",
+        "curvature": 0.16233766233766256
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.22767857142857206
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_9",
+        "curvature": 0.12142857142857155
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.15476190476190477
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_12",
+        "curvature": 0.11538461538461553
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.1488095238095246
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.12318840579710133
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_16",
+        "curvature": 0.06428571428571439
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Attention-deficit/hyperactivity disorder_18",
+        "curvature": 0.16666666666666674
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Alcohol abuse or dependence_2",
+        "curvature": -0.4857142857142851
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Alcohol abuse or dependence_7",
+        "curvature": -0.34920634920634863
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Alcohol abuse or dependence_9",
+        "curvature": -0.3857142857142848
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_4--Nicotine dependence_4",
+        "curvature": -0.1547619047619042
+      },
+      {
+        "edge": "Nicotine dependence_4--Social phobia_3",
+        "curvature": -0.38636363636363646
+      },
+      {
+        "edge": "Nicotine dependence_4--Specific phobia_2",
+        "curvature": -0.15756302521008325
+      },
+      {
+        "edge": "Nicotine dependence_4--Post-traumatic stres disorder_18",
+        "curvature": -0.2467532467532465
+      },
+      {
+        "edge": "Nicotine dependence_4--Attention-deficit/hyperactivity disorder_14",
+        "curvature": -0.11645962732919246
+      },
+      {
+        "edge": "Nicotine dependence_4--Alcohol abuse or dependence_9",
+        "curvature": -0.11190476190476195
+      },
+      {
+        "edge": "Nicotine dependence_4--Nicotine dependence_1",
+        "curvature": 0.10714285714285732
+      },
+      {
+        "edge": "Nicotine dependence_4--Nicotine dependence_2",
+        "curvature": 0.14682539682539697
+      },
+      {
+        "edge": "Nicotine dependence_4--Nicotine dependence_3",
+        "curvature": 0.1690476190476191
+      },
+      {
+        "edge": "Nicotine dependence_4--Nicotine dependence_5",
+        "curvature": 0.06168831168831146
+      },
+      {
+        "edge": "Nicotine dependence_4--Nicotine dependence_6",
+        "curvature": 0.11904761904761918
+      },
+      {
+        "edge": "Nicotine dependence_4--Nicotine dependence_7",
+        "curvature": 0.16233766233766245
+      },
+      {
+        "edge": "Major depressive episode_7--Mania or hypomania_9",
+        "curvature": -0.1333333333333333
+      },
+      {
+        "edge": "Major depressive episode_7--Generalised anxiety disorder_3",
+        "curvature": -0.18333333333333357
+      },
+      {
+        "edge": "Major depressive episode_7--Panic disorder_1",
+        "curvature": -0.12028985507246381
+      },
+      {
+        "edge": "Major depressive episode_7--Panic disorder_3",
+        "curvature": -0.1833333333333329
+      },
+      {
+        "edge": "Major depressive episode_7--Post-traumatic stres disorder_19",
+        "curvature": -0.06666666666666621
+      },
+      {
+        "edge": "Major depressive episode_17--Panic disorder_1",
+        "curvature": -0.16086956521739104
+      },
+      {
+        "edge": "Dysthymia_2--Dysthymia_3",
+        "curvature": 0.25
+      },
+      {
+        "edge": "Dysthymia_2--Dysthymia_4",
+        "curvature": 0.19444444444444453
+      },
+      {
+        "edge": "Dysthymia_2--Dysthymia_7",
+        "curvature": 0.16666666666666674
+      },
+      {
+        "edge": "Dysthymia_2--Dysthymia_8",
+        "curvature": 0.1875
+      },
+      {
+        "edge": "Dysthymia_2--Dysthymia_9",
+        "curvature": 0.14583333333333348
+      },
+      {
+        "edge": "Dysthymia_2--Panic disorder_2",
+        "curvature": -0.55
+      },
+      {
+        "edge": "Mania or hypomania_6--Mania or hypomania_3",
+        "curvature": 0.2500000000000001
+      },
+      {
+        "edge": "Mania or hypomania_6--Mania or hypomania_4",
+        "curvature": 0.3333333333333335
+      },
+      {
+        "edge": "Mania or hypomania_6--Mania or hypomania_5",
+        "curvature": 0.2666666666666667
+      },
+      {
+        "edge": "Mania or hypomania_6--Mania or hypomania_7",
+        "curvature": 0.20833333333333337
+      },
+      {
+        "edge": "Mania or hypomania_6--Mania or hypomania_8",
+        "curvature": 0.29166666666666674
+      },
+      {
+        "edge": "Mania or hypomania_6--Mania or hypomania_9",
+        "curvature": 0.29166666666666685
+      },
+      {
+        "edge": "Mania or hypomania_6--Mania or hypomania_10",
+        "curvature": 0.09999999999999987
+      },
+      {
+        "edge": "Panic disorder_4--Panic disorder_1",
+        "curvature": -0.024844720496894235
+      },
+      {
+        "edge": "Panic disorder_4--Panic disorder_2",
+        "curvature": 0.2142857142857144
+      },
+      {
+        "edge": "Panic disorder_4--Panic disorder_3",
+        "curvature": 0.27857142857142847
+      },
+      {
+        "edge": "Panic disorder_4--Agoraphobia_2",
+        "curvature": 0.1517857142857144
+      },
+      {
+        "edge": "Panic disorder_4--Agoraphobia_4",
+        "curvature": 0.13392857142857162
+      },
+      {
+        "edge": "Panic disorder_4--Post-traumatic stres disorder_9",
+        "curvature": -0.29642857142857126
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_5",
+        "curvature": 0.1911764705882354
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_6",
+        "curvature": 0.1900584795321637
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_7",
+        "curvature": 0.2638888888888894
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_8",
+        "curvature": 0.1944444444444443
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_9",
+        "curvature": 0.3055555555555557
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_10",
+        "curvature": 0.2777777777777778
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_12",
+        "curvature": 0.2500000000000002
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_14",
+        "curvature": 0.2888888888888891
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_16",
+        "curvature": 0.2499999999999999
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_17",
+        "curvature": 0.2499999999999999
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_18",
+        "curvature": 0.17676767676767713
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Post-traumatic stres disorder_19",
+        "curvature": 0.23611111111111105
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Attention-deficit/hyperactivity disorder_2",
+        "curvature": -0.1071428571428572
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Attention-deficit/hyperactivity disorder_3",
+        "curvature": -0.13888888888888884
+      },
+      {
+        "edge": "Post-traumatic stres disorder_13--Attention-deficit/hyperactivity disorder_5",
+        "curvature": 0.01944444444444504
+      },
+      {
+        "edge": "Dysthymia_3--Dysthymia_4",
+        "curvature": 0.33333333333333337
+      },
+      {
+        "edge": "Dysthymia_3--Dysthymia_5",
+        "curvature": 0.31746031746031744
+      },
+      {
+        "edge": "Dysthymia_3--Dysthymia_6",
+        "curvature": 0.3571428571428571
+      },
+      {
+        "edge": "Dysthymia_3--Dysthymia_7",
+        "curvature": 0.16666666666666674
+      },
+      {
+        "edge": "Dysthymia_3--Dysthymia_8",
+        "curvature": 0.38888888888888884
+      },
+      {
+        "edge": "Dysthymia_3--Dysthymia_9",
+        "curvature": 0.4444444444444444
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Specific phobia_3",
+        "curvature": -0.04615384615384599
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Panic disorder_3",
+        "curvature": -0.27499999999999925
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_4",
+        "curvature": 0.1499999999999997
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_5",
+        "curvature": 0.15441176470588247
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_7",
+        "curvature": 0.2000000000000003
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_8",
+        "curvature": 0.16666666666666696
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_9",
+        "curvature": 0.2749999999999998
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_10",
+        "curvature": 0.21176470588235308
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_14",
+        "curvature": 0.2250000000000002
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_15",
+        "curvature": 0.14166666666666672
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_16",
+        "curvature": 0.1194444444444448
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_17",
+        "curvature": 0.16666666666666685
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Post-traumatic stres disorder_18",
+        "curvature": 0.1749999999999997
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Attention-deficit/hyperactivity disorder_5",
+        "curvature": -0.049999999999999156
+      },
+      {
+        "edge": "Post-traumatic stres disorder_19--Attention-deficit/hyperactivity disorder_10",
+        "curvature": -0.1812499999999999
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Panic disorder_1",
+        "curvature": -0.2593167701863355
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Post-traumatic stres disorder_4",
+        "curvature": -0.13214285714285667
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Post-traumatic stres disorder_6",
+        "curvature": -0.1635338345864661
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Attention-deficit/hyperactivity disorder_7",
+        "curvature": 0.09090909090909116
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Attention-deficit/hyperactivity disorder_10",
+        "curvature": 0.15625000000000022
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.14285714285714302
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Attention-deficit/hyperactivity disorder_12",
+        "curvature": 0.14560439560439564
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.14596273291925477
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Attention-deficit/hyperactivity disorder_16",
+        "curvature": 0.1785714285714286
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.14880952380952395
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Attention-deficit/hyperactivity disorder_18",
+        "curvature": 0.17857142857142871
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_15--Nicotine dependence_7",
+        "curvature": -0.15909090909090895
+      },
+      {
+        "edge": "Dysthymia_4--Dysthymia_6",
+        "curvature": 0.2777777777777779
+      },
+      {
+        "edge": "Dysthymia_4--Dysthymia_8",
+        "curvature": 0.27083333333333337
+      },
+      {
+        "edge": "Dysthymia_4--Dysthymia_9",
+        "curvature": 0.33333333333333337
+      },
+      {
+        "edge": "Dysthymia_4--Dysthymia_10",
+        "curvature": 0.16666666666666674
+      },
+      {
+        "edge": "Dysthymia_4--Generalised anxiety disorder_8",
+        "curvature": -0.47777777777777786
+      },
+      {
+        "edge": "Mania or hypomania_4--Mania or hypomania_5",
+        "curvature": 0.30000000000000004
+      },
+      {
+        "edge": "Mania or hypomania_4--Mania or hypomania_7",
+        "curvature": 0.20833333333333337
+      },
+      {
+        "edge": "Mania or hypomania_4--Mania or hypomania_8",
+        "curvature": 0.3333333333333335
+      },
+      {
+        "edge": "Mania or hypomania_4--Mania or hypomania_9",
+        "curvature": 0.23611111111111127
+      },
+      {
+        "edge": "Mania or hypomania_4--Mania or hypomania_10",
+        "curvature": 0.0555555555555558
+      },
+      {
+        "edge": "Generalised anxiety disorder_8--Generalised anxiety disorder_3",
+        "curvature": 0.2499999999999999
+      },
+      {
+        "edge": "Generalised anxiety disorder_8--Generalised anxiety disorder_4",
+        "curvature": 0.3125
+      },
+      {
+        "edge": "Generalised anxiety disorder_8--Generalised anxiety disorder_5",
+        "curvature": 0.3125
+      },
+      {
+        "edge": "Generalised anxiety disorder_8--Generalised anxiety disorder_6",
+        "curvature": 0.25
+      },
+      {
+        "edge": "Generalised anxiety disorder_8--Generalised anxiety disorder_7",
+        "curvature": 0.27142857142857135
+      },
+      {
+        "edge": "Generalised anxiety disorder_8--Post-traumatic stres disorder_15",
+        "curvature": -0.5777777777777773
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_1",
+        "curvature": 0.22222222222222243
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_2",
+        "curvature": 0.2063492063492065
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_3",
+        "curvature": 0.19444444444444453
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_4",
+        "curvature": 0.2333333333333335
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_5",
+        "curvature": 0.357843137254902
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_6",
+        "curvature": 0.2719298245614037
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_7",
+        "curvature": 0.2708333333333335
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_8",
+        "curvature": 0.2777777777777777
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_9",
+        "curvature": 0.15833333333333344
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_12",
+        "curvature": 0.2444444444444447
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_14",
+        "curvature": 0.13888888888888906
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_16",
+        "curvature": 0.2777777777777777
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_17",
+        "curvature": 0.2777777777777778
+      },
+      {
+        "edge": "Post-traumatic stres disorder_15--Post-traumatic stres disorder_18",
+        "curvature": 0.21212121212121215
+      },
+      {
+        "edge": "Dysthymia_5--Dysthymia_6",
+        "curvature": 0.4285714285714286
+      },
+      {
+        "edge": "Dysthymia_5--Dysthymia_8",
+        "curvature": 0.3035714285714287
+      },
+      {
+        "edge": "Dysthymia_5--Dysthymia_9",
+        "curvature": 0.31746031746031766
+      },
+      {
+        "edge": "Dysthymia_5--Dysthymia_10",
+        "curvature": 0.2857142857142858
+      },
+      {
+        "edge": "Mania or hypomania_5--Mania or hypomania_3",
+        "curvature": 0.2666666666666666
+      },
+      {
+        "edge": "Mania or hypomania_5--Mania or hypomania_7",
+        "curvature": 0.14166666666666694
+      },
+      {
+        "edge": "Mania or hypomania_5--Mania or hypomania_8",
+        "curvature": 0.33750000000000024
+      },
+      {
+        "edge": "Mania or hypomania_5--Mania or hypomania_10",
+        "curvature": 0.09999999999999976
+      },
+      {
+        "edge": "Mania or hypomania_5--Attention-deficit/hyperactivity disorder_16",
+        "curvature": -0.3500000000000003
+      },
+      {
+        "edge": "Mania or hypomania_10--Mania or hypomania_3",
+        "curvature": -0.016666666666666607
+      },
+      {
+        "edge": "Mania or hypomania_10--Mania or hypomania_7",
+        "curvature": 0.11666666666666692
+      },
+      {
+        "edge": "Mania or hypomania_10--Mania or hypomania_8",
+        "curvature": 0.037499999999999756
+      },
+      {
+        "edge": "Mania or hypomania_10--Mania or hypomania_9",
+        "curvature": 0.04166666666666674
+      },
+      {
+        "edge": "Mania or hypomania_10--Post-traumatic stres disorder_12",
+        "curvature": -0.2916666666666661
+      },
+      {
+        "edge": "Mania or hypomania_10--Attention-deficit/hyperactivity disorder_2",
+        "curvature": -0.20714285714285685
+      },
+      {
+        "edge": "Mania or hypomania_10--Attention-deficit/hyperactivity disorder_3",
+        "curvature": -0.2361111111111105
+      },
+      {
+        "edge": "Mania or hypomania_10--Attention-deficit/hyperactivity disorder_5",
+        "curvature": -0.1999999999999993
+      },
+      {
+        "edge": "Mania or hypomania_10--Attention-deficit/hyperactivity disorder_18",
+        "curvature": -0.1607142857142856
+      },
+      {
+        "edge": "Mania or hypomania_10--Alcohol abuse or dependence_3",
+        "curvature": -0.5142857142857142
+      },
+      {
+        "edge": "Mania or hypomania_10--Alcohol abuse or dependence_11",
+        "curvature": -0.3714285714285712
+      },
+      {
+        "edge": "Mania or hypomania_10--Nicotine dependence_3",
+        "curvature": -0.1999999999999993
+      },
+      {
+        "edge": "Mania or hypomania_9--Mania or hypomania_3",
+        "curvature": 0.1250000000000001
+      },
+      {
+        "edge": "Mania or hypomania_9--Mania or hypomania_7",
+        "curvature": 0.1250000000000001
+      },
+      {
+        "edge": "Mania or hypomania_9--Mania or hypomania_8",
+        "curvature": 0.20833333333333337
+      },
+      {
+        "edge": "Mania or hypomania_9--Generalised anxiety disorder_3",
+        "curvature": -0.29166666666666674
+      },
+      {
+        "edge": "Mania or hypomania_9--Panic disorder_1",
+        "curvature": -0.32065217391304324
+      },
+      {
+        "edge": "Mania or hypomania_9--Attention-deficit/hyperactivity disorder_10",
+        "curvature": -0.3020833333333335
+      },
+      {
+        "edge": "Generalised anxiety disorder_3--Generalised anxiety disorder_4",
+        "curvature": 0.3125
+      },
+      {
+        "edge": "Generalised anxiety disorder_3--Generalised anxiety disorder_5",
+        "curvature": 0.3125
+      },
+      {
+        "edge": "Generalised anxiety disorder_3--Generalised anxiety disorder_6",
+        "curvature": 0.35
+      },
+      {
+        "edge": "Generalised anxiety disorder_3--Generalised anxiety disorder_7",
+        "curvature": 0.27142857142857135
+      },
+      {
+        "edge": "Generalised anxiety disorder_3--Attention-deficit/hyperactivity disorder_10",
+        "curvature": -0.5937500000000002
+      },
+      {
+        "edge": "Panic disorder_1--Social phobia_2",
+        "curvature": -0.15760869565217384
+      },
+      {
+        "edge": "Panic disorder_1--Panic disorder_2",
+        "curvature": -0.19565217391304324
+      },
+      {
+        "edge": "Panic disorder_1--Panic disorder_3",
+        "curvature": -0.015217391304346961
+      },
+      {
+        "edge": "Panic disorder_1--Agoraphobia_2",
+        "curvature": -0.17119565217391286
+      },
+      {
+        "edge": "Panic disorder_1--Agoraphobia_3",
+        "curvature": -0.10869565217391286
+      },
+      {
+        "edge": "Panic disorder_1--Agoraphobia_4",
+        "curvature": -0.10869565217391286
+      },
+      {
+        "edge": "Panic disorder_1--Post-traumatic stres disorder_4",
+        "curvature": -0.14456521739130412
+      },
+      {
+        "edge": "Panic disorder_1--Post-traumatic stres disorder_6",
+        "curvature": -0.21510297482837482
+      },
+      {
+        "edge": "Panic disorder_1--Post-traumatic stres disorder_7",
+        "curvature": -0.21874999999999978
+      },
+      {
+        "edge": "Panic disorder_1--Alcohol abuse or dependence_7",
+        "curvature": -0.4154589371980677
+      },
+      {
+        "edge": "Panic disorder_1--Alcohol abuse or dependence_13",
+        "curvature": -0.4624505928853755
+      },
+      {
+        "edge": "Panic disorder_1--Nicotine dependence_2",
+        "curvature": -0.3719806763285023
+      },
+      {
+        "edge": "Panic disorder_3--Social phobia_4",
+        "curvature": 0.050000000000000044
+      },
+      {
+        "edge": "Panic disorder_3--Panic disorder_2",
+        "curvature": 0.10000000000000042
+      },
+      {
+        "edge": "Panic disorder_3--Agoraphobia_1",
+        "curvature": 0.2214285714285713
+      },
+      {
+        "edge": "Panic disorder_3--Agoraphobia_2",
+        "curvature": 0.20000000000000007
+      },
+      {
+        "edge": "Panic disorder_3--Agoraphobia_4",
+        "curvature": 0.20000000000000007
+      },
+      {
+        "edge": "Dysthymia_6--Dysthymia_8",
+        "curvature": 0.3035714285714288
+      },
+      {
+        "edge": "Dysthymia_6--Dysthymia_9",
+        "curvature": 0.31746031746031744
+      },
+      {
+        "edge": "Generalised anxiety disorder_4--Generalised anxiety disorder_5",
+        "curvature": 0.5
+      },
+      {
+        "edge": "Generalised anxiety disorder_4--Generalised anxiety disorder_6",
+        "curvature": 0.3125
+      },
+      {
+        "edge": "Generalised anxiety disorder_4--Generalised anxiety disorder_7",
+        "curvature": 0.4464285714285714
+      },
+      {
+        "edge": "Specific phobia_2--Social phobia_2",
+        "curvature": -0.17279411764705865
+      },
+      {
+        "edge": "Specific phobia_2--Specific phobia_3",
+        "curvature": 0.09276018099547523
+      },
+      {
+        "edge": "Specific phobia_2--Specific phobia_4",
+        "curvature": 0.08455882352941169
+      },
+      {
+        "edge": "Specific phobia_2--Specific phobia_5",
+        "curvature": 0.15441176470588258
+      },
+      {
+        "edge": "Specific phobia_2--Agoraphobia_4",
+        "curvature": -0.2242647058823528
+      },
+      {
+        "edge": "Specific phobia_2--Post-traumatic stres disorder_2",
+        "curvature": 0.033613445378151585
+      },
+      {
+        "edge": "Specific phobia_2--Post-traumatic stres disorder_3",
+        "curvature": -0.014705882352940902
+      },
+      {
+        "edge": "Specific phobia_2--Post-traumatic stres disorder_5",
+        "curvature": 0.02941176470588225
+      },
+      {
+        "edge": "Specific phobia_2--Post-traumatic stres disorder_6",
+        "curvature": 0.02786377708978338
+      },
+      {
+        "edge": "Specific phobia_2--Post-traumatic stres disorder_18",
+        "curvature": 0.0481283422459895
+      },
+      {
+        "edge": "Specific phobia_2--Attention-deficit/hyperactivity disorder_5",
+        "curvature": -0.09558823529411753
+      },
+      {
+        "edge": "Specific phobia_2--Attention-deficit/hyperactivity disorder_8",
+        "curvature": -0.22610294117647056
+      },
+      {
+        "edge": "Specific phobia_2--Alcohol abuse or dependence_7",
+        "curvature": -0.38235294117647034
+      },
+      {
+        "edge": "Specific phobia_2--Nicotine dependence_3",
+        "curvature": -0.1431372549019605
+      },
+      {
+        "edge": "Dysthymia_7--Dysthymia_8",
+        "curvature": 0.17361111111111127
+      },
+      {
+        "edge": "Dysthymia_7--Dysthymia_9",
+        "curvature": 0.2222222222222222
+      },
+      {
+        "edge": "Dysthymia_7--Dysthymia_10",
+        "curvature": 0.19841269841269837
+      },
+      {
+        "edge": "Generalised anxiety disorder_6--Generalised anxiety disorder_5",
+        "curvature": 0.2625000000000002
+      },
+      {
+        "edge": "Generalised anxiety disorder_6--Generalised anxiety disorder_7",
+        "curvature": 0.27142857142857135
+      },
+      {
+        "edge": "Generalised anxiety disorder_6--Post-traumatic stres disorder_16",
+        "curvature": -0.5
+      },
+      {
+        "edge": "Social phobia_3--Social phobia_2",
+        "curvature": 0.06818181818181823
+      },
+      {
+        "edge": "Social phobia_3--Social phobia_4",
+        "curvature": -0.025974025974025983
+      },
+      {
+        "edge": "Social phobia_3--Social phobia_5",
+        "curvature": 0.03030303030303061
+      },
+      {
+        "edge": "Social phobia_3--Specific phobia_3",
+        "curvature": -0.05244755244755228
+      },
+      {
+        "edge": "Social phobia_3--Agoraphobia_1",
+        "curvature": -0.16233766233766245
+      },
+      {
+        "edge": "Specific phobia_3--Specific phobia_4",
+        "curvature": 0.08653846153846168
+      },
+      {
+        "edge": "Specific phobia_3--Specific phobia_5",
+        "curvature": 0.10096153846153866
+      },
+      {
+        "edge": "Specific phobia_3--Agoraphobia_1",
+        "curvature": -0.038461538461538325
+      },
+      {
+        "edge": "Specific phobia_3--Agoraphobia_3",
+        "curvature": -0.0439560439560438
+      },
+      {
+        "edge": "Specific phobia_3--Post-traumatic stres disorder_2",
+        "curvature": -0.10164835164835129
+      },
+      {
+        "edge": "Specific phobia_3--Post-traumatic stres disorder_10",
+        "curvature": -0.11085972850678716
+      },
+      {
+        "edge": "Specific phobia_3--Attention-deficit/hyperactivity disorder_14",
+        "curvature": -0.2558528428093645
+      },
+      {
+        "edge": "Post-traumatic stres disorder_14--Post-traumatic stres disorder_5",
+        "curvature": 0.1490196078431374
+      },
+      {
+        "edge": "Post-traumatic stres disorder_14--Post-traumatic stres disorder_9",
+        "curvature": 0.216666666666667
+      },
+      {
+        "edge": "Post-traumatic stres disorder_14--Post-traumatic stres disorder_10",
+        "curvature": 0.2450980392156863
+      },
+      {
+        "edge": "Post-traumatic stres disorder_14--Post-traumatic stres disorder_12",
+        "curvature": 0.20000000000000007
+      },
+      {
+        "edge": "Post-traumatic stres disorder_14--Post-traumatic stres disorder_16",
+        "curvature": 0.16111111111111132
+      },
+      {
+        "edge": "Post-traumatic stres disorder_14--Post-traumatic stres disorder_18",
+        "curvature": 0.06969696969697003
+      },
+      {
+        "edge": "Post-traumatic stres disorder_14--Attention-deficit/hyperactivity disorder_5",
+        "curvature": -0.08333333333333282
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.2714285714285717
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Attention-deficit/hyperactivity disorder_3",
+        "curvature": 0.27380952380952406
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Attention-deficit/hyperactivity disorder_5",
+        "curvature": 0.24285714285714277
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Attention-deficit/hyperactivity disorder_6",
+        "curvature": 0.23701298701298723
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.22321428571428592
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Attention-deficit/hyperactivity disorder_9",
+        "curvature": 0.15714285714285725
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Attention-deficit/hyperactivity disorder_10",
+        "curvature": 0.1250000000000001
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.20238095238095266
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_2--Alcohol abuse or dependence_7",
+        "curvature": -0.41269841269841256
+      },
+      {
+        "edge": "Mania or hypomania_7--Social phobia_2",
+        "curvature": -0.3124999999999998
+      },
+      {
+        "edge": "Mania or hypomania_7--Post-traumatic stres disorder_17",
+        "curvature": -0.2638888888888884
+      },
+      {
+        "edge": "Generalised anxiety disorder_5--Generalised anxiety disorder_7",
+        "curvature": 0.4464285714285714
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_1",
+        "curvature": 0.19444444444444475
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_2",
+        "curvature": 0.19444444444444475
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_3",
+        "curvature": 0.16666666666666696
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_4",
+        "curvature": 0.19444444444444486
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_6",
+        "curvature": 0.23099415204678342
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_7",
+        "curvature": 0.22569444444444442
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_10",
+        "curvature": 0.24346405228758172
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_12",
+        "curvature": 0.2000000000000004
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_16",
+        "curvature": 0.19444444444444442
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Post-traumatic stres disorder_18",
+        "curvature": 0.19949494949494972
+      },
+      {
+        "edge": "Post-traumatic stres disorder_17--Attention-deficit/hyperactivity disorder_6",
+        "curvature": -0.25757575757575735
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_9--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.34999999999999987
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_9--Attention-deficit/hyperactivity disorder_3",
+        "curvature": 0.19444444444444453
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_9--Attention-deficit/hyperactivity disorder_5",
+        "curvature": 0.15000000000000036
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_9--Attention-deficit/hyperactivity disorder_7",
+        "curvature": 0.16363636363636402
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_9--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.26249999999999996
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_9--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.17857142857142883
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_9--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.13333333333333341
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_1",
+        "curvature": 0.2321428571428571
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_2",
+        "curvature": 0.17857142857142883
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_4",
+        "curvature": 0.30519480519480546
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_5",
+        "curvature": 0.21428571428571463
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_7",
+        "curvature": 0.22222222222222232
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_8",
+        "curvature": 0.2321428571428571
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_9",
+        "curvature": 0.18095238095238098
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_10",
+        "curvature": 0.25000000000000033
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_12",
+        "curvature": 0.2321428571428572
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Alcohol abuse or dependence_13",
+        "curvature": 0.2662337662337664
+      },
+      {
+        "edge": "Alcohol abuse or dependence_11--Nicotine dependence_3",
+        "curvature": -0.17857142857142816
+      },
+      {
+        "edge": "Dysthymia_9--Dysthymia_8",
+        "curvature": 0.45138888888888884
+      },
+      {
+        "edge": "Dysthymia_9--Dysthymia_10",
+        "curvature": 0.26190476190476164
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Post-traumatic stres disorder_9",
+        "curvature": -0.07499999999999996
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Post-traumatic stres disorder_10",
+        "curvature": -0.11470588235294121
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.125
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Attention-deficit/hyperactivity disorder_3",
+        "curvature": 0.1805555555555558
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Attention-deficit/hyperactivity disorder_6",
+        "curvature": 0.1272727272727272
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.17499999999999993
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.09642857142857175
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.125
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_5--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.07499999999999996
+      },
+      {
+        "edge": "Dysthymia_10--Dysthymia_8",
+        "curvature": 0.29464285714285743
+      },
+      {
+        "edge": "Alcohol abuse or dependence_13--Alcohol abuse or dependence_1",
+        "curvature": 0.21590909090909105
+      },
+      {
+        "edge": "Alcohol abuse or dependence_13--Alcohol abuse or dependence_4",
+        "curvature": 0.2727272727272727
+      },
+      {
+        "edge": "Alcohol abuse or dependence_13--Alcohol abuse or dependence_7",
+        "curvature": 0.18181818181818155
+      },
+      {
+        "edge": "Alcohol abuse or dependence_13--Alcohol abuse or dependence_8",
+        "curvature": 0.2272727272727273
+      },
+      {
+        "edge": "Alcohol abuse or dependence_13--Alcohol abuse or dependence_9",
+        "curvature": 0.181818181818182
+      },
+      {
+        "edge": "Alcohol abuse or dependence_13--Alcohol abuse or dependence_10",
+        "curvature": 0.22727272727272751
+      },
+      {
+        "edge": "Alcohol abuse or dependence_13--Alcohol abuse or dependence_12",
+        "curvature": 0.26136363636363646
+      },
+      {
+        "edge": "Alcohol abuse or dependence_13--Nicotine dependence_7",
+        "curvature": -0.2727272727272725
+      },
+      {
+        "edge": "Nicotine dependence_3--Specific phobia_4",
+        "curvature": -0.27916666666666656
+      },
+      {
+        "edge": "Nicotine dependence_3--Post-traumatic stres disorder_8",
+        "curvature": -0.2722222222222219
+      },
+      {
+        "edge": "Nicotine dependence_3--Post-traumatic stres disorder_12",
+        "curvature": -0.2333333333333334
+      },
+      {
+        "edge": "Nicotine dependence_3--Attention-deficit/hyperactivity disorder_18",
+        "curvature": -0.27857142857142825
+      },
+      {
+        "edge": "Nicotine dependence_3--Alcohol abuse or dependence_7",
+        "curvature": -0.09999999999999964
+      },
+      {
+        "edge": "Nicotine dependence_3--Nicotine dependence_1",
+        "curvature": 0.07142857142857173
+      },
+      {
+        "edge": "Nicotine dependence_3--Nicotine dependence_2",
+        "curvature": 0.07777777777777772
+      },
+      {
+        "edge": "Nicotine dependence_3--Nicotine dependence_5",
+        "curvature": 0.10303030303030314
+      },
+      {
+        "edge": "Nicotine dependence_3--Nicotine dependence_6",
+        "curvature": 0.01666666666666683
+      },
+      {
+        "edge": "Nicotine dependence_3--Nicotine dependence_7",
+        "curvature": 0.10000000000000009
+      },
+      {
+        "edge": "Panic disorder_2--Agoraphobia_1",
+        "curvature": 0.0
+      },
+      {
+        "edge": "Mania or hypomania_3--Mania or hypomania_8",
+        "curvature": 0.4375
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Specific phobia_4",
+        "curvature": -0.08750000000000013
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_4",
+        "curvature": 0.1499999999999999
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_5",
+        "curvature": 0.21617647058823564
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_6",
+        "curvature": 0.222368421052632
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_7",
+        "curvature": 0.29375000000000007
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_8",
+        "curvature": 0.24722222222222257
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_10",
+        "curvature": 0.27647058823529436
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_12",
+        "curvature": 0.27500000000000036
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_16",
+        "curvature": 0.2083333333333336
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Post-traumatic stres disorder_18",
+        "curvature": 0.19999999999999996
+      },
+      {
+        "edge": "Post-traumatic stres disorder_9--Attention-deficit/hyperactivity disorder_17",
+        "curvature": -0.2000000000000004
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_7--Post-traumatic stres disorder_18",
+        "curvature": -0.13636363636363602
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_7--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.1863636363636365
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_7--Attention-deficit/hyperactivity disorder_3",
+        "curvature": 0.2424242424242422
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_7--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.2215909090909095
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_7--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.1086956521739133
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_7--Attention-deficit/hyperactivity disorder_18",
+        "curvature": 0.21753246753246747
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Post-traumatic stres disorder_18",
+        "curvature": -0.13461538461538458
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Attention-deficit/hyperactivity disorder_3",
+        "curvature": 0.22435897435897467
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.18269230769230782
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Attention-deficit/hyperactivity disorder_10",
+        "curvature": 0.2427884615384618
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.3131868131868133
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.17628205128205165
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.17558528428093645
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Attention-deficit/hyperactivity disorder_16",
+        "curvature": 0.3230769230769234
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.28525641025641035
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_12--Nicotine dependence_7",
+        "curvature": -0.23076923076923062
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Post-traumatic stres disorder_4",
+        "curvature": 0.24722222222222223
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Post-traumatic stres disorder_6",
+        "curvature": 0.19590643274853803
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Post-traumatic stres disorder_7",
+        "curvature": 0.31597222222222254
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Post-traumatic stres disorder_8",
+        "curvature": 0.2222222222222221
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Post-traumatic stres disorder_10",
+        "curvature": 0.25326797385620947
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Post-traumatic stres disorder_12",
+        "curvature": 0.32222222222222274
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Post-traumatic stres disorder_18",
+        "curvature": 0.17171717171717193
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Alcohol abuse or dependence_7",
+        "curvature": -0.4166666666666663
+      },
+      {
+        "edge": "Post-traumatic stres disorder_16--Nicotine dependence_2",
+        "curvature": -0.30555555555555514
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_18--Attention-deficit/hyperactivity disorder_3",
+        "curvature": 0.2182539682539686
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_18--Attention-deficit/hyperactivity disorder_6",
+        "curvature": 0.1461038961038964
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_18--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.23214285714285732
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_18--Attention-deficit/hyperactivity disorder_10",
+        "curvature": 0.2455357142857143
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_18--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.2857142857142858
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_18--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.11645962732919246
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_18--Attention-deficit/hyperactivity disorder_16",
+        "curvature": 0.2500000000000002
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_18--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.22023809523809534
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_16--Post-traumatic stres disorder_18",
+        "curvature": -0.15454545454545432
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_16--Attention-deficit/hyperactivity disorder_10",
+        "curvature": 0.1625000000000003
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_16--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.22142857142857175
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_16--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.0782608695652176
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_16--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.2583333333333335
+      },
+      {
+        "edge": "Social phobia_2--Social phobia_4",
+        "curvature": 0.0535714285714286
+      },
+      {
+        "edge": "Social phobia_2--Social phobia_5",
+        "curvature": 0.20833333333333348
+      },
+      {
+        "edge": "Social phobia_2--Agoraphobia_3",
+        "curvature": -0.03571428571428559
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_10--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.17500000000000004
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_10--Attention-deficit/hyperactivity disorder_3",
+        "curvature": 0.23611111111111127
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_10--Attention-deficit/hyperactivity disorder_6",
+        "curvature": 0.23011363636363646
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_10--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.25
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_10--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.2857142857142857
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_10--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.29166666666666685
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_10--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.059782608695651995
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_10--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.26041666666666674
+      },
+      {
+        "edge": "Post-traumatic stres disorder_12--Post-traumatic stres disorder_4",
+        "curvature": 0.21666666666666679
+      },
+      {
+        "edge": "Post-traumatic stres disorder_12--Post-traumatic stres disorder_5",
+        "curvature": 0.2921568627450981
+      },
+      {
+        "edge": "Post-traumatic stres disorder_12--Post-traumatic stres disorder_6",
+        "curvature": 0.24736842105263168
+      },
+      {
+        "edge": "Post-traumatic stres disorder_12--Post-traumatic stres disorder_7",
+        "curvature": 0.33750000000000013
+      },
+      {
+        "edge": "Post-traumatic stres disorder_12--Post-traumatic stres disorder_8",
+        "curvature": 0.2944444444444446
+      },
+      {
+        "edge": "Post-traumatic stres disorder_12--Post-traumatic stres disorder_10",
+        "curvature": 0.315686274509804
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_3--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.28333333333333344
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_3--Attention-deficit/hyperactivity disorder_6",
+        "curvature": 0.28787878787878785
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_3--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.35416666666666674
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_3--Attention-deficit/hyperactivity disorder_11",
+        "curvature": 0.261904761904762
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_3--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.3055555555555557
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_3--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.11231884057971075
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_3--Nicotine dependence_7",
+        "curvature": -0.22222222222222232
+      },
+      {
+        "edge": "Alcohol abuse or dependence_3--Alcohol abuse or dependence_1",
+        "curvature": 0.2232142857142857
+      },
+      {
+        "edge": "Alcohol abuse or dependence_3--Alcohol abuse or dependence_2",
+        "curvature": 0.2142857142857142
+      },
+      {
+        "edge": "Alcohol abuse or dependence_3--Alcohol abuse or dependence_4",
+        "curvature": 0.22077922077922096
+      },
+      {
+        "edge": "Alcohol abuse or dependence_3--Alcohol abuse or dependence_5",
+        "curvature": 0.24675324675324695
+      },
+      {
+        "edge": "Alcohol abuse or dependence_3--Alcohol abuse or dependence_10",
+        "curvature": 0.22023809523809557
+      },
+      {
+        "edge": "Alcohol abuse or dependence_3--Nicotine dependence_5",
+        "curvature": -0.06493506493506485
+      },
+      {
+        "edge": "Social phobia_4--Specific phobia_4",
+        "curvature": 0.0
+      },
+      {
+        "edge": "Social phobia_4--Agoraphobia_2",
+        "curvature": 0.2678571428571429
+      },
+      {
+        "edge": "Social phobia_4--Agoraphobia_4",
+        "curvature": 0.20535714285714302
+      },
+      {
+        "edge": "Agoraphobia_3--Specific phobia_5",
+        "curvature": -0.02678571428571397
+      },
+      {
+        "edge": "Agoraphobia_3--Agoraphobia_1",
+        "curvature": 0.2142857142857144
+      },
+      {
+        "edge": "Agoraphobia_3--Agoraphobia_2",
+        "curvature": 0.19642857142857162
+      },
+      {
+        "edge": "Agoraphobia_3--Agoraphobia_4",
+        "curvature": 0.19642857142857162
+      },
+      {
+        "edge": "Agoraphobia_1--Agoraphobia_2",
+        "curvature": 0.2946428571428571
+      },
+      {
+        "edge": "Agoraphobia_1--Agoraphobia_4",
+        "curvature": 0.2946428571428573
+      },
+      {
+        "edge": "Specific phobia_4--Specific phobia_5",
+        "curvature": 0.125
+      },
+      {
+        "edge": "Specific phobia_4--Agoraphobia_2",
+        "curvature": 0.0625
+      },
+      {
+        "edge": "Agoraphobia_2--Agoraphobia_4",
+        "curvature": 0.5
+      },
+      {
+        "edge": "Specific phobia_5--Post-traumatic stres disorder_6",
+        "curvature": -0.08552631578947345
+      },
+      {
+        "edge": "Specific phobia_5--Post-traumatic stres disorder_7",
+        "curvature": -0.0625
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_1",
+        "curvature": 0.2638888888888893
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_2",
+        "curvature": 0.28174603174603197
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_3",
+        "curvature": 0.2638888888888894
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_4",
+        "curvature": 0.34444444444444455
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_5",
+        "curvature": 0.397058823529412
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_6",
+        "curvature": 0.3479532163742691
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_7",
+        "curvature": 0.3125000000000002
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_10",
+        "curvature": 0.3366013071895425
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Post-traumatic stres disorder_18",
+        "curvature": 0.3282828282828285
+      },
+      {
+        "edge": "Post-traumatic stres disorder_8--Attention-deficit/hyperactivity disorder_14",
+        "curvature": -0.06280193236714915
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_11--Attention-deficit/hyperactivity disorder_8",
+        "curvature": 0.3258928571428572
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_11--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.32142857142857173
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_11--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.1506211180124224
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_11--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.41666666666666685
+      },
+      {
+        "edge": "Post-traumatic stres disorder_2--Post-traumatic stres disorder_1",
+        "curvature": 0.43452380952380965
+      },
+      {
+        "edge": "Post-traumatic stres disorder_2--Post-traumatic stres disorder_3",
+        "curvature": 0.4464285714285716
+      },
+      {
+        "edge": "Post-traumatic stres disorder_2--Post-traumatic stres disorder_4",
+        "curvature": 0.23214285714285765
+      },
+      {
+        "edge": "Post-traumatic stres disorder_2--Post-traumatic stres disorder_5",
+        "curvature": 0.29201680672268926
+      },
+      {
+        "edge": "Post-traumatic stres disorder_2--Post-traumatic stres disorder_6",
+        "curvature": 0.2687969924812029
+      },
+      {
+        "edge": "Post-traumatic stres disorder_2--Post-traumatic stres disorder_10",
+        "curvature": 0.21008403361344563
+      },
+      {
+        "edge": "Post-traumatic stres disorder_2--Post-traumatic stres disorder_18",
+        "curvature": 0.24350649350649356
+      },
+      {
+        "edge": "Post-traumatic stres disorder_2--Attention-deficit/hyperactivity disorder_14",
+        "curvature": -0.08850931677018625
+      },
+      {
+        "edge": "Post-traumatic stres disorder_3--Post-traumatic stres disorder_1",
+        "curvature": 0.45833333333333337
+      },
+      {
+        "edge": "Post-traumatic stres disorder_3--Post-traumatic stres disorder_4",
+        "curvature": 0.2250000000000002
+      },
+      {
+        "edge": "Post-traumatic stres disorder_3--Post-traumatic stres disorder_5",
+        "curvature": 0.2696078431372553
+      },
+      {
+        "edge": "Post-traumatic stres disorder_3--Post-traumatic stres disorder_6",
+        "curvature": 0.26973684210526316
+      },
+      {
+        "edge": "Post-traumatic stres disorder_3--Post-traumatic stres disorder_18",
+        "curvature": 0.23863636363636398
+      },
+      {
+        "edge": "Post-traumatic stres disorder_3--Attention-deficit/hyperactivity disorder_14",
+        "curvature": -0.09420289855072417
+      },
+      {
+        "edge": "Post-traumatic stres disorder_5--Post-traumatic stres disorder_1",
+        "curvature": 0.281862745098039
+      },
+      {
+        "edge": "Post-traumatic stres disorder_5--Post-traumatic stres disorder_4",
+        "curvature": 0.26323529411764746
+      },
+      {
+        "edge": "Post-traumatic stres disorder_5--Post-traumatic stres disorder_6",
+        "curvature": 0.32817337461300333
+      },
+      {
+        "edge": "Post-traumatic stres disorder_5--Post-traumatic stres disorder_7",
+        "curvature": 0.3400735294117647
+      },
+      {
+        "edge": "Post-traumatic stres disorder_5--Post-traumatic stres disorder_10",
+        "curvature": 0.38235294117647056
+      },
+      {
+        "edge": "Post-traumatic stres disorder_5--Post-traumatic stres disorder_18",
+        "curvature": 0.28609625668449257
+      },
+      {
+        "edge": "Post-traumatic stres disorder_6--Post-traumatic stres disorder_1",
+        "curvature": 0.267543859649123
+      },
+      {
+        "edge": "Post-traumatic stres disorder_6--Post-traumatic stres disorder_4",
+        "curvature": 0.35263157894736863
+      },
+      {
+        "edge": "Post-traumatic stres disorder_6--Post-traumatic stres disorder_7",
+        "curvature": 0.3437500000000001
+      },
+      {
+        "edge": "Post-traumatic stres disorder_6--Post-traumatic stres disorder_18",
+        "curvature": 0.27511961722488076
+      },
+      {
+        "edge": "Post-traumatic stres disorder_18--Post-traumatic stres disorder_1",
+        "curvature": 0.21969696969696995
+      },
+      {
+        "edge": "Post-traumatic stres disorder_18--Post-traumatic stres disorder_4",
+        "curvature": 0.29999999999999993
+      },
+      {
+        "edge": "Post-traumatic stres disorder_18--Post-traumatic stres disorder_7",
+        "curvature": 0.19886363636363624
+      },
+      {
+        "edge": "Post-traumatic stres disorder_18--Post-traumatic stres disorder_10",
+        "curvature": 0.2339572192513374
+      },
+      {
+        "edge": "Post-traumatic stres disorder_18--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.045454545454545414
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_8--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.32499999999999996
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_8--Attention-deficit/hyperactivity disorder_6",
+        "curvature": 0.2982954545454547
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_8--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.3958333333333338
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_8--Attention-deficit/hyperactivity disorder_14",
+        "curvature": 0.10869565217391297
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_8--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.25000000000000044
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Post-traumatic stres disorder_4",
+        "curvature": -0.4083333333333332
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_1",
+        "curvature": 0.1527777777777779
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_2",
+        "curvature": 0.1888888888888891
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_4",
+        "curvature": 0.1994949494949496
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_5",
+        "curvature": 0.1565656565656568
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_6",
+        "curvature": 0.11111111111111105
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_8",
+        "curvature": 0.20138888888888895
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_9",
+        "curvature": 0.30000000000000027
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_10",
+        "curvature": 0.19444444444444453
+      },
+      {
+        "edge": "Alcohol abuse or dependence_7--Alcohol abuse or dependence_12",
+        "curvature": 0.14583333333333348
+      },
+      {
+        "edge": "Post-traumatic stres disorder_10--Post-traumatic stres disorder_1",
+        "curvature": 0.19852941176470595
+      },
+      {
+        "edge": "Post-traumatic stres disorder_10--Post-traumatic stres disorder_4",
+        "curvature": 0.2132352941176472
+      },
+      {
+        "edge": "Post-traumatic stres disorder_10--Post-traumatic stres disorder_7",
+        "curvature": 0.3492647058823529
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_14--Post-traumatic stres disorder_1",
+        "curvature": -0.13405797101449268
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_14--Attention-deficit/hyperactivity disorder_6",
+        "curvature": 0.0711462450592889
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_14--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.0797101449275367
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_14--Attention-deficit/hyperactivity disorder_17",
+        "curvature": 0.08514492753623204
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_14--Alcohol abuse or dependence_9",
+        "curvature": -0.41449275362318816
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_14--Nicotine dependence_5",
+        "curvature": -0.3557312252964422
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_14--Nicotine dependence_7",
+        "curvature": -0.12845849802371534
+      },
+      {
+        "edge": "Post-traumatic stres disorder_7--Post-traumatic stres disorder_4",
+        "curvature": 0.2687500000000005
+      },
+      {
+        "edge": "Post-traumatic stres disorder_4--Post-traumatic stres disorder_1",
+        "curvature": 0.22499999999999987
+      },
+      {
+        "edge": "Post-traumatic stres disorder_4--Alcohol abuse or dependence_9",
+        "curvature": -0.46666666666666656
+      },
+      {
+        "edge": "Post-traumatic stres disorder_4--Nicotine dependence_2",
+        "curvature": -0.19444444444444442
+      },
+      {
+        "edge": "Nicotine dependence_2--Nicotine dependence_1",
+        "curvature": 0.23809523809523814
+      },
+      {
+        "edge": "Nicotine dependence_2--Nicotine dependence_5",
+        "curvature": 0.16161616161616166
+      },
+      {
+        "edge": "Nicotine dependence_2--Nicotine dependence_6",
+        "curvature": 0.2500000000000001
+      },
+      {
+        "edge": "Nicotine dependence_2--Nicotine dependence_7",
+        "curvature": 0.21212121212121227
+      },
+      {
+        "edge": "Alcohol abuse or dependence_9--Alcohol abuse or dependence_1",
+        "curvature": 0.15416666666666679
+      },
+      {
+        "edge": "Alcohol abuse or dependence_9--Alcohol abuse or dependence_2",
+        "curvature": 0.2833333333333332
+      },
+      {
+        "edge": "Alcohol abuse or dependence_9--Alcohol abuse or dependence_4",
+        "curvature": 0.2272727272727274
+      },
+      {
+        "edge": "Alcohol abuse or dependence_9--Alcohol abuse or dependence_5",
+        "curvature": 0.23636363636363666
+      },
+      {
+        "edge": "Alcohol abuse or dependence_9--Alcohol abuse or dependence_6",
+        "curvature": 0.23333333333333328
+      },
+      {
+        "edge": "Alcohol abuse or dependence_9--Alcohol abuse or dependence_8",
+        "curvature": 0.18333333333333346
+      },
+      {
+        "edge": "Alcohol abuse or dependence_9--Alcohol abuse or dependence_10",
+        "curvature": 0.26666666666666683
+      },
+      {
+        "edge": "Alcohol abuse or dependence_9--Nicotine dependence_5",
+        "curvature": 0.09090909090909083
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_17--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.2500000000000002
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_6--Attention-deficit/hyperactivity disorder_1",
+        "curvature": 0.3500000000000003
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_6--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.359848484848485
+      },
+      {
+        "edge": "Attention-deficit/hyperactivity disorder_1--Attention-deficit/hyperactivity disorder_13",
+        "curvature": 0.3500000000000001
+      },
+      {
+        "edge": "Nicotine dependence_7--Nicotine dependence_1",
+        "curvature": 0.13636363636363646
+      },
+      {
+        "edge": "Nicotine dependence_7--Nicotine dependence_5",
+        "curvature": 0.18181818181818188
+      },
+      {
+        "edge": "Nicotine dependence_7--Nicotine dependence_6",
+        "curvature": 0.1742424242424243
+      },
+      {
+        "edge": "Alcohol abuse or dependence_2--Alcohol abuse or dependence_4",
+        "curvature": 0.3090909090909092
+      },
+      {
+        "edge": "Alcohol abuse or dependence_2--Alcohol abuse or dependence_5",
+        "curvature": 0.34545454545454557
+      },
+      {
+        "edge": "Alcohol abuse or dependence_2--Alcohol abuse or dependence_6",
+        "curvature": 0.2666666666666666
+      },
+      {
+        "edge": "Alcohol abuse or dependence_2--Alcohol abuse or dependence_8",
+        "curvature": 0.26249999999999996
+      },
+      {
+        "edge": "Alcohol abuse or dependence_2--Alcohol abuse or dependence_10",
+        "curvature": 0.3666666666666668
+      },
+      {
+        "edge": "Nicotine dependence_5--Alcohol abuse or dependence_6",
+        "curvature": 0.03030303030303061
+      },
+      {
+        "edge": "Nicotine dependence_5--Alcohol abuse or dependence_10",
+        "curvature": -0.03409090909090895
+      },
+      {
+        "edge": "Nicotine dependence_5--Nicotine dependence_1",
+        "curvature": 0.2402597402597404
+      },
+      {
+        "edge": "Nicotine dependence_5--Nicotine dependence_6",
+        "curvature": 0.20454545454545492
+      },
+      {
+        "edge": "Alcohol abuse or dependence_1--Alcohol abuse or dependence_4",
+        "curvature": 0.40909090909090906
+      },
+      {
+        "edge": "Alcohol abuse or dependence_1--Alcohol abuse or dependence_5",
+        "curvature": 0.32386363636363624
+      },
+      {
+        "edge": "Alcohol abuse or dependence_1--Alcohol abuse or dependence_12",
+        "curvature": 0.4375
+      },
+      {
+        "edge": "Alcohol abuse or dependence_4--Alcohol abuse or dependence_5",
+        "curvature": 0.36363636363636365
+      },
+      {
+        "edge": "Alcohol abuse or dependence_4--Alcohol abuse or dependence_8",
+        "curvature": 0.40909090909090895
+      },
+      {
+        "edge": "Alcohol abuse or dependence_4--Alcohol abuse or dependence_10",
+        "curvature": 0.39772727272727293
+      },
+      {
+        "edge": "Alcohol abuse or dependence_4--Alcohol abuse or dependence_12",
+        "curvature": 0.40909090909090906
+      },
+      {
+        "edge": "Alcohol abuse or dependence_5--Alcohol abuse or dependence_6",
+        "curvature": 0.27272727272727293
+      },
+      {
+        "edge": "Alcohol abuse or dependence_5--Alcohol abuse or dependence_10",
+        "curvature": 0.3977272727272728
+      },
+      {
+        "edge": "Alcohol abuse or dependence_5--Alcohol abuse or dependence_12",
+        "curvature": 0.2670454545454545
+      },
+      {
+        "edge": "Alcohol abuse or dependence_5--Nicotine dependence_1",
+        "curvature": -0.20779220779220786
+      },
+      {
+        "edge": "Alcohol abuse or dependence_12--Alcohol abuse or dependence_8",
+        "curvature": 0.4375
+      },
+      {
+        "edge": "Alcohol abuse or dependence_12--Alcohol abuse or dependence_10",
+        "curvature": 0.3124999999999999
+      },
+      {
+        "edge": "Alcohol abuse or dependence_6--Alcohol abuse or dependence_10",
+        "curvature": 0.29166666666666685
+      },
+      {
+        "edge": "Alcohol abuse or dependence_8--Alcohol abuse or dependence_10",
+        "curvature": 0.35416666666666663
+      },
+      {
+        "edge": "Nicotine dependence_1--Nicotine dependence_6",
+        "curvature": 0.4404761904761909
+      }
+    ]
+  },
+  "mcgrath_22": {
+    "name": "McGrath et al. (2020) WHO WMH 22 disorders",
+    "n_nodes": 25,
+    "n_edges": 257,
+    "n_bridge": 0,
+    "n_mixed": 0,
+    "n_cluster_internal": 25,
+    "mean_curvature": 0.4431556027847963,
+    "std_curvature": 0.08883071263054707,
+    "correlations": {
+      "orc_degree": {
+        "rho": 0.41324370473257127,
+        "p": 0.04004902818121604
+      },
+      "orc_betweenness": {
+        "rho": 0.008647194843151617,
+        "p": 0.96727750073239
+      },
+      "orc_clustering": {
+        "rho": -0.0031444344884187696,
+        "p": 0.9880982069854365
+      },
+      "forman_degree": {
+        "rho": -0.9559860267789374,
+        "p": 9.68903670314173e-14
+      }
+    },
+    "top10_bridges": [
+      {
+        "node": "Anorexia nervosa",
+        "kappa": 0.06669960474308323
+      },
+      {
+        "node": "Specific Phobia",
+        "kappa": 0.26862070735588545
+      },
+      {
+        "node": "Bulimia nervosa",
+        "kappa": 0.39924888811604625
+      },
+      {
+        "node": "OCD",
+        "kappa": 0.4244210566674333
+      },
+      {
+        "node": "Binge eating disorder",
+        "kappa": 0.43307749498170334
+      },
+      {
+        "node": "Specific phobia",
+        "kappa": 0.43688938598868554
+      },
+      {
+        "node": "ADHD",
+        "kappa": 0.45390909987183276
+      },
+      {
+        "node": "Child SAD",
+        "kappa": 0.45751212210839526
+      },
+      {
+        "node": "ODD",
+        "kappa": 0.46678173605051065
+      },
+      {
+        "node": "Conduct disorder",
+        "kappa": 0.47010334856184655
+      }
+    ],
+    "top10_cluster": [
+      {
+        "node": "Social phobia",
+        "kappa": 0.4865445819003132
+      },
+      {
+        "node": "MDE",
+        "kappa": 0.48654458190031313
+      },
+      {
+        "node": "Drug abuse",
+        "kappa": 0.4865445819003131
+      },
+      {
+        "node": "GAD",
+        "kappa": 0.4865445819003131
+      },
+      {
+        "node": "Panic disorder",
+        "kappa": 0.4865445819003131
+      },
+      {
+        "node": "Bipolar disorder",
+        "kappa": 0.4865445819003131
+      },
+      {
+        "node": "Dysthymia",
+        "kappa": 0.48654458190031297
+      },
+      {
+        "node": "Drug dependence",
+        "kappa": 0.4789039462952506
+      },
+      {
+        "node": "PTSD",
+        "kappa": 0.4744678761691996
+      },
+      {
+        "node": "Nicotine dependence",
+        "kappa": 0.4744678761691995
+      }
+    ],
+    "per_node": [
+      {
+        "node": "ADHD",
+        "kappa": 0.45390909987183276,
+        "degree": 21,
+        "betweenness": 0.00444237312843451,
+        "clustering": 0.9333333333333333,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Adult SAD",
+        "kappa": 0.4744678761691995,
+        "degree": 23,
+        "betweenness": 0.006468533834262735,
+        "clustering": 0.9169960474308301,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Agoraphobia",
+        "kappa": 0.47446787616919944,
+        "degree": 23,
+        "betweenness": 0.006468533834262735,
+        "clustering": 0.9169960474308301,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol abuse",
+        "kappa": 0.47446787616919944,
+        "degree": 23,
+        "betweenness": 0.006468533834262735,
+        "clustering": 0.9169960474308301,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Alcohol dependence",
+        "kappa": 0.47446787616919944,
+        "degree": 23,
+        "betweenness": 0.006468533834262735,
+        "clustering": 0.9169960474308301,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Anorexia nervosa",
+        "kappa": 0.06669960474308323,
+        "degree": 2,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Binge eating disorder",
+        "kappa": 0.43307749498170334,
+        "degree": 22,
+        "betweenness": 0.03945384917251925,
+        "clustering": 0.8831168831168831,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Bipolar disorder",
+        "kappa": 0.4865445819003131,
+        "degree": 22,
+        "betweenness": 0.0018909254523065265,
+        "clustering": 0.961038961038961,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Bulimia nervosa",
+        "kappa": 0.39924888811604625,
+        "degree": 17,
+        "betweenness": 0.00018115942028985507,
+        "clustering": 0.9926470588235294,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Child SAD",
+        "kappa": 0.45751212210839526,
+        "degree": 21,
+        "betweenness": 0.0038529707007967885,
+        "clustering": 0.9476190476190476,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Conduct disorder",
+        "kappa": 0.47010334856184655,
+        "degree": 22,
+        "betweenness": 0.004921574470807207,
+        "clustering": 0.935064935064935,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Drug abuse",
+        "kappa": 0.4865445819003131,
+        "degree": 22,
+        "betweenness": 0.0018909254523065265,
+        "clustering": 0.961038961038961,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Drug dependence",
+        "kappa": 0.4789039462952506,
+        "degree": 21,
+        "betweenness": 0.0007968646395756371,
+        "clustering": 0.9809523809523809,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Dysthymia",
+        "kappa": 0.48654458190031297,
+        "degree": 22,
+        "betweenness": 0.0018909254523065265,
+        "clustering": 0.961038961038961,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "GAD",
+        "kappa": 0.4865445819003131,
+        "degree": 22,
+        "betweenness": 0.0018909254523065265,
+        "clustering": 0.961038961038961,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "IED",
+        "kappa": 0.47010334856184666,
+        "degree": 22,
+        "betweenness": 0.004921574470807207,
+        "clustering": 0.935064935064935,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "MDE",
+        "kappa": 0.48654458190031313,
+        "degree": 22,
+        "betweenness": 0.0018909254523065265,
+        "clustering": 0.961038961038961,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Nicotine dependence",
+        "kappa": 0.4744678761691995,
+        "degree": 23,
+        "betweenness": 0.006468533834262735,
+        "clustering": 0.9169960474308301,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "OCD",
+        "kappa": 0.4244210566674333,
+        "degree": 18,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "ODD",
+        "kappa": 0.46678173605051065,
+        "degree": 22,
+        "betweenness": 0.0051583841705325085,
+        "clustering": 0.9307359307359307,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "PTSD",
+        "kappa": 0.4744678761691996,
+        "degree": 23,
+        "betweenness": 0.006468533834262735,
+        "clustering": 0.9169960474308301,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Panic disorder",
+        "kappa": 0.4865445819003131,
+        "degree": 22,
+        "betweenness": 0.0018909254523065265,
+        "clustering": 0.961038961038961,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Social phobia",
+        "kappa": 0.4865445819003132,
+        "degree": 22,
+        "betweenness": 0.0018909254523065265,
+        "clustering": 0.961038961038961,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Specific Phobia",
+        "kappa": 0.26862070735588545,
+        "degree": 11,
+        "betweenness": 0.0,
+        "clustering": 1.0,
+        "classification": "cluster-internal"
+      },
+      {
+        "node": "Specific phobia",
+        "kappa": 0.43688938598868554,
+        "degree": 23,
+        "betweenness": 0.043643858509587415,
+        "clustering": 0.8814229249011858,
+        "classification": "cluster-internal"
+      }
+    ],
+    "edge_curvatures": [
+      {
+        "edge": "MDE--Bipolar disorder",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "MDE--Dysthymia",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "MDE--Panic disorder",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "MDE--GAD",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "MDE--Social phobia",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "MDE--Specific phobia",
+        "curvature": 0.48023715415019785
+      },
+      {
+        "edge": "MDE--Agoraphobia",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "MDE--PTSD",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "MDE--OCD",
+        "curvature": 0.43181818181818155
+      },
+      {
+        "edge": "MDE--Adult SAD",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "MDE--Child SAD",
+        "curvature": 0.453463203463203
+      },
+      {
+        "edge": "MDE--Bulimia nervosa",
+        "curvature": 0.40909090909090884
+      },
+      {
+        "edge": "MDE--Binge eating disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "MDE--IED",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "MDE--Conduct disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "MDE--ODD",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "MDE--Nicotine dependence",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "MDE--Alcohol abuse",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "MDE--Alcohol dependence",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "MDE--Drug abuse",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "MDE--Drug dependence",
+        "curvature": 0.4956709956709958
+      },
+      {
+        "edge": "MDE--ADHD",
+        "curvature": 0.4534632034632029
+      },
+      {
+        "edge": "Bipolar disorder--Dysthymia",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Bipolar disorder--Panic disorder",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Bipolar disorder--GAD",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Bipolar disorder--Social phobia",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Bipolar disorder--Specific phobia",
+        "curvature": 0.4802371541501975
+      },
+      {
+        "edge": "Bipolar disorder--Agoraphobia",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Bipolar disorder--PTSD",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Bipolar disorder--OCD",
+        "curvature": 0.4318181818181819
+      },
+      {
+        "edge": "Bipolar disorder--Adult SAD",
+        "curvature": 0.48913043478260865
+      },
+      {
+        "edge": "Bipolar disorder--Bulimia nervosa",
+        "curvature": 0.4090909090909094
+      },
+      {
+        "edge": "Bipolar disorder--Binge eating disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Bipolar disorder--IED",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Bipolar disorder--Nicotine dependence",
+        "curvature": 0.48913043478260865
+      },
+      {
+        "edge": "Bipolar disorder--Alcohol abuse",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Bipolar disorder--Alcohol dependence",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Bipolar disorder--Drug abuse",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Bipolar disorder--Drug dependence",
+        "curvature": 0.4956709956709958
+      },
+      {
+        "edge": "Bipolar disorder--Child SAD",
+        "curvature": 0.4534632034632038
+      },
+      {
+        "edge": "Bipolar disorder--ADHD",
+        "curvature": 0.453463203463203
+      },
+      {
+        "edge": "Bipolar disorder--Conduct disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Bipolar disorder--ODD",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Dysthymia--Panic disorder",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Dysthymia--GAD",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Dysthymia--Social phobia",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Dysthymia--Specific phobia",
+        "curvature": 0.48023715415019785
+      },
+      {
+        "edge": "Dysthymia--Agoraphobia",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Dysthymia--PTSD",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "Dysthymia--Adult SAD",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Dysthymia--Binge eating disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Dysthymia--IED",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Dysthymia--Nicotine dependence",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Dysthymia--Alcohol abuse",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Dysthymia--Alcohol dependence",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Dysthymia--Drug abuse",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Dysthymia--Drug dependence",
+        "curvature": 0.4956709956709958
+      },
+      {
+        "edge": "Dysthymia--OCD",
+        "curvature": 0.43181818181818155
+      },
+      {
+        "edge": "Dysthymia--Child SAD",
+        "curvature": 0.453463203463203
+      },
+      {
+        "edge": "Dysthymia--Bulimia nervosa",
+        "curvature": 0.40909090909090895
+      },
+      {
+        "edge": "Dysthymia--ADHD",
+        "curvature": 0.45346320346320335
+      },
+      {
+        "edge": "Dysthymia--Conduct disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Dysthymia--ODD",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Panic disorder--GAD",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Panic disorder--Social phobia",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Panic disorder--Specific phobia",
+        "curvature": 0.48023715415019796
+      },
+      {
+        "edge": "Panic disorder--Agoraphobia",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Panic disorder--PTSD",
+        "curvature": 0.489130434782609
+      },
+      {
+        "edge": "Panic disorder--OCD",
+        "curvature": 0.43181818181818177
+      },
+      {
+        "edge": "Panic disorder--Adult SAD",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Panic disorder--Binge eating disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Panic disorder--IED",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Panic disorder--Nicotine dependence",
+        "curvature": 0.489130434782609
+      },
+      {
+        "edge": "Panic disorder--Alcohol abuse",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "Panic disorder--Alcohol dependence",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "Panic disorder--Drug abuse",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Panic disorder--Drug dependence",
+        "curvature": 0.4956709956709955
+      },
+      {
+        "edge": "Panic disorder--Child SAD",
+        "curvature": 0.4534632034632027
+      },
+      {
+        "edge": "Panic disorder--Bulimia nervosa",
+        "curvature": 0.40909090909090917
+      },
+      {
+        "edge": "Panic disorder--ADHD",
+        "curvature": 0.45346320346320335
+      },
+      {
+        "edge": "Panic disorder--Conduct disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Panic disorder--ODD",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "GAD--Social phobia",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "GAD--Specific phobia",
+        "curvature": 0.48023715415019796
+      },
+      {
+        "edge": "GAD--Agoraphobia",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "GAD--PTSD",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "GAD--OCD",
+        "curvature": 0.43181818181818166
+      },
+      {
+        "edge": "GAD--Adult SAD",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "GAD--Bulimia nervosa",
+        "curvature": 0.40909090909090895
+      },
+      {
+        "edge": "GAD--Binge eating disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "GAD--IED",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "GAD--Nicotine dependence",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "GAD--Alcohol abuse",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "GAD--Alcohol dependence",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "GAD--Drug abuse",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "GAD--Drug dependence",
+        "curvature": 0.4956709956709958
+      },
+      {
+        "edge": "GAD--Child SAD",
+        "curvature": 0.4534632034632028
+      },
+      {
+        "edge": "GAD--ADHD",
+        "curvature": 0.45346320346320335
+      },
+      {
+        "edge": "GAD--Conduct disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "GAD--ODD",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Social phobia--Specific phobia",
+        "curvature": 0.48023715415019796
+      },
+      {
+        "edge": "Social phobia--Agoraphobia",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "Social phobia--PTSD",
+        "curvature": 0.489130434782609
+      },
+      {
+        "edge": "Social phobia--OCD",
+        "curvature": 0.43181818181818155
+      },
+      {
+        "edge": "Social phobia--Adult SAD",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "Social phobia--Child SAD",
+        "curvature": 0.45346320346320323
+      },
+      {
+        "edge": "Social phobia--Bulimia nervosa",
+        "curvature": 0.4090909090909094
+      },
+      {
+        "edge": "Social phobia--Binge eating disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Social phobia--IED",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Social phobia--ADHD",
+        "curvature": 0.45346320346320335
+      },
+      {
+        "edge": "Social phobia--Conduct disorder",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Social phobia--ODD",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Social phobia--Nicotine dependence",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Social phobia--Alcohol abuse",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Social phobia--Alcohol dependence",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "Social phobia--Drug abuse",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "Social phobia--Drug dependence",
+        "curvature": 0.4956709956709958
+      },
+      {
+        "edge": "Specific phobia--Agoraphobia",
+        "curvature": 0.4565217391304348
+      },
+      {
+        "edge": "Specific phobia--PTSD",
+        "curvature": 0.4565217391304348
+      },
+      {
+        "edge": "Specific phobia--OCD",
+        "curvature": 0.40338164251207687
+      },
+      {
+        "edge": "Specific phobia--Adult SAD",
+        "curvature": 0.4565217391304348
+      },
+      {
+        "edge": "Specific phobia--Child SAD",
+        "curvature": 0.41511387163561064
+      },
+      {
+        "edge": "Specific phobia--Anorexia nervosa",
+        "curvature": 0.06521739130434834
+      },
+      {
+        "edge": "Specific phobia--Bulimia nervosa",
+        "curvature": 0.38491048593350374
+      },
+      {
+        "edge": "Specific phobia--Binge eating disorder",
+        "curvature": 0.49802371541502
+      },
+      {
+        "edge": "Specific phobia--IED",
+        "curvature": 0.43577075098814255
+      },
+      {
+        "edge": "Specific phobia--ADHD",
+        "curvature": 0.4130434782608694
+      },
+      {
+        "edge": "Specific phobia--Conduct disorder",
+        "curvature": 0.43577075098814233
+      },
+      {
+        "edge": "Specific phobia--ODD",
+        "curvature": 0.43577075098814255
+      },
+      {
+        "edge": "Specific phobia--Nicotine dependence",
+        "curvature": 0.4565217391304348
+      },
+      {
+        "edge": "Specific phobia--Alcohol abuse",
+        "curvature": 0.4565217391304348
+      },
+      {
+        "edge": "Specific phobia--Alcohol dependence",
+        "curvature": 0.4565217391304348
+      },
+      {
+        "edge": "Specific phobia--Drug abuse",
+        "curvature": 0.48023715415019774
+      },
+      {
+        "edge": "Specific phobia--Drug dependence",
+        "curvature": 0.4606625258799174
+      },
+      {
+        "edge": "Agoraphobia--Specific Phobia",
+        "curvature": 0.2608695652173916
+      },
+      {
+        "edge": "Agoraphobia--PTSD",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Agoraphobia--OCD",
+        "curvature": 0.4130434782608694
+      },
+      {
+        "edge": "Agoraphobia--Adult SAD",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Agoraphobia--Bulimia nervosa",
+        "curvature": 0.39130434782608714
+      },
+      {
+        "edge": "Agoraphobia--Binge eating disorder",
+        "curvature": 0.44367588932806334
+      },
+      {
+        "edge": "Agoraphobia--IED",
+        "curvature": 0.49505928853754955
+      },
+      {
+        "edge": "Agoraphobia--ODD",
+        "curvature": 0.49604743083003955
+      },
+      {
+        "edge": "Agoraphobia--Nicotine dependence",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Agoraphobia--Alcohol abuse",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Agoraphobia--Alcohol dependence",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Agoraphobia--Drug abuse",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Agoraphobia--Drug dependence",
+        "curvature": 0.4761904761904763
+      },
+      {
+        "edge": "Agoraphobia--Child SAD",
+        "curvature": 0.4761904761904767
+      },
+      {
+        "edge": "Agoraphobia--ADHD",
+        "curvature": 0.4761904761904764
+      },
+      {
+        "edge": "Agoraphobia--Conduct disorder",
+        "curvature": 0.49505928853754955
+      },
+      {
+        "edge": "PTSD--Specific Phobia",
+        "curvature": 0.2608695652173917
+      },
+      {
+        "edge": "PTSD--OCD",
+        "curvature": 0.4130434782608692
+      },
+      {
+        "edge": "PTSD--Adult SAD",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "PTSD--Child SAD",
+        "curvature": 0.47619047619047616
+      },
+      {
+        "edge": "PTSD--Bulimia nervosa",
+        "curvature": 0.3913043478260869
+      },
+      {
+        "edge": "PTSD--Binge eating disorder",
+        "curvature": 0.44367588932806323
+      },
+      {
+        "edge": "PTSD--IED",
+        "curvature": 0.49505928853754955
+      },
+      {
+        "edge": "PTSD--Conduct disorder",
+        "curvature": 0.49505928853754955
+      },
+      {
+        "edge": "PTSD--ODD",
+        "curvature": 0.49604743083003966
+      },
+      {
+        "edge": "PTSD--Nicotine dependence",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "PTSD--Alcohol abuse",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "PTSD--Alcohol dependence",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "PTSD--Drug abuse",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "PTSD--Drug dependence",
+        "curvature": 0.47619047619047605
+      },
+      {
+        "edge": "PTSD--ADHD",
+        "curvature": 0.4761904761904763
+      },
+      {
+        "edge": "OCD--Adult SAD",
+        "curvature": 0.41304347826086907
+      },
+      {
+        "edge": "OCD--Binge eating disorder",
+        "curvature": 0.419191919191919
+      },
+      {
+        "edge": "OCD--IED",
+        "curvature": 0.43181818181818166
+      },
+      {
+        "edge": "OCD--Nicotine dependence",
+        "curvature": 0.4130434782608696
+      },
+      {
+        "edge": "OCD--Alcohol abuse",
+        "curvature": 0.4130434782608693
+      },
+      {
+        "edge": "OCD--Alcohol dependence",
+        "curvature": 0.4130434782608692
+      },
+      {
+        "edge": "OCD--Drug abuse",
+        "curvature": 0.43181818181818155
+      },
+      {
+        "edge": "OCD--Drug dependence",
+        "curvature": 0.45238095238095277
+      },
+      {
+        "edge": "OCD--Conduct disorder",
+        "curvature": 0.43181818181818155
+      },
+      {
+        "edge": "Adult SAD--Specific Phobia",
+        "curvature": 0.2608695652173916
+      },
+      {
+        "edge": "Adult SAD--Bulimia nervosa",
+        "curvature": 0.39130434782608714
+      },
+      {
+        "edge": "Adult SAD--Binge eating disorder",
+        "curvature": 0.44367588932806334
+      },
+      {
+        "edge": "Adult SAD--IED",
+        "curvature": 0.49505928853754955
+      },
+      {
+        "edge": "Adult SAD--Conduct disorder",
+        "curvature": 0.49505928853754955
+      },
+      {
+        "edge": "Adult SAD--ODD",
+        "curvature": 0.49604743083003955
+      },
+      {
+        "edge": "Adult SAD--Nicotine dependence",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Adult SAD--Alcohol abuse",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Adult SAD--Alcohol dependence",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Adult SAD--Drug abuse",
+        "curvature": 0.48913043478260876
+      },
+      {
+        "edge": "Adult SAD--Drug dependence",
+        "curvature": 0.4761904761904765
+      },
+      {
+        "edge": "Adult SAD--Child SAD",
+        "curvature": 0.4761904761904763
+      },
+      {
+        "edge": "Adult SAD--ADHD",
+        "curvature": 0.4761904761904764
+      },
+      {
+        "edge": "Child SAD--Specific Phobia",
+        "curvature": 0.2857142857142858
+      },
+      {
+        "edge": "Child SAD--Binge eating disorder",
+        "curvature": 0.4101731601731602
+      },
+      {
+        "edge": "Child SAD--IED",
+        "curvature": 0.49675324675324684
+      },
+      {
+        "edge": "Child SAD--ADHD",
+        "curvature": 0.5
+      },
+      {
+        "edge": "Child SAD--Conduct disorder",
+        "curvature": 0.49675324675324684
+      },
+      {
+        "edge": "Child SAD--ODD",
+        "curvature": 0.4956709956709954
+      },
+      {
+        "edge": "Child SAD--Nicotine dependence",
+        "curvature": 0.47619047619047583
+      },
+      {
+        "edge": "Child SAD--Alcohol abuse",
+        "curvature": 0.47619047619047583
+      },
+      {
+        "edge": "Child SAD--Alcohol dependence",
+        "curvature": 0.47619047619047583
+      },
+      {
+        "edge": "Child SAD--Drug abuse",
+        "curvature": 0.4534632034632031
+      },
+      {
+        "edge": "Child SAD--Drug dependence",
+        "curvature": 0.47619047619047616
+      },
+      {
+        "edge": "Bulimia nervosa--Binge eating disorder",
+        "curvature": 0.3770053475935832
+      },
+      {
+        "edge": "Bulimia nervosa--Nicotine dependence",
+        "curvature": 0.39130434782608714
+      },
+      {
+        "edge": "Bulimia nervosa--Alcohol abuse",
+        "curvature": 0.39130434782608703
+      },
+      {
+        "edge": "Bulimia nervosa--Alcohol dependence",
+        "curvature": 0.3913043478260869
+      },
+      {
+        "edge": "Bulimia nervosa--Drug abuse",
+        "curvature": 0.40909090909090906
+      },
+      {
+        "edge": "Bulimia nervosa--ADHD",
+        "curvature": 0.4047619047619051
+      },
+      {
+        "edge": "Bulimia nervosa--ODD",
+        "curvature": 0.40909090909090884
+      },
+      {
+        "edge": "Binge eating disorder--Anorexia nervosa",
+        "curvature": 0.06818181818181812
+      },
+      {
+        "edge": "Binge eating disorder--IED",
+        "curvature": 0.43181818181818177
+      },
+      {
+        "edge": "Binge eating disorder--Nicotine dependence",
+        "curvature": 0.44367588932806334
+      },
+      {
+        "edge": "Binge eating disorder--Alcohol abuse",
+        "curvature": 0.44367588932806334
+      },
+      {
+        "edge": "Binge eating disorder--Alcohol dependence",
+        "curvature": 0.44367588932806323
+      },
+      {
+        "edge": "Binge eating disorder--Drug abuse",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Binge eating disorder--Drug dependence",
+        "curvature": 0.45670995670995684
+      },
+      {
+        "edge": "Binge eating disorder--Conduct disorder",
+        "curvature": 0.43181818181818177
+      },
+      {
+        "edge": "Binge eating disorder--ODD",
+        "curvature": 0.4318181818181819
+      },
+      {
+        "edge": "IED--Specific Phobia",
+        "curvature": 0.27272727272727293
+      },
+      {
+        "edge": "IED--Conduct disorder",
+        "curvature": 0.5227272727272727
+      },
+      {
+        "edge": "IED--ODD",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "IED--Nicotine dependence",
+        "curvature": 0.49505928853754966
+      },
+      {
+        "edge": "IED--Alcohol abuse",
+        "curvature": 0.49505928853754944
+      },
+      {
+        "edge": "IED--Alcohol dependence",
+        "curvature": 0.49505928853754955
+      },
+      {
+        "edge": "IED--Drug abuse",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "IED--Drug dependence",
+        "curvature": 0.48917748917748904
+      },
+      {
+        "edge": "IED--ADHD",
+        "curvature": 0.4729437229437229
+      },
+      {
+        "edge": "Conduct disorder--ADHD",
+        "curvature": 0.4729437229437229
+      },
+      {
+        "edge": "Conduct disorder--Specific Phobia",
+        "curvature": 0.27272727272727293
+      },
+      {
+        "edge": "Conduct disorder--ODD",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Conduct disorder--Nicotine dependence",
+        "curvature": 0.4950592885375493
+      },
+      {
+        "edge": "Conduct disorder--Alcohol abuse",
+        "curvature": 0.49505928853754944
+      },
+      {
+        "edge": "Conduct disorder--Alcohol dependence",
+        "curvature": 0.49505928853754944
+      },
+      {
+        "edge": "Conduct disorder--Drug abuse",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "Conduct disorder--Drug dependence",
+        "curvature": 0.48917748917748904
+      },
+      {
+        "edge": "ODD--ADHD",
+        "curvature": 0.4989177489177493
+      },
+      {
+        "edge": "ODD--Specific Phobia",
+        "curvature": 0.27272727272727293
+      },
+      {
+        "edge": "ODD--Nicotine dependence",
+        "curvature": 0.49604743083003966
+      },
+      {
+        "edge": "ODD--Alcohol abuse",
+        "curvature": 0.49604743083003966
+      },
+      {
+        "edge": "ODD--Alcohol dependence",
+        "curvature": 0.49604743083003977
+      },
+      {
+        "edge": "ODD--Drug abuse",
+        "curvature": 0.4772727272727273
+      },
+      {
+        "edge": "ODD--Drug dependence",
+        "curvature": 0.45346320346320323
+      },
+      {
+        "edge": "Nicotine dependence--ADHD",
+        "curvature": 0.47619047619047605
+      },
+      {
+        "edge": "Nicotine dependence--Specific Phobia",
+        "curvature": 0.2608695652173917
+      },
+      {
+        "edge": "Nicotine dependence--Alcohol abuse",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Nicotine dependence--Alcohol dependence",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Nicotine dependence--Drug abuse",
+        "curvature": 0.48913043478260865
+      },
+      {
+        "edge": "Nicotine dependence--Drug dependence",
+        "curvature": 0.47619047619047616
+      },
+      {
+        "edge": "Alcohol abuse--ADHD",
+        "curvature": 0.4761904761904767
+      },
+      {
+        "edge": "Alcohol abuse--Specific Phobia",
+        "curvature": 0.26086956521739146
+      },
+      {
+        "edge": "Alcohol abuse--Alcohol dependence",
+        "curvature": 0.5217391304347826
+      },
+      {
+        "edge": "Alcohol abuse--Drug abuse",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "Alcohol abuse--Drug dependence",
+        "curvature": 0.4761904761904765
+      },
+      {
+        "edge": "Alcohol dependence--ADHD",
+        "curvature": 0.4761904761904764
+      },
+      {
+        "edge": "Alcohol dependence--Specific Phobia",
+        "curvature": 0.26086956521739135
+      },
+      {
+        "edge": "Alcohol dependence--Drug abuse",
+        "curvature": 0.48913043478260887
+      },
+      {
+        "edge": "Alcohol dependence--Drug dependence",
+        "curvature": 0.4761904761904765
+      },
+      {
+        "edge": "Drug abuse--ADHD",
+        "curvature": 0.453463203463203
+      },
+      {
+        "edge": "Drug abuse--Drug dependence",
+        "curvature": 0.4956709956709956
+      },
+      {
+        "edge": "Drug dependence--ADHD",
+        "curvature": 0.45238095238095244
+      },
+      {
+        "edge": "ADHD--Specific Phobia",
+        "curvature": 0.28571428571428603
+      }
+    ]
+  }
+}

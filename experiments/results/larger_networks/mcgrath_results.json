@@ -1,0 +1,1344 @@
+{
+  "name": "McGrath et al. (2020) WHO WMH 22 disorders",
+  "n_nodes": 25,
+  "n_edges": 257,
+  "n_bridge": 0,
+  "n_mixed": 0,
+  "n_cluster_internal": 25,
+  "mean_curvature": 0.4431556027847963,
+  "std_curvature": 0.08883071263054707,
+  "correlations": {
+    "orc_degree": {
+      "rho": 0.41324370473257127,
+      "p": 0.04004902818121604
+    },
+    "orc_betweenness": {
+      "rho": 0.008647194843151617,
+      "p": 0.96727750073239
+    },
+    "orc_clustering": {
+      "rho": -0.0031444344884187696,
+      "p": 0.9880982069854365
+    },
+    "forman_degree": {
+      "rho": -0.9559860267789374,
+      "p": 9.68903670314173e-14
+    }
+  },
+  "top10_bridges": [
+    {
+      "node": "Anorexia nervosa",
+      "kappa": 0.06669960474308323
+    },
+    {
+      "node": "Specific Phobia",
+      "kappa": 0.26862070735588545
+    },
+    {
+      "node": "Bulimia nervosa",
+      "kappa": 0.39924888811604625
+    },
+    {
+      "node": "OCD",
+      "kappa": 0.4244210566674333
+    },
+    {
+      "node": "Binge eating disorder",
+      "kappa": 0.43307749498170334
+    },
+    {
+      "node": "Specific phobia",
+      "kappa": 0.43688938598868554
+    },
+    {
+      "node": "ADHD",
+      "kappa": 0.45390909987183276
+    },
+    {
+      "node": "Child SAD",
+      "kappa": 0.45751212210839526
+    },
+    {
+      "node": "ODD",
+      "kappa": 0.46678173605051065
+    },
+    {
+      "node": "Conduct disorder",
+      "kappa": 0.47010334856184655
+    }
+  ],
+  "top10_cluster": [
+    {
+      "node": "Social phobia",
+      "kappa": 0.4865445819003132
+    },
+    {
+      "node": "MDE",
+      "kappa": 0.48654458190031313
+    },
+    {
+      "node": "Drug abuse",
+      "kappa": 0.4865445819003131
+    },
+    {
+      "node": "GAD",
+      "kappa": 0.4865445819003131
+    },
+    {
+      "node": "Panic disorder",
+      "kappa": 0.4865445819003131
+    },
+    {
+      "node": "Bipolar disorder",
+      "kappa": 0.4865445819003131
+    },
+    {
+      "node": "Dysthymia",
+      "kappa": 0.48654458190031297
+    },
+    {
+      "node": "Drug dependence",
+      "kappa": 0.4789039462952506
+    },
+    {
+      "node": "PTSD",
+      "kappa": 0.4744678761691996
+    },
+    {
+      "node": "Nicotine dependence",
+      "kappa": 0.4744678761691995
+    }
+  ],
+  "per_node": [
+    {
+      "node": "ADHD",
+      "kappa": 0.45390909987183276,
+      "degree": 21,
+      "betweenness": 0.00444237312843451,
+      "clustering": 0.9333333333333333,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Adult SAD",
+      "kappa": 0.4744678761691995,
+      "degree": 23,
+      "betweenness": 0.006468533834262735,
+      "clustering": 0.9169960474308301,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Agoraphobia",
+      "kappa": 0.47446787616919944,
+      "degree": 23,
+      "betweenness": 0.006468533834262735,
+      "clustering": 0.9169960474308301,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Alcohol abuse",
+      "kappa": 0.47446787616919944,
+      "degree": 23,
+      "betweenness": 0.006468533834262735,
+      "clustering": 0.9169960474308301,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Alcohol dependence",
+      "kappa": 0.47446787616919944,
+      "degree": 23,
+      "betweenness": 0.006468533834262735,
+      "clustering": 0.9169960474308301,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Anorexia nervosa",
+      "kappa": 0.06669960474308323,
+      "degree": 2,
+      "betweenness": 0.0,
+      "clustering": 1.0,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Binge eating disorder",
+      "kappa": 0.43307749498170334,
+      "degree": 22,
+      "betweenness": 0.03945384917251925,
+      "clustering": 0.8831168831168831,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Bipolar disorder",
+      "kappa": 0.4865445819003131,
+      "degree": 22,
+      "betweenness": 0.0018909254523065265,
+      "clustering": 0.961038961038961,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Bulimia nervosa",
+      "kappa": 0.39924888811604625,
+      "degree": 17,
+      "betweenness": 0.00018115942028985507,
+      "clustering": 0.9926470588235294,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Child SAD",
+      "kappa": 0.45751212210839526,
+      "degree": 21,
+      "betweenness": 0.0038529707007967885,
+      "clustering": 0.9476190476190476,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Conduct disorder",
+      "kappa": 0.47010334856184655,
+      "degree": 22,
+      "betweenness": 0.004921574470807207,
+      "clustering": 0.935064935064935,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Drug abuse",
+      "kappa": 0.4865445819003131,
+      "degree": 22,
+      "betweenness": 0.0018909254523065265,
+      "clustering": 0.961038961038961,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Drug dependence",
+      "kappa": 0.4789039462952506,
+      "degree": 21,
+      "betweenness": 0.0007968646395756371,
+      "clustering": 0.9809523809523809,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Dysthymia",
+      "kappa": 0.48654458190031297,
+      "degree": 22,
+      "betweenness": 0.0018909254523065265,
+      "clustering": 0.961038961038961,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "GAD",
+      "kappa": 0.4865445819003131,
+      "degree": 22,
+      "betweenness": 0.0018909254523065265,
+      "clustering": 0.961038961038961,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "IED",
+      "kappa": 0.47010334856184666,
+      "degree": 22,
+      "betweenness": 0.004921574470807207,
+      "clustering": 0.935064935064935,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "MDE",
+      "kappa": 0.48654458190031313,
+      "degree": 22,
+      "betweenness": 0.0018909254523065265,
+      "clustering": 0.961038961038961,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Nicotine dependence",
+      "kappa": 0.4744678761691995,
+      "degree": 23,
+      "betweenness": 0.006468533834262735,
+      "clustering": 0.9169960474308301,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "OCD",
+      "kappa": 0.4244210566674333,
+      "degree": 18,
+      "betweenness": 0.0,
+      "clustering": 1.0,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "ODD",
+      "kappa": 0.46678173605051065,
+      "degree": 22,
+      "betweenness": 0.0051583841705325085,
+      "clustering": 0.9307359307359307,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "PTSD",
+      "kappa": 0.4744678761691996,
+      "degree": 23,
+      "betweenness": 0.006468533834262735,
+      "clustering": 0.9169960474308301,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Panic disorder",
+      "kappa": 0.4865445819003131,
+      "degree": 22,
+      "betweenness": 0.0018909254523065265,
+      "clustering": 0.961038961038961,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Social phobia",
+      "kappa": 0.4865445819003132,
+      "degree": 22,
+      "betweenness": 0.0018909254523065265,
+      "clustering": 0.961038961038961,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Specific Phobia",
+      "kappa": 0.26862070735588545,
+      "degree": 11,
+      "betweenness": 0.0,
+      "clustering": 1.0,
+      "classification": "cluster-internal"
+    },
+    {
+      "node": "Specific phobia",
+      "kappa": 0.43688938598868554,
+      "degree": 23,
+      "betweenness": 0.043643858509587415,
+      "clustering": 0.8814229249011858,
+      "classification": "cluster-internal"
+    }
+  ],
+  "edge_curvatures": [
+    {
+      "edge": "MDE--Bipolar disorder",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "MDE--Dysthymia",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "MDE--Panic disorder",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "MDE--GAD",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "MDE--Social phobia",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "MDE--Specific phobia",
+      "curvature": 0.48023715415019785
+    },
+    {
+      "edge": "MDE--Agoraphobia",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "MDE--PTSD",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "MDE--OCD",
+      "curvature": 0.43181818181818155
+    },
+    {
+      "edge": "MDE--Adult SAD",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "MDE--Child SAD",
+      "curvature": 0.453463203463203
+    },
+    {
+      "edge": "MDE--Bulimia nervosa",
+      "curvature": 0.40909090909090884
+    },
+    {
+      "edge": "MDE--Binge eating disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "MDE--IED",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "MDE--Conduct disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "MDE--ODD",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "MDE--Nicotine dependence",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "MDE--Alcohol abuse",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "MDE--Alcohol dependence",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "MDE--Drug abuse",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "MDE--Drug dependence",
+      "curvature": 0.4956709956709958
+    },
+    {
+      "edge": "MDE--ADHD",
+      "curvature": 0.4534632034632029
+    },
+    {
+      "edge": "Bipolar disorder--Dysthymia",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Bipolar disorder--Panic disorder",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Bipolar disorder--GAD",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Bipolar disorder--Social phobia",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Bipolar disorder--Specific phobia",
+      "curvature": 0.4802371541501975
+    },
+    {
+      "edge": "Bipolar disorder--Agoraphobia",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Bipolar disorder--PTSD",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Bipolar disorder--OCD",
+      "curvature": 0.4318181818181819
+    },
+    {
+      "edge": "Bipolar disorder--Adult SAD",
+      "curvature": 0.48913043478260865
+    },
+    {
+      "edge": "Bipolar disorder--Bulimia nervosa",
+      "curvature": 0.4090909090909094
+    },
+    {
+      "edge": "Bipolar disorder--Binge eating disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Bipolar disorder--IED",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Bipolar disorder--Nicotine dependence",
+      "curvature": 0.48913043478260865
+    },
+    {
+      "edge": "Bipolar disorder--Alcohol abuse",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Bipolar disorder--Alcohol dependence",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Bipolar disorder--Drug abuse",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Bipolar disorder--Drug dependence",
+      "curvature": 0.4956709956709958
+    },
+    {
+      "edge": "Bipolar disorder--Child SAD",
+      "curvature": 0.4534632034632038
+    },
+    {
+      "edge": "Bipolar disorder--ADHD",
+      "curvature": 0.453463203463203
+    },
+    {
+      "edge": "Bipolar disorder--Conduct disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Bipolar disorder--ODD",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Dysthymia--Panic disorder",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Dysthymia--GAD",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Dysthymia--Social phobia",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Dysthymia--Specific phobia",
+      "curvature": 0.48023715415019785
+    },
+    {
+      "edge": "Dysthymia--Agoraphobia",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Dysthymia--PTSD",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "Dysthymia--Adult SAD",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Dysthymia--Binge eating disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Dysthymia--IED",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Dysthymia--Nicotine dependence",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Dysthymia--Alcohol abuse",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Dysthymia--Alcohol dependence",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Dysthymia--Drug abuse",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Dysthymia--Drug dependence",
+      "curvature": 0.4956709956709958
+    },
+    {
+      "edge": "Dysthymia--OCD",
+      "curvature": 0.43181818181818155
+    },
+    {
+      "edge": "Dysthymia--Child SAD",
+      "curvature": 0.453463203463203
+    },
+    {
+      "edge": "Dysthymia--Bulimia nervosa",
+      "curvature": 0.40909090909090895
+    },
+    {
+      "edge": "Dysthymia--ADHD",
+      "curvature": 0.45346320346320335
+    },
+    {
+      "edge": "Dysthymia--Conduct disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Dysthymia--ODD",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Panic disorder--GAD",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Panic disorder--Social phobia",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Panic disorder--Specific phobia",
+      "curvature": 0.48023715415019796
+    },
+    {
+      "edge": "Panic disorder--Agoraphobia",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Panic disorder--PTSD",
+      "curvature": 0.489130434782609
+    },
+    {
+      "edge": "Panic disorder--OCD",
+      "curvature": 0.43181818181818177
+    },
+    {
+      "edge": "Panic disorder--Adult SAD",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Panic disorder--Binge eating disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Panic disorder--IED",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Panic disorder--Nicotine dependence",
+      "curvature": 0.489130434782609
+    },
+    {
+      "edge": "Panic disorder--Alcohol abuse",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "Panic disorder--Alcohol dependence",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "Panic disorder--Drug abuse",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Panic disorder--Drug dependence",
+      "curvature": 0.4956709956709955
+    },
+    {
+      "edge": "Panic disorder--Child SAD",
+      "curvature": 0.4534632034632027
+    },
+    {
+      "edge": "Panic disorder--Bulimia nervosa",
+      "curvature": 0.40909090909090917
+    },
+    {
+      "edge": "Panic disorder--ADHD",
+      "curvature": 0.45346320346320335
+    },
+    {
+      "edge": "Panic disorder--Conduct disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Panic disorder--ODD",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "GAD--Social phobia",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "GAD--Specific phobia",
+      "curvature": 0.48023715415019796
+    },
+    {
+      "edge": "GAD--Agoraphobia",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "GAD--PTSD",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "GAD--OCD",
+      "curvature": 0.43181818181818166
+    },
+    {
+      "edge": "GAD--Adult SAD",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "GAD--Bulimia nervosa",
+      "curvature": 0.40909090909090895
+    },
+    {
+      "edge": "GAD--Binge eating disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "GAD--IED",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "GAD--Nicotine dependence",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "GAD--Alcohol abuse",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "GAD--Alcohol dependence",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "GAD--Drug abuse",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "GAD--Drug dependence",
+      "curvature": 0.4956709956709958
+    },
+    {
+      "edge": "GAD--Child SAD",
+      "curvature": 0.4534632034632028
+    },
+    {
+      "edge": "GAD--ADHD",
+      "curvature": 0.45346320346320335
+    },
+    {
+      "edge": "GAD--Conduct disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "GAD--ODD",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Social phobia--Specific phobia",
+      "curvature": 0.48023715415019796
+    },
+    {
+      "edge": "Social phobia--Agoraphobia",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "Social phobia--PTSD",
+      "curvature": 0.489130434782609
+    },
+    {
+      "edge": "Social phobia--OCD",
+      "curvature": 0.43181818181818155
+    },
+    {
+      "edge": "Social phobia--Adult SAD",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "Social phobia--Child SAD",
+      "curvature": 0.45346320346320323
+    },
+    {
+      "edge": "Social phobia--Bulimia nervosa",
+      "curvature": 0.4090909090909094
+    },
+    {
+      "edge": "Social phobia--Binge eating disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Social phobia--IED",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Social phobia--ADHD",
+      "curvature": 0.45346320346320335
+    },
+    {
+      "edge": "Social phobia--Conduct disorder",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Social phobia--ODD",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Social phobia--Nicotine dependence",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Social phobia--Alcohol abuse",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Social phobia--Alcohol dependence",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "Social phobia--Drug abuse",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "Social phobia--Drug dependence",
+      "curvature": 0.4956709956709958
+    },
+    {
+      "edge": "Specific phobia--Agoraphobia",
+      "curvature": 0.4565217391304348
+    },
+    {
+      "edge": "Specific phobia--PTSD",
+      "curvature": 0.4565217391304348
+    },
+    {
+      "edge": "Specific phobia--OCD",
+      "curvature": 0.40338164251207687
+    },
+    {
+      "edge": "Specific phobia--Adult SAD",
+      "curvature": 0.4565217391304348
+    },
+    {
+      "edge": "Specific phobia--Child SAD",
+      "curvature": 0.41511387163561064
+    },
+    {
+      "edge": "Specific phobia--Anorexia nervosa",
+      "curvature": 0.06521739130434834
+    },
+    {
+      "edge": "Specific phobia--Bulimia nervosa",
+      "curvature": 0.38491048593350374
+    },
+    {
+      "edge": "Specific phobia--Binge eating disorder",
+      "curvature": 0.49802371541502
+    },
+    {
+      "edge": "Specific phobia--IED",
+      "curvature": 0.43577075098814255
+    },
+    {
+      "edge": "Specific phobia--ADHD",
+      "curvature": 0.4130434782608694
+    },
+    {
+      "edge": "Specific phobia--Conduct disorder",
+      "curvature": 0.43577075098814233
+    },
+    {
+      "edge": "Specific phobia--ODD",
+      "curvature": 0.43577075098814255
+    },
+    {
+      "edge": "Specific phobia--Nicotine dependence",
+      "curvature": 0.4565217391304348
+    },
+    {
+      "edge": "Specific phobia--Alcohol abuse",
+      "curvature": 0.4565217391304348
+    },
+    {
+      "edge": "Specific phobia--Alcohol dependence",
+      "curvature": 0.4565217391304348
+    },
+    {
+      "edge": "Specific phobia--Drug abuse",
+      "curvature": 0.48023715415019774
+    },
+    {
+      "edge": "Specific phobia--Drug dependence",
+      "curvature": 0.4606625258799174
+    },
+    {
+      "edge": "Agoraphobia--Specific Phobia",
+      "curvature": 0.2608695652173916
+    },
+    {
+      "edge": "Agoraphobia--PTSD",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Agoraphobia--OCD",
+      "curvature": 0.4130434782608694
+    },
+    {
+      "edge": "Agoraphobia--Adult SAD",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Agoraphobia--Bulimia nervosa",
+      "curvature": 0.39130434782608714
+    },
+    {
+      "edge": "Agoraphobia--Binge eating disorder",
+      "curvature": 0.44367588932806334
+    },
+    {
+      "edge": "Agoraphobia--IED",
+      "curvature": 0.49505928853754955
+    },
+    {
+      "edge": "Agoraphobia--ODD",
+      "curvature": 0.49604743083003955
+    },
+    {
+      "edge": "Agoraphobia--Nicotine dependence",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Agoraphobia--Alcohol abuse",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Agoraphobia--Alcohol dependence",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Agoraphobia--Drug abuse",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Agoraphobia--Drug dependence",
+      "curvature": 0.4761904761904763
+    },
+    {
+      "edge": "Agoraphobia--Child SAD",
+      "curvature": 0.4761904761904767
+    },
+    {
+      "edge": "Agoraphobia--ADHD",
+      "curvature": 0.4761904761904764
+    },
+    {
+      "edge": "Agoraphobia--Conduct disorder",
+      "curvature": 0.49505928853754955
+    },
+    {
+      "edge": "PTSD--Specific Phobia",
+      "curvature": 0.2608695652173917
+    },
+    {
+      "edge": "PTSD--OCD",
+      "curvature": 0.4130434782608692
+    },
+    {
+      "edge": "PTSD--Adult SAD",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "PTSD--Child SAD",
+      "curvature": 0.47619047619047616
+    },
+    {
+      "edge": "PTSD--Bulimia nervosa",
+      "curvature": 0.3913043478260869
+    },
+    {
+      "edge": "PTSD--Binge eating disorder",
+      "curvature": 0.44367588932806323
+    },
+    {
+      "edge": "PTSD--IED",
+      "curvature": 0.49505928853754955
+    },
+    {
+      "edge": "PTSD--Conduct disorder",
+      "curvature": 0.49505928853754955
+    },
+    {
+      "edge": "PTSD--ODD",
+      "curvature": 0.49604743083003966
+    },
+    {
+      "edge": "PTSD--Nicotine dependence",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "PTSD--Alcohol abuse",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "PTSD--Alcohol dependence",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "PTSD--Drug abuse",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "PTSD--Drug dependence",
+      "curvature": 0.47619047619047605
+    },
+    {
+      "edge": "PTSD--ADHD",
+      "curvature": 0.4761904761904763
+    },
+    {
+      "edge": "OCD--Adult SAD",
+      "curvature": 0.41304347826086907
+    },
+    {
+      "edge": "OCD--Binge eating disorder",
+      "curvature": 0.419191919191919
+    },
+    {
+      "edge": "OCD--IED",
+      "curvature": 0.43181818181818166
+    },
+    {
+      "edge": "OCD--Nicotine dependence",
+      "curvature": 0.4130434782608696
+    },
+    {
+      "edge": "OCD--Alcohol abuse",
+      "curvature": 0.4130434782608693
+    },
+    {
+      "edge": "OCD--Alcohol dependence",
+      "curvature": 0.4130434782608692
+    },
+    {
+      "edge": "OCD--Drug abuse",
+      "curvature": 0.43181818181818155
+    },
+    {
+      "edge": "OCD--Drug dependence",
+      "curvature": 0.45238095238095277
+    },
+    {
+      "edge": "OCD--Conduct disorder",
+      "curvature": 0.43181818181818155
+    },
+    {
+      "edge": "Adult SAD--Specific Phobia",
+      "curvature": 0.2608695652173916
+    },
+    {
+      "edge": "Adult SAD--Bulimia nervosa",
+      "curvature": 0.39130434782608714
+    },
+    {
+      "edge": "Adult SAD--Binge eating disorder",
+      "curvature": 0.44367588932806334
+    },
+    {
+      "edge": "Adult SAD--IED",
+      "curvature": 0.49505928853754955
+    },
+    {
+      "edge": "Adult SAD--Conduct disorder",
+      "curvature": 0.49505928853754955
+    },
+    {
+      "edge": "Adult SAD--ODD",
+      "curvature": 0.49604743083003955
+    },
+    {
+      "edge": "Adult SAD--Nicotine dependence",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Adult SAD--Alcohol abuse",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Adult SAD--Alcohol dependence",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Adult SAD--Drug abuse",
+      "curvature": 0.48913043478260876
+    },
+    {
+      "edge": "Adult SAD--Drug dependence",
+      "curvature": 0.4761904761904765
+    },
+    {
+      "edge": "Adult SAD--Child SAD",
+      "curvature": 0.4761904761904763
+    },
+    {
+      "edge": "Adult SAD--ADHD",
+      "curvature": 0.4761904761904764
+    },
+    {
+      "edge": "Child SAD--Specific Phobia",
+      "curvature": 0.2857142857142858
+    },
+    {
+      "edge": "Child SAD--Binge eating disorder",
+      "curvature": 0.4101731601731602
+    },
+    {
+      "edge": "Child SAD--IED",
+      "curvature": 0.49675324675324684
+    },
+    {
+      "edge": "Child SAD--ADHD",
+      "curvature": 0.5
+    },
+    {
+      "edge": "Child SAD--Conduct disorder",
+      "curvature": 0.49675324675324684
+    },
+    {
+      "edge": "Child SAD--ODD",
+      "curvature": 0.4956709956709954
+    },
+    {
+      "edge": "Child SAD--Nicotine dependence",
+      "curvature": 0.47619047619047583
+    },
+    {
+      "edge": "Child SAD--Alcohol abuse",
+      "curvature": 0.47619047619047583
+    },
+    {
+      "edge": "Child SAD--Alcohol dependence",
+      "curvature": 0.47619047619047583
+    },
+    {
+      "edge": "Child SAD--Drug abuse",
+      "curvature": 0.4534632034632031
+    },
+    {
+      "edge": "Child SAD--Drug dependence",
+      "curvature": 0.47619047619047616
+    },
+    {
+      "edge": "Bulimia nervosa--Binge eating disorder",
+      "curvature": 0.3770053475935832
+    },
+    {
+      "edge": "Bulimia nervosa--Nicotine dependence",
+      "curvature": 0.39130434782608714
+    },
+    {
+      "edge": "Bulimia nervosa--Alcohol abuse",
+      "curvature": 0.39130434782608703
+    },
+    {
+      "edge": "Bulimia nervosa--Alcohol dependence",
+      "curvature": 0.3913043478260869
+    },
+    {
+      "edge": "Bulimia nervosa--Drug abuse",
+      "curvature": 0.40909090909090906
+    },
+    {
+      "edge": "Bulimia nervosa--ADHD",
+      "curvature": 0.4047619047619051
+    },
+    {
+      "edge": "Bulimia nervosa--ODD",
+      "curvature": 0.40909090909090884
+    },
+    {
+      "edge": "Binge eating disorder--Anorexia nervosa",
+      "curvature": 0.06818181818181812
+    },
+    {
+      "edge": "Binge eating disorder--IED",
+      "curvature": 0.43181818181818177
+    },
+    {
+      "edge": "Binge eating disorder--Nicotine dependence",
+      "curvature": 0.44367588932806334
+    },
+    {
+      "edge": "Binge eating disorder--Alcohol abuse",
+      "curvature": 0.44367588932806334
+    },
+    {
+      "edge": "Binge eating disorder--Alcohol dependence",
+      "curvature": 0.44367588932806323
+    },
+    {
+      "edge": "Binge eating disorder--Drug abuse",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Binge eating disorder--Drug dependence",
+      "curvature": 0.45670995670995684
+    },
+    {
+      "edge": "Binge eating disorder--Conduct disorder",
+      "curvature": 0.43181818181818177
+    },
+    {
+      "edge": "Binge eating disorder--ODD",
+      "curvature": 0.4318181818181819
+    },
+    {
+      "edge": "IED--Specific Phobia",
+      "curvature": 0.27272727272727293
+    },
+    {
+      "edge": "IED--Conduct disorder",
+      "curvature": 0.5227272727272727
+    },
+    {
+      "edge": "IED--ODD",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "IED--Nicotine dependence",
+      "curvature": 0.49505928853754966
+    },
+    {
+      "edge": "IED--Alcohol abuse",
+      "curvature": 0.49505928853754944
+    },
+    {
+      "edge": "IED--Alcohol dependence",
+      "curvature": 0.49505928853754955
+    },
+    {
+      "edge": "IED--Drug abuse",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "IED--Drug dependence",
+      "curvature": 0.48917748917748904
+    },
+    {
+      "edge": "IED--ADHD",
+      "curvature": 0.4729437229437229
+    },
+    {
+      "edge": "Conduct disorder--ADHD",
+      "curvature": 0.4729437229437229
+    },
+    {
+      "edge": "Conduct disorder--Specific Phobia",
+      "curvature": 0.27272727272727293
+    },
+    {
+      "edge": "Conduct disorder--ODD",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Conduct disorder--Nicotine dependence",
+      "curvature": 0.4950592885375493
+    },
+    {
+      "edge": "Conduct disorder--Alcohol abuse",
+      "curvature": 0.49505928853754944
+    },
+    {
+      "edge": "Conduct disorder--Alcohol dependence",
+      "curvature": 0.49505928853754944
+    },
+    {
+      "edge": "Conduct disorder--Drug abuse",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "Conduct disorder--Drug dependence",
+      "curvature": 0.48917748917748904
+    },
+    {
+      "edge": "ODD--ADHD",
+      "curvature": 0.4989177489177493
+    },
+    {
+      "edge": "ODD--Specific Phobia",
+      "curvature": 0.27272727272727293
+    },
+    {
+      "edge": "ODD--Nicotine dependence",
+      "curvature": 0.49604743083003966
+    },
+    {
+      "edge": "ODD--Alcohol abuse",
+      "curvature": 0.49604743083003966
+    },
+    {
+      "edge": "ODD--Alcohol dependence",
+      "curvature": 0.49604743083003977
+    },
+    {
+      "edge": "ODD--Drug abuse",
+      "curvature": 0.4772727272727273
+    },
+    {
+      "edge": "ODD--Drug dependence",
+      "curvature": 0.45346320346320323
+    },
+    {
+      "edge": "Nicotine dependence--ADHD",
+      "curvature": 0.47619047619047605
+    },
+    {
+      "edge": "Nicotine dependence--Specific Phobia",
+      "curvature": 0.2608695652173917
+    },
+    {
+      "edge": "Nicotine dependence--Alcohol abuse",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Nicotine dependence--Alcohol dependence",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Nicotine dependence--Drug abuse",
+      "curvature": 0.48913043478260865
+    },
+    {
+      "edge": "Nicotine dependence--Drug dependence",
+      "curvature": 0.47619047619047616
+    },
+    {
+      "edge": "Alcohol abuse--ADHD",
+      "curvature": 0.4761904761904767
+    },
+    {
+      "edge": "Alcohol abuse--Specific Phobia",
+      "curvature": 0.26086956521739146
+    },
+    {
+      "edge": "Alcohol abuse--Alcohol dependence",
+      "curvature": 0.5217391304347826
+    },
+    {
+      "edge": "Alcohol abuse--Drug abuse",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "Alcohol abuse--Drug dependence",
+      "curvature": 0.4761904761904765
+    },
+    {
+      "edge": "Alcohol dependence--ADHD",
+      "curvature": 0.4761904761904764
+    },
+    {
+      "edge": "Alcohol dependence--Specific Phobia",
+      "curvature": 0.26086956521739135
+    },
+    {
+      "edge": "Alcohol dependence--Drug abuse",
+      "curvature": 0.48913043478260887
+    },
+    {
+      "edge": "Alcohol dependence--Drug dependence",
+      "curvature": 0.4761904761904765
+    },
+    {
+      "edge": "Drug abuse--ADHD",
+      "curvature": 0.453463203463203
+    },
+    {
+      "edge": "Drug abuse--Drug dependence",
+      "curvature": 0.4956709956709956
+    },
+    {
+      "edge": "Drug dependence--ADHD",
+      "curvature": 0.45238095238095244
+    },
+    {
+      "edge": "ADHD--Specific Phobia",
+      "curvature": 0.28571428571428603
+    }
+  ]
+}

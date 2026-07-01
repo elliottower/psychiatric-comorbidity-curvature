@@ -1,0 +1,734 @@
+{
+  "permutation_test": {
+    "observed_gap": -0.13310630341880364,
+    "n_permutations": 10000,
+    "p_one_sided": 0.2205,
+    "p_two_sided": 0.4559,
+    "null_mean": 0.003446323183760684,
+    "null_std": 0.20529668491495484,
+    "null_ci_lower": -0.4398148148148148,
+    "null_ci_upper": 0.4375
+  },
+  "leave_one_edge_out": {
+    "baseline_gap": -0.13310630341880364,
+    "n_edges": 39,
+    "n_disconnect": 5,
+    "n_flips": 0,
+    "per_edge": [
+      {
+        "edge": "MDD--GAD",
+        "disconnects": false,
+        "gad_kappa": -0.14591836734693844,
+        "mdd_kappa": 0.008101851851852027,
+        "gap": -0.15402021919879047,
+        "gad_rank": 2,
+        "mdd_rank": 4,
+        "flips_ordering": false,
+        "edge_curvature": -0.39423076923076894
+      },
+      {
+        "edge": "MDD--insomnia",
+        "disconnects": false,
+        "gad_kappa": -0.14010416666666659,
+        "mdd_kappa": -0.017129629629629235,
+        "gap": -0.12297453703703735,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": -0.025641025641025328
+      },
+      {
+        "edge": "MDD--SUD",
+        "disconnects": false,
+        "gad_kappa": -0.15833333333333321,
+        "mdd_kappa": -0.0437499999999996,
+        "gap": -0.11458333333333362,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.18803418803418848
+      },
+      {
+        "edge": "MDD--anhedonia",
+        "disconnects": false,
+        "gad_kappa": -0.14010416666666659,
+        "mdd_kappa": -0.007870370370370009,
+        "gap": -0.13223379629629659,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.09615384615384659
+      },
+      {
+        "edge": "MDD--suicide_ideation",
+        "disconnects": false,
+        "gad_kappa": -0.14010416666666659,
+        "mdd_kappa": -0.021759259259258906,
+        "gap": -0.11834490740740768,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.025641025641025772
+      },
+      {
+        "edge": "MDD--PTSD",
+        "disconnects": false,
+        "gad_kappa": -0.15885416666666669,
+        "mdd_kappa": -0.02835648148148127,
+        "gap": -0.13049768518518542,
+        "gad_rank": 1,
+        "mdd_rank": 4,
+        "flips_ordering": false,
+        "edge_curvature": 0.061538461538461875
+      },
+      {
+        "edge": "MDD--SCZ",
+        "disconnects": false,
+        "gad_kappa": -0.14010416666666659,
+        "mdd_kappa": 0.021064814814815164,
+        "gap": -0.16116898148148176,
+        "gad_rank": 1,
+        "mdd_rank": 5,
+        "flips_ordering": false,
+        "edge_curvature": -0.13461538461538414
+      },
+      {
+        "edge": "MDD--BIP",
+        "disconnects": false,
+        "gad_kappa": -0.14010416666666659,
+        "mdd_kappa": -0.007870370370370009,
+        "gap": -0.13223379629629659,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.09615384615384648
+      },
+      {
+        "edge": "MDD--BPD",
+        "disconnects": false,
+        "gad_kappa": -0.14010416666666659,
+        "mdd_kappa": -0.025231481481481095,
+        "gap": -0.1148726851851855,
+        "gad_rank": 1,
+        "mdd_rank": 3,
+        "flips_ordering": false,
+        "edge_curvature": -0.028846153846153744
+      },
+      {
+        "edge": "MDD--fatigue",
+        "disconnects": false,
+        "gad_kappa": -0.14010416666666664,
+        "mdd_kappa": -0.014814814814814595,
+        "gap": -0.12528935185185205,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": -0.02564102564102555
+      },
+      {
+        "edge": "MDD--cortisol",
+        "disconnects": false,
+        "gad_kappa": -0.14583333333333331,
+        "mdd_kappa": -0.014467592592592384,
+        "gap": -0.13136574074074092,
+        "gad_rank": 1,
+        "mdd_rank": 3,
+        "flips_ordering": false,
+        "edge_curvature": 0.012820512820512775
+      },
+      {
+        "edge": "MDD--inflammation",
+        "disconnects": false,
+        "gad_kappa": -0.14010416666666659,
+        "mdd_kappa": -0.011342592592592191,
+        "gap": -0.1287615740740744,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.06410256410256443
+      },
+      {
+        "edge": "MDD--OCD",
+        "disconnects": false,
+        "gad_kappa": -0.16354166666666659,
+        "mdd_kappa": 0.004282407407407614,
+        "gap": -0.1678240740740742,
+        "gad_rank": 1,
+        "mdd_rank": 3,
+        "flips_ordering": false,
+        "edge_curvature": -0.05769230769230749
+      },
+      {
+        "edge": "GAD--panic",
+        "disconnects": true,
+        "gad_kappa": null,
+        "mdd_kappa": null,
+        "gap": null,
+        "gad_rank": null,
+        "mdd_rank": null,
+        "flips_ordering": null
+      },
+      {
+        "edge": "GAD--somatic",
+        "disconnects": true,
+        "gad_kappa": null,
+        "mdd_kappa": null,
+        "gap": null,
+        "gad_rank": null,
+        "mdd_rank": null,
+        "flips_ordering": null
+      },
+      {
+        "edge": "GAD--social_anxiety",
+        "disconnects": true,
+        "gad_kappa": null,
+        "mdd_kappa": null,
+        "gap": null,
+        "gad_rank": null,
+        "mdd_rank": null,
+        "flips_ordering": null
+      },
+      {
+        "edge": "GAD--PTSD",
+        "disconnects": false,
+        "gad_kappa": -0.1459968602825743,
+        "mdd_kappa": -0.0350568235183617,
+        "gap": -0.1109400367642126,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": -0.22499999999999987
+      },
+      {
+        "edge": "GAD--ADHD",
+        "disconnects": false,
+        "gad_kappa": -0.19458398744113,
+        "mdd_kappa": -0.0150488400488398,
+        "gap": -0.1795351473922902,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.04166666666666663
+      },
+      {
+        "edge": "GAD--ASD",
+        "disconnects": false,
+        "gad_kappa": -0.17417582417582386,
+        "mdd_kappa": -0.005280830280830014,
+        "gap": -0.16889499389499385,
+        "gad_rank": 1,
+        "mdd_rank": 3,
+        "flips_ordering": false,
+        "edge_curvature": 0.0
+      },
+      {
+        "edge": "GAD--OCD",
+        "disconnects": false,
+        "gad_kappa": -0.17087912087912058,
+        "mdd_kappa": -0.01061097022635459,
+        "gap": -0.16026815065276598,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.0625
+      },
+      {
+        "edge": "insomnia--fatigue",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.020249835634450715,
+        "gap": -0.12225817718606208,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.3333333333333335
+      },
+      {
+        "edge": "insomnia--cortisol",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.020249835634450743,
+        "gap": -0.12225817718606205,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.33333333333333337
+      },
+      {
+        "edge": "panic--agoraphobia",
+        "disconnects": true,
+        "gad_kappa": null,
+        "mdd_kappa": null,
+        "gap": null,
+        "gad_rank": null,
+        "mdd_rank": null,
+        "flips_ordering": null
+      },
+      {
+        "edge": "SUD--psychosis",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.03163214990138044,
+        "gap": -0.11087586291913235,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": -0.08333333333333348
+      },
+      {
+        "edge": "SUD--suicide_ideation",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.026208086785009608,
+        "gap": -0.11629992603550318,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.11111111111111116
+      },
+      {
+        "edge": "SUD--PTSD",
+        "disconnects": false,
+        "gad_kappa": -0.1612580128205128,
+        "mdd_kappa": -0.03513313609467435,
+        "gap": -0.12612487672583844,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": -0.03333333333333344
+      },
+      {
+        "edge": "SUD--BIP",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.021893491124260114,
+        "gap": -0.12061452169625267,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.16666666666666652
+      },
+      {
+        "edge": "SUD--ADHD",
+        "disconnects": false,
+        "gad_kappa": -0.18064903846153843,
+        "mdd_kappa": -0.019058185404338995,
+        "gap": -0.16159085305719945,
+        "gad_rank": 1,
+        "mdd_rank": 3,
+        "flips_ordering": false,
+        "edge_curvature": -0.2777777777777779
+      },
+      {
+        "edge": "SUD--anhedonia",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.021893491124260114,
+        "gap": -0.12061452169625267,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.16666666666666674
+      },
+      {
+        "edge": "SUD--BPD",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.029413214990137826,
+        "gap": -0.11309479783037496,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.013888888888888729
+      },
+      {
+        "edge": "SUD--inflammation",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.03754930966469401,
+        "gap": -0.10495870315581877,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.0
+      },
+      {
+        "edge": "PTSD--dissociation",
+        "disconnects": false,
+        "gad_kappa": -0.13000801282051277,
+        "mdd_kappa": -0.018573307034845207,
+        "gap": -0.11143470578566757,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.15000000000000002
+      },
+      {
+        "edge": "PTSD--cortisol",
+        "disconnects": false,
+        "gad_kappa": -0.13301282051282048,
+        "mdd_kappa": -0.030859631821169995,
+        "gap": -0.10215318869165049,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.10000000000000009
+      },
+      {
+        "edge": "SCZ--psychosis",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": 0.0009533201840896505,
+        "gap": -0.14346133300460243,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.5
+      },
+      {
+        "edge": "ADHD--ASD",
+        "disconnects": false,
+        "gad_kappa": -0.1445913461538461,
+        "mdd_kappa": -0.009401709401709138,
+        "gap": -0.13518963675213697,
+        "gad_rank": 1,
+        "mdd_rank": 3,
+        "flips_ordering": false,
+        "edge_curvature": 0.41666666666666674
+      },
+      {
+        "edge": "dissociation--BPD",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.014086127547665746,
+        "gap": -0.12842188527284704,
+        "gad_rank": 1,
+        "mdd_rank": 3,
+        "flips_ordering": false,
+        "edge_curvature": 0.25
+      },
+      {
+        "edge": "BPD--suicide_ideation",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.00964825772518052,
+        "gap": -0.13285975509533227,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.41666666666666674
+      },
+      {
+        "edge": "fatigue--inflammation",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.013675213675213405,
+        "gap": -0.12883279914529938,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.3333333333333335
+      },
+      {
+        "edge": "social_anxiety--avoidance",
+        "disconnects": true,
+        "gad_kappa": null,
+        "mdd_kappa": null,
+        "gap": null,
+        "gad_rank": null,
+        "mdd_rank": null,
+        "flips_ordering": null
+      }
+    ],
+    "most_destabilizing": [
+      {
+        "edge": "PTSD--cortisol",
+        "disconnects": false,
+        "gad_kappa": -0.13301282051282048,
+        "mdd_kappa": -0.030859631821169995,
+        "gap": -0.10215318869165049,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.10000000000000009
+      },
+      {
+        "edge": "SUD--inflammation",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.03754930966469401,
+        "gap": -0.10495870315581877,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.0
+      },
+      {
+        "edge": "SUD--psychosis",
+        "disconnects": false,
+        "gad_kappa": -0.14250801282051279,
+        "mdd_kappa": -0.03163214990138044,
+        "gap": -0.11087586291913235,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": -0.08333333333333348
+      },
+      {
+        "edge": "GAD--PTSD",
+        "disconnects": false,
+        "gad_kappa": -0.1459968602825743,
+        "mdd_kappa": -0.0350568235183617,
+        "gap": -0.1109400367642126,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": -0.22499999999999987
+      },
+      {
+        "edge": "PTSD--dissociation",
+        "disconnects": false,
+        "gad_kappa": -0.13000801282051277,
+        "mdd_kappa": -0.018573307034845207,
+        "gap": -0.11143470578566757,
+        "gad_rank": 1,
+        "mdd_rank": 2,
+        "flips_ordering": false,
+        "edge_curvature": 0.15000000000000002
+      }
+    ]
+  },
+  "weighted_orc": {
+    "unweighted": {
+      "gad_kappa": -0.14250801282051279,
+      "mdd_kappa": -0.009401709401709138,
+      "gad_rank": 1,
+      "mdd_rank": 2
+    },
+    "weighted_distance": {
+      "gad_kappa": -0.18769890287024735,
+      "mdd_kappa": -0.12331432976862872,
+      "gad_rank": 4,
+      "mdd_rank": 8,
+      "gap": -0.06438457310161863,
+      "spearman_vs_unweighted": 0.037577257019753285
+    },
+    "weighted_mass": {
+      "gad_kappa": -0.19046018619148963,
+      "mdd_kappa": -0.05236860070623199,
+      "gad_rank": 1,
+      "mdd_rank": 2,
+      "gap": -0.13809158548525763,
+      "spearman_vs_unweighted": 0.9245982977228769
+    },
+    "per_node": [
+      {
+        "node": "ADHD",
+        "unweighted_kappa": 0.060185185185185154,
+        "unweighted_rank": 6,
+        "weighted_dist_kappa": 0.11120917336297886,
+        "weighted_dist_rank": 17,
+        "weighted_mass_kappa": 0.03924044365220861,
+        "weighted_mass_rank": 6
+      },
+      {
+        "node": "ASD",
+        "unweighted_kappa": 0.20833333333333337,
+        "unweighted_rank": 19,
+        "weighted_dist_kappa": 0.29406161289032834,
+        "weighted_dist_rank": 22,
+        "weighted_mass_kappa": 0.16176470588235292,
+        "weighted_mass_rank": 16
+      },
+      {
+        "node": "BIP",
+        "unweighted_kappa": 0.1314102564102565,
+        "unweighted_rank": 10,
+        "weighted_dist_kappa": -0.15281261484905373,
+        "weighted_dist_rank": 7,
+        "weighted_mass_kappa": 0.16965487643724325,
+        "weighted_mass_rank": 17
+      },
+      {
+        "node": "BPD",
+        "unweighted_kappa": 0.16292735042735043,
+        "unweighted_rank": 14,
+        "weighted_dist_kappa": 0.10816973037762814,
+        "weighted_dist_rank": 16,
+        "weighted_mass_kappa": 0.1325363086319371,
+        "weighted_mass_rank": 13
+      },
+      {
+        "node": "GAD",
+        "unweighted_kappa": -0.14250801282051279,
+        "unweighted_rank": 1,
+        "weighted_dist_kappa": -0.18769890287024735,
+        "weighted_dist_rank": 4,
+        "weighted_mass_kappa": -0.19046018619148963,
+        "weighted_mass_rank": 1
+      },
+      {
+        "node": "MDD",
+        "unweighted_kappa": -0.009401709401709138,
+        "unweighted_rank": 2,
+        "weighted_dist_kappa": -0.12331432976862872,
+        "weighted_dist_rank": 8,
+        "weighted_mass_kappa": -0.05236860070623199,
+        "weighted_mass_rank": 2
+      },
+      {
+        "node": "OCD",
+        "unweighted_kappa": 0.0024038461538462563,
+        "unweighted_rank": 3,
+        "weighted_dist_kappa": 0.06339828217519777,
+        "weighted_dist_rank": 14,
+        "weighted_mass_kappa": 0.06443870850880773,
+        "weighted_mass_rank": 7
+      },
+      {
+        "node": "PTSD",
+        "unweighted_kappa": 0.010641025641025736,
+        "unweighted_rank": 4,
+        "weighted_dist_kappa": -0.002204474990845795,
+        "weighted_dist_rank": 10,
+        "weighted_mass_kappa": 0.010370225142334988,
+        "weighted_mass_rank": 4
+      },
+      {
+        "node": "SCZ",
+        "unweighted_kappa": 0.18269230769230793,
+        "unweighted_rank": 15,
+        "weighted_dist_kappa": -0.4973902655410369,
+        "weighted_dist_rank": 2,
+        "weighted_mass_kappa": 0.1368778659169263,
+        "weighted_mass_rank": 14
+      },
+      {
+        "node": "SUD",
+        "unweighted_kappa": 0.02799145299145298,
+        "unweighted_rank": 5,
+        "weighted_dist_kappa": 0.16761023814783818,
+        "weighted_dist_rank": 19,
+        "weighted_mass_kappa": -0.036831968583787095,
+        "weighted_mass_rank": 3
+      },
+      {
+        "node": "agoraphobia",
+        "unweighted_kappa": 0.5,
+        "unweighted_rank": 22,
+        "weighted_dist_kappa": 0.0,
+        "weighted_dist_rank": 11,
+        "weighted_mass_kappa": 0.6666666666666667,
+        "weighted_mass_rank": 22
+      },
+      {
+        "node": "anhedonia",
+        "unweighted_kappa": 0.13141025641025667,
+        "unweighted_rank": 11,
+        "weighted_dist_kappa": 0.07963388547149775,
+        "weighted_dist_rank": 15,
+        "weighted_mass_kappa": 0.12402459934215143,
+        "weighted_mass_rank": 12
+      },
+      {
+        "node": "avoidance",
+        "unweighted_kappa": 0.5,
+        "unweighted_rank": 23,
+        "weighted_dist_kappa": 0.0,
+        "weighted_dist_rank": 12,
+        "weighted_mass_kappa": 0.6666666666666667,
+        "weighted_mass_rank": 23
+      },
+      {
+        "node": "cortisol",
+        "unweighted_kappa": 0.14871794871794874,
+        "unweighted_rank": 13,
+        "weighted_dist_kappa": 0.23817517271147215,
+        "weighted_dist_rank": 21,
+        "weighted_mass_kappa": 0.10849935101563475,
+        "weighted_mass_rank": 11
+      },
+      {
+        "node": "dissociation",
+        "unweighted_kappa": 0.2,
+        "unweighted_rank": 17,
+        "weighted_dist_kappa": 0.03032289120275594,
+        "weighted_dist_rank": 13,
+        "weighted_mass_kappa": 0.21068548387096775,
+        "weighted_mass_rank": 18
+      },
+      {
+        "node": "fatigue",
+        "unweighted_kappa": 0.2136752136752138,
+        "unweighted_rank": 20,
+        "weighted_dist_kappa": -0.1717908297228495,
+        "weighted_dist_rank": 5,
+        "weighted_mass_kappa": 0.23197593466546165,
+        "weighted_mass_rank": 20
+      },
+      {
+        "node": "inflammation",
+        "unweighted_kappa": 0.13247863247863265,
+        "unweighted_rank": 12,
+        "weighted_dist_kappa": 0.32553896646264435,
+        "weighted_dist_rank": 23,
+        "weighted_mass_kappa": 0.02554132549513614,
+        "weighted_mass_rank": 5
+      },
+      {
+        "node": "insomnia",
+        "unweighted_kappa": 0.21367521367521383,
+        "unweighted_rank": 21,
+        "weighted_dist_kappa": -0.0060755847635288,
+        "weighted_dist_rank": 9,
+        "weighted_mass_kappa": 0.2128476557808584,
+        "weighted_mass_rank": 19
+      },
+      {
+        "node": "panic",
+        "unweighted_kappa": 0.0625,
+        "unweighted_rank": 7,
+        "weighted_dist_kappa": -0.21989424653152612,
+        "weighted_dist_rank": 3,
+        "weighted_mass_kappa": 0.07843137254901966,
+        "weighted_mass_rank": 9
+      },
+      {
+        "node": "psychosis",
+        "unweighted_kappa": 0.20833333333333326,
+        "unweighted_rank": 18,
+        "weighted_dist_kappa": -0.637544705486752,
+        "weighted_dist_rank": 1,
+        "weighted_mass_kappa": 0.2670454545454549,
+        "weighted_mass_rank": 21
+      },
+      {
+        "node": "social_anxiety",
+        "unweighted_kappa": 0.0625,
+        "unweighted_rank": 8,
+        "weighted_dist_kappa": -0.16497516092919107,
+        "weighted_dist_rank": 6,
+        "weighted_mass_kappa": 0.06862745098039225,
+        "weighted_mass_rank": 8
+      },
+      {
+        "node": "somatic",
+        "unweighted_kappa": 0.125,
+        "unweighted_rank": 9,
+        "weighted_dist_kappa": 0.15483937067690212,
+        "weighted_dist_rank": 18,
+        "weighted_mass_kappa": 0.0980392156862746,
+        "weighted_mass_rank": 10
+      },
+      {
+        "node": "suicide_ideation",
+        "unweighted_kappa": 0.18447293447293456,
+        "unweighted_rank": 16,
+        "weighted_dist_kappa": 0.18389345995501183,
+        "weighted_dist_rank": 20,
+        "weighted_mass_kappa": 0.13866117244646659,
+        "weighted_mass_rank": 15
+      }
+    ]
+  }
+}

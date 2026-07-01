@@ -1,0 +1,190 @@
+{
+  "paired_bootstrap": {
+    "mean_diff": -0.079681051844866,
+    "ci_lower": -0.20092006257631267,
+    "ci_upper": 0.03843343528395945,
+    "std_diff": 0.06282967106211337,
+    "frac_gad_below_mdd": 0.9,
+    "n_trials": 1000,
+    "gad_mean": -0.07907741135633033,
+    "mdd_mean": 0.0006036404885356836
+  },
+  "orc_degree_correlation": {
+    "orc_degree": {
+      "pearson_r": -0.5675477009787989,
+      "pearson_p": 0.0047337568630412726,
+      "spearman_rho": -0.4665500109713522,
+      "spearman_p": 0.02482168742638671
+    },
+    "forman_degree": {
+      "pearson_r": -0.6684617624532152,
+      "pearson_p": 0.0004892003176183793,
+      "spearman_rho": -0.6492610288000688,
+      "spearman_p": 0.0008017568593974826
+    },
+    "per_node": [
+      {
+        "node": "ADHD",
+        "degree": 3,
+        "orc_kappa": 0.060185185185185154,
+        "forman_mean": -5.333333333333333
+      },
+      {
+        "node": "ASD",
+        "degree": 2,
+        "orc_kappa": 0.20833333333333337,
+        "forman_mean": -3.5
+      },
+      {
+        "node": "BIP",
+        "degree": 2,
+        "orc_kappa": 0.1314102564102565,
+        "forman_mean": -9.0
+      },
+      {
+        "node": "BPD",
+        "degree": 4,
+        "orc_kappa": 0.16292735042735043,
+        "forman_mean": -6.75
+      },
+      {
+        "node": "GAD",
+        "degree": 8,
+        "orc_kappa": -0.14250801282051279,
+        "forman_mean": -7.75
+      },
+      {
+        "node": "MDD",
+        "degree": 13,
+        "orc_kappa": -0.009401709401709138,
+        "forman_mean": -12.76923076923077
+      },
+      {
+        "node": "OCD",
+        "degree": 2,
+        "orc_kappa": 0.0024038461538462563,
+        "forman_mean": -8.5
+      },
+      {
+        "node": "PTSD",
+        "degree": 5,
+        "orc_kappa": 0.010641025641025736,
+        "forman_mean": -8.0
+      },
+      {
+        "node": "SCZ",
+        "degree": 2,
+        "orc_kappa": 0.18269230769230793,
+        "forman_mean": -5.5
+      },
+      {
+        "node": "SUD",
+        "degree": 9,
+        "orc_kappa": 0.02799145299145298,
+        "forman_mean": -9.11111111111111
+      },
+      {
+        "node": "agoraphobia",
+        "degree": 1,
+        "orc_kappa": 0.5,
+        "forman_mean": 1.0
+      },
+      {
+        "node": "anhedonia",
+        "degree": 2,
+        "orc_kappa": 0.13141025641025667,
+        "forman_mean": -9.0
+      },
+      {
+        "node": "avoidance",
+        "degree": 1,
+        "orc_kappa": 0.5,
+        "forman_mean": 1.0
+      },
+      {
+        "node": "cortisol",
+        "degree": 3,
+        "orc_kappa": 0.14871794871794874,
+        "forman_mean": -6.0
+      },
+      {
+        "node": "dissociation",
+        "degree": 2,
+        "orc_kappa": 0.2,
+        "forman_mean": -2.5
+      },
+      {
+        "node": "fatigue",
+        "degree": 3,
+        "orc_kappa": 0.2136752136752138,
+        "forman_mean": -5.333333333333333
+      },
+      {
+        "node": "inflammation",
+        "degree": 3,
+        "orc_kappa": 0.13247863247863265,
+        "forman_mean": -7.333333333333333
+      },
+      {
+        "node": "insomnia",
+        "degree": 3,
+        "orc_kappa": 0.21367521367521383,
+        "forman_mean": -5.333333333333333
+      },
+      {
+        "node": "panic",
+        "degree": 2,
+        "orc_kappa": 0.0625,
+        "forman_mean": -2.5
+      },
+      {
+        "node": "psychosis",
+        "degree": 2,
+        "orc_kappa": 0.20833333333333326,
+        "forman_mean": -3.5
+      },
+      {
+        "node": "social_anxiety",
+        "degree": 2,
+        "orc_kappa": 0.0625,
+        "forman_mean": -2.5
+      },
+      {
+        "node": "somatic",
+        "degree": 1,
+        "orc_kappa": 0.125,
+        "forman_mean": -5.0
+      },
+      {
+        "node": "suicide_ideation",
+        "degree": 3,
+        "orc_kappa": 0.18447293447293456,
+        "forman_mean": -7.666666666666667
+      }
+    ]
+  },
+  "modularity": {
+    "louvain": {
+      "modularity": 0.33234714003944776,
+      "coverage": 0.6923076923076923,
+      "n_communities": 4
+    },
+    "ricci_flow": {
+      "modularity": 0.28566732412886253,
+      "coverage": 0.8461538461538461,
+      "n_communities": 4
+    }
+  },
+  "two_sided_nulls": {
+    "er": {
+      "z": 1.76,
+      "p_one_sided": 0.0254,
+      "p_two_sided": 0.07840780657496538
+    },
+    "cm": {
+      "z": 1.96,
+      "p_one_sided": 0.0217,
+      "p_two_sided": 0.04999579029644097
+    }
+  }
+}
