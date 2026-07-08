@@ -1,0 +1,110 @@
+{
+  "data_source": "ENIGMA cortical thickness spatial correlations (Wannan et al. 2024)",
+  "graph_type": "cortical similarity (r_cortical)",
+  "timestamp": "20260702_141813",
+  "n_nodes": 9,
+  "n_edges": 16,
+  "density": 0.444,
+  "n_within": 4,
+  "n_cross": 12,
+  "within_mean": 0.5842,
+  "cross_mean": 0.3818,
+  "within_std": 0.0582,
+  "cross_std": 0.2871,
+  "U": 8.0,
+  "p": 0.058242,
+  "cohens_d": 0.977,
+  "node_curvature": {
+    "Epilepsy": 0,
+    "ASD": 0.0413,
+    "OCD": 0.2473,
+    "SCZ": 0.4505,
+    "PTSD": 0.4892,
+    "AN": 0.5011,
+    "BD": 0.5301,
+    "MDD": 0.5522,
+    "ADHD": 0.6071
+  },
+  "edges": {
+    "OCD-ASD": {
+      "kappa": -0.5246,
+      "r_cortical": 0.33,
+      "type": "cross"
+    },
+    "SCZ-OCD": {
+      "kappa": 0.299,
+      "r_cortical": 0.28,
+      "type": "cross"
+    },
+    "OCD-PTSD": {
+      "kappa": 0.3697,
+      "r_cortical": 0.27,
+      "type": "cross"
+    },
+    "SCZ-PTSD": {
+      "kappa": 0.3905,
+      "r_cortical": 0.24,
+      "type": "cross"
+    },
+    "BD-OCD": {
+      "kappa": 0.402,
+      "r_cortical": 0.35,
+      "type": "cross"
+    },
+    "MDD-OCD": {
+      "kappa": 0.4535,
+      "r_cortical": 0.41,
+      "type": "cross"
+    },
+    "BD-AN": {
+      "kappa": 0.4549,
+      "r_cortical": 0.31,
+      "type": "cross"
+    },
+    "OCD-AN": {
+      "kappa": 0.4842,
+      "r_cortical": 0.45,
+      "type": "within"
+    },
+    "SCZ-MDD": {
+      "kappa": 0.4951,
+      "r_cortical": 0.32,
+      "type": "cross"
+    },
+    "AN-PTSD": {
+      "kappa": 0.5249,
+      "r_cortical": 0.34,
+      "type": "cross"
+    },
+    "BD-PTSD": {
+      "kappa": 0.5325,
+      "r_cortical": 0.29,
+      "type": "cross"
+    },
+    "MDD-AN": {
+      "kappa": 0.5403,
+      "r_cortical": 0.38,
+      "type": "cross"
+    },
+    "ASD-ADHD": {
+      "kappa": 0.6071,
+      "r_cortical": 0.42,
+      "type": "within"
+    },
+    "SCZ-BD": {
+      "kappa": 0.6174,
+      "r_cortical": 0.57,
+      "type": "within"
+    },
+    "MDD-PTSD": {
+      "kappa": 0.6282,
+      "r_cortical": 0.52,
+      "type": "within"
+    },
+    "BD-MDD": {
+      "kappa": 0.6439,
+      "r_cortical": 0.63,
+      "type": "cross"
+    }
+  }
+}

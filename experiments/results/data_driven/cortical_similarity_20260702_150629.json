@@ -1,0 +1,82 @@
+{
+  "data_source": "ENIGMA cortical thickness spatial correlations (Patel et al. 2021, JAMA Psychiatry)",
+  "graph_type": "cortical similarity (r_cortical)",
+  "timestamp": "20260702_150629",
+  "n_nodes": 6,
+  "n_edges": 11,
+  "density": 0.733,
+  "n_within": 2,
+  "n_cross": 9,
+  "within_mean": 0.4291,
+  "cross_mean": 0.4653,
+  "within_std": 0.0923,
+  "cross_std": 0.0916,
+  "U": 11.0,
+  "p": 0.727273,
+  "cohens_d": -0.394,
+  "node_curvature": {
+    "ASD": 0.393,
+    "ADHD": 0.4051,
+    "OCD": 0.4323,
+    "BD": 0.4587,
+    "MDD": 0.4841,
+    "SCZ": 0.5313
+  },
+  "edges": {
+    "ASD-OCD": {
+      "kappa": 0.2638,
+      "r_cortical": 0.31,
+      "type": "cross"
+    },
+    "ADHD-ASD": {
+      "kappa": 0.3368,
+      "r_cortical": 0.28,
+      "type": "within"
+    },
+    "BD-OCD": {
+      "kappa": 0.41,
+      "r_cortical": 0.31,
+      "type": "cross"
+    },
+    "ADHD-MDD": {
+      "kappa": 0.4194,
+      "r_cortical": 0.39,
+      "type": "cross"
+    },
+    "BD-MDD": {
+      "kappa": 0.4447,
+      "r_cortical": 0.33,
+      "type": "cross"
+    },
+    "ADHD-SCZ": {
+      "kappa": 0.4593,
+      "r_cortical": 0.41,
+      "type": "cross"
+    },
+    "MDD-OCD": {
+      "kappa": 0.5153,
+      "r_cortical": 0.37,
+      "type": "cross"
+    },
+    "BD-SCZ": {
+      "kappa": 0.5214,
+      "r_cortical": 0.53,
+      "type": "within"
+    },
+    "OCD-SCZ": {
+      "kappa": 0.54,
+      "r_cortical": 0.43,
+      "type": "cross"
+    },
+    "MDD-SCZ": {
+      "kappa": 0.5572,
+      "r_cortical": 0.54,
+      "type": "cross"
+    },
+    "ASD-SCZ": {
+      "kappa": 0.5785,
+      "r_cortical": 0.63,
+      "type": "cross"
+    }
+  }
+}

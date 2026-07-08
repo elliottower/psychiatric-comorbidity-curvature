@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "timestamp": "20260702_133240",
+    "graph_type": "ldsc_genetic_correlations",
+    "sources": [
+      "Lee2019_CDG2_Cell",
+      "Grotzinger2022_NatGenet"
+    ],
+    "n_disorders": 11,
+    "n_edges_sig": 36,
+    "n_edges_all": 55
+  },
+  "orc_per_edge": {
+    "BD-OCD": {
+      "kappa": -0.2356,
+      "rg": 0.13,
+      "weight": 0.13,
+      "edge_type": "cross_domain"
+    },
+    "PTSD-OCD": {
+      "kappa": -0.1416,
+      "rg": 0.15,
+      "weight": 0.15,
+      "edge_type": "cross_domain"
+    },
+    "SCZ-OCD": {
+      "kappa": -0.1125,
+      "rg": 0.14,
+      "weight": 0.14,
+      "edge_type": "cross_domain"
+    },
+    "MDD-OCD": {
+      "kappa": 0.0866,
+      "rg": 0.21,
+      "weight": 0.21,
+      "edge_type": "cross_domain"
+    },
+    "SCZ-ALCH": {
+      "kappa": 0.1237,
+      "rg": 0.1,
+      "weight": 0.1,
+      "edge_type": "cross_domain"
+    },
+    "ADHD-SCZ": {
+      "kappa": 0.1841,
+      "rg": 0.12,
+      "weight": 0.12,
+      "edge_type": "cross_domain"
+    },
+    "ASD-SCZ": {
+      "kappa": 0.1925,
+      "rg": 0.16,
+      "weight": 0.16,
+      "edge_type": "cross_domain"
+    },
+    "SCZ-PTSD": {
+      "kappa": 0.2133,
+      "rg": 0.13,
+      "weight": 0.13,
+      "edge_type": "cross_domain"
+    },
+    "PTSD-AN": {
+      "kappa": 0.2338,
+      "rg": 0.15,
+      "weight": 0.15,
+      "edge_type": "cross_domain"
+    },
+    "ASD-MDD": {
+      "kappa": 0.289,
+      "rg": 0.19,
+      "weight": 0.19,
+      "edge_type": "cross_domain"
+    },
+    "ANX-OCD": {
+      "kappa": 0.3204,
+      "rg": 0.35,
+      "weight": 0.35,
+      "edge_type": "cross_domain"
+    },
+    "SCZ-AN": {
+      "kappa": 0.3298,
+      "rg": 0.19,
+      "weight": 0.19,
+      "edge_type": "cross_domain"
+    },
+    "ASD-ANX": {
+      "kappa": 0.341,
+      "rg": 0.22,
+      "weight": 0.22,
+      "edge_type": "cross_domain"
+    },
+    "MDD-AN": {
+      "kappa": 0.3517,
+      "rg": 0.21,
+      "weight": 0.21,
+      "edge_type": "cross_domain"
+    },
+    "ADHD-BD": {
+      "kappa": 0.3537,
+      "rg": 0.16,
+      "weight": 0.16,
+      "edge_type": "cross_domain"
+    },
+    "OCD-TS": {
+      "kappa": 0.3673,
+      "rg": 0.41,
+      "weight": 0.41,
+      "edge_type": "cross_domain"
+    },
+    "BD-PTSD": {
+      "kappa": 0.3833,
+      "rg": 0.19,
+      "weight": 0.19,
+      "edge_type": "cross_domain"
+    },
+    "AN-OCD": {
+      "kappa": 0.4229,
+      "rg": 0.49,
+      "weight": 0.49,
+      "edge_type": "within_compulsive"
+    },
+    "ANX-AN": {
+      "kappa": 0.4273,
+      "rg": 0.28,
+      "weight": 0.28,
+      "edge_type": "cross_domain"
+    },
+    "SCZ-ANX": {
+      "kappa": 0.4377,
+      "rg": 0.24,
+      "weight": 0.24,
+      "edge_type": "cross_domain"
+    },
+    "ADHD-ALCH": {
+      "kappa": 0.4752,
+      "rg": 0.4,
+      "weight": 0.4,
+      "edge_type": "cross_domain"
+    },
+    "ADHD-PTSD": {
+      "kappa": 0.4859,
+      "rg": 0.4,
+      "weight": 0.4,
+      "edge_type": "cross_domain"
+    },
+    "BD-ANX": {
+      "kappa": 0.4922,
+      "rg": 0.33,
+      "weight": 0.33,
+      "edge_type": "cross_domain"
+    },
+    "MDD-SCZ": {
+      "kappa": 0.4945,
+      "rg": 0.32,
+      "weight": 0.32,
+      "edge_type": "cross_domain"
+    },
+    "BD-MDD": {
+      "kappa": 0.5022,
+      "rg": 0.35,
+      "weight": 0.35,
+      "edge_type": "cross_domain"
+    },
+    "ADHD-ASD": {
+      "kappa": 0.5224,
+      "rg": 0.36,
+      "weight": 0.36,
+      "edge_type": "within_neurodev"
+    },
+    "PTSD-ALCH": {
+      "kappa": 0.5245,
+      "rg": 0.55,
+      "weight": 0.55,
+      "edge_type": "cross_domain"
+    },
+    "ANX-ALCH": {
+      "kappa": 0.5259,
+      "rg": 0.41,
+      "weight": 0.41,
+      "edge_type": "cross_domain"
+    },
+    "BD-ALCH": {
+      "kappa": 0.5263,
+      "rg": 0.27,
+      "weight": 0.27,
+      "edge_type": "cross_domain"
+    },
+    "ADHD-ANX": {
+      "kappa": 0.5461,
+      "rg": 0.56,
+      "weight": 0.56,
+      "edge_type": "cross_domain"
+    },
+    "MDD-ALCH": {
+      "kappa": 0.5544,
+      "rg": 0.5,
+      "weight": 0.5,
+      "edge_type": "cross_domain"
+    },
+    "ADHD-MDD": {
+      "kappa": 0.565,
+      "rg": 0.44,
+      "weight": 0.44,
+      "edge_type": "cross_domain"
+    },
+    "ANX-PTSD": {
+      "kappa": 0.5812,
+      "rg": 0.72,
+      "weight": 0.72,
+      "edge_type": "within_internal"
+    },
+    "MDD-PTSD": {
+      "kappa": 0.5847,
+      "rg": 0.71,
+      "weight": 0.71,
+      "edge_type": "within_internal"
+    },
+    "MDD-ANX": {
+      "kappa": 0.5952,
+      "rg": 0.81,
+      "weight": 0.81,
+      "edge_type": "within_internal"
+    },
+    "BD-SCZ": {
+      "kappa": 0.6022,
+      "rg": 0.68,
+      "weight": 0.68,
+      "edge_type": "within_psychotic"
+    }
+  },
+  "degree_curvature": {
+    "r": 0.0716,
+    "p": 0.834202,
+    "n_nodes": 11
+  },
+  "edge_null": {
+    "null_type": "weight_permutation",
+    "n_perms": 500,
+    "n_tested": 36,
+    "n_bottleneck": 0,
+    "n_redundant": 0,
+    "bottleneck_edges": {},
+    "redundant_edges": {}
+  },
+  "cross_vs_within": {
+    "cross_domain_mean": 0.3279,
+    "within_domain_mean": 0.5514,
+    "U": 19.0,
+    "p": 0.001264,
+    "n_cross": 30,
+    "n_within": 6
+  },
+  "node_curvature": {
+    "OCD": 0.1011,
+    "SCZ": 0.2739,
+    "ASD": 0.3362,
+    "AN": 0.3531,
+    "PTSD": 0.3581,
+    "TS": 0.3673,
+    "BD": 0.3749,
+    "MDD": 0.447,
+    "ADHD": 0.4475,
+    "ALCH": 0.455,
+    "ANX": 0.4741
+  },
+  "depression_rank": {
+    "position": 8,
+    "total": 11,
+    "curvature": 0.447
+  }
+}

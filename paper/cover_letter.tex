@@ -1,0 +1,34 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\signature{Elliot Tower \\ Independent researcher \\ \texttt{elliot@elliottower.ai}}
+
+\begin{document}
+
+\begin{letter}{Editorial Board \\ \emph{GigaScience} \\ Oxford University Press}
+
+\opening{Dear Editors,}
+
+I am submitting the manuscript ``Edge-Level Discrete Curvature Decomposes Bridge Structure Across Disease Networks'' for consideration as a Research Article in \emph{GigaScience}.
+
+Ollivier-Ricci curvature has been applied to brain, cancer, and autism networks, but every biomedical application to date reports curvature at the node level without a null model separating curvature from degree. We show that node-level curvature is a degree artifact ($r = -0.71$) and present an edge-level analysis with degree-preserving and weight-permutation nulls that recovers genuine bridge structure. The method replicates across seven independent graphs spanning five data types and three disease domains: in every graph, the lowest-curvature node is a recognized diagnostic bridge entity. Applied to a psychiatric mechanism network, disconfirmed claims occupy significantly lower-curvature positions than higher-verdict claims ($p = 0.007$, $d = 0.89$), and among five edge-level methods, only curvature achieves this discrimination.
+
+\emph{GigaScience} is a good fit for three reasons:
+
+\begin{enumerate}
+\item \textbf{Data-intensive, cross-domain scope.} The analysis spans seven graphs constructed from genetic correlations, shared GWAS loci, epidemiological odds ratios, hazard ratios, and literature curation across psychiatric, autoimmune, and cardiometabolic disease. This breadth suits a venue that values large-scale, multi-data-type analyses.
+
+\item \textbf{Methodological contribution with immediate reuse.} The degree-preserving and weight-permutation null models are portable to any biomedical network where curvature is computed. The paper provides a concrete correction for a pervasive confound in an active area of network biology.
+
+\item \textbf{Open data and open code.} All analysis scripts, the mechanism catalog, precomputed curvatures, permutation distributions, and MR results are available under an MIT license at \url{https://github.com/elliottower/psychiatric-comorbidity-curvature}.
+\end{enumerate}
+
+I used AI assistants (Claude Code by Anthropic; Perplexity AI) for text editing, code drafting/debugging, and literature review assistance in constructing the mechanism catalog. I reviewed and verified all outputs and take full responsibility for the content. Full details are disclosed in the manuscript.
+
+I confirm that this manuscript has not been published previously and is not under consideration at another journal. I have no competing interests and this work received no external funding.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

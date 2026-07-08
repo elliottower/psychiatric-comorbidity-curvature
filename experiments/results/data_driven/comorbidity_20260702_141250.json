@@ -1,0 +1,341 @@
+{
+  "data_source": "Epidemiological comorbidity surveys (odds ratios)",
+  "graph_type": "comorbidity (log OR)",
+  "timestamp": "20260702_141250",
+  "n_nodes": 10,
+  "n_edges": 44,
+  "density": 0.978,
+  "n_within": 6,
+  "n_cross": 38,
+  "within_mean": 0.562,
+  "cross_mean": 0.4789,
+  "within_std": 0.0055,
+  "cross_std": 0.0755,
+  "U": 19.0,
+  "p": 0.000349,
+  "cohens_d": 1.554,
+  "node_curvature": {
+    "SCZ": 0.4491,
+    "AN": 0.4628,
+    "SUD": 0.468,
+    "ASD": 0.4804,
+    "PTSD": 0.4835,
+    "ADHD": 0.4882,
+    "OCD": 0.4944,
+    "ANX": 0.5015,
+    "MDD": 0.5325,
+    "BD": 0.5385
+  },
+  "edge_zscores": {
+    "MDD-ANX": 0.724,
+    "MDD-PTSD": 0.92,
+    "MDD-BD": 1.07,
+    "MDD-ADHD": 0.353,
+    "MDD-ASD": 0.72,
+    "MDD-AN": 0.691,
+    "MDD-OCD": 0.162,
+    "MDD-SCZ": -0.005,
+    "MDD-SUD": -0.133,
+    "ANX-PTSD": 0.813,
+    "ANX-BD": 0.521,
+    "ANX-ADHD": -0.168,
+    "ANX-ASD": 0.617,
+    "ANX-AN": 0.61,
+    "ANX-OCD": 0.839,
+    "ANX-SCZ": -2.496,
+    "ANX-SUD": -0.598,
+    "PTSD-BD": 0.506,
+    "PTSD-ADHD": -0.057,
+    "PTSD-ASD": -1.355,
+    "PTSD-AN": -1.407,
+    "PTSD-OCD": -0.057,
+    "PTSD-SCZ": -1.086,
+    "PTSD-SUD": 0.444,
+    "BD-ADHD": 0.769,
+    "BD-ASD": -0.078,
+    "BD-AN": 0.052,
+    "BD-OCD": 0.286,
+    "BD-SCZ": 0.849,
+    "BD-SUD": 0.832,
+    "ADHD-ASD": 0.943,
+    "ADHD-AN": -1.673,
+    "ADHD-OCD": -0.188,
+    "ADHD-SCZ": -1.561,
+    "ADHD-SUD": 0.552,
+    "ASD-AN": 0.053,
+    "ASD-OCD": 0.228,
+    "ASD-SCZ": -0.643,
+    "AN-OCD": 0.718,
+    "AN-SCZ": -1.935,
+    "AN-SUD": -0.746,
+    "OCD-SCZ": 0.32,
+    "OCD-SUD": -1.851,
+    "SCZ-SUD": 1.112
+  },
+  "edges": {
+    "OCD-SUD": {
+      "kappa": 0.294,
+      "or": 1.4,
+      "type": "cross",
+      "z": -1.851
+    },
+    "ANX-SCZ": {
+      "kappa": 0.311,
+      "or": 1.5,
+      "type": "cross",
+      "z": -2.496
+    },
+    "AN-SCZ": {
+      "kappa": 0.3524,
+      "or": 1.5,
+      "type": "cross",
+      "z": -1.935
+    },
+    "PTSD-ASD": {
+      "kappa": 0.3628,
+      "or": 1.6,
+      "type": "cross",
+      "z": -1.355
+    },
+    "ADHD-SCZ": {
+      "kappa": 0.3736,
+      "or": 1.5,
+      "type": "cross",
+      "z": -1.561
+    },
+    "ADHD-AN": {
+      "kappa": 0.3814,
+      "or": 1.6,
+      "type": "cross",
+      "z": -1.673
+    },
+    "PTSD-AN": {
+      "kappa": 0.3859,
+      "or": 1.4,
+      "type": "cross",
+      "z": -1.407
+    },
+    "AN-SUD": {
+      "kappa": 0.4066,
+      "or": 1.8,
+      "type": "cross",
+      "z": -0.746
+    },
+    "ASD-SCZ": {
+      "kappa": 0.4103,
+      "or": 2.0,
+      "type": "cross",
+      "z": -0.643
+    },
+    "ANX-SUD": {
+      "kappa": 0.4186,
+      "or": 1.8,
+      "type": "cross",
+      "z": -0.598
+    },
+    "PTSD-SCZ": {
+      "kappa": 0.421,
+      "or": 1.8,
+      "type": "cross",
+      "z": -1.086
+    },
+    "MDD-SUD": {
+      "kappa": 0.4533,
+      "or": 2.1,
+      "type": "cross",
+      "z": -0.133
+    },
+    "BD-ASD": {
+      "kappa": 0.47,
+      "or": 2.1,
+      "type": "cross",
+      "z": -0.078
+    },
+    "ASD-AN": {
+      "kappa": 0.4756,
+      "or": 2.2,
+      "type": "cross",
+      "z": 0.053
+    },
+    "ADHD-OCD": {
+      "kappa": 0.4783,
+      "or": 2.1,
+      "type": "cross",
+      "z": -0.188
+    },
+    "ANX-ADHD": {
+      "kappa": 0.4871,
+      "or": 3.5,
+      "type": "cross",
+      "z": -0.168
+    },
+    "ASD-OCD": {
+      "kappa": 0.4921,
+      "or": 2.5,
+      "type": "cross",
+      "z": 0.228
+    },
+    "PTSD-OCD": {
+      "kappa": 0.4975,
+      "or": 2.0,
+      "type": "cross",
+      "z": -0.057
+    },
+    "PTSD-ADHD": {
+      "kappa": 0.4983,
+      "or": 2.2,
+      "type": "cross",
+      "z": -0.057
+    },
+    "MDD-SCZ": {
+      "kappa": 0.5006,
+      "or": 2.4,
+      "type": "cross",
+      "z": -0.005
+    },
+    "BD-AN": {
+      "kappa": 0.5048,
+      "or": 2.3,
+      "type": "cross",
+      "z": 0.052
+    },
+    "MDD-OCD": {
+      "kappa": 0.5152,
+      "or": 2.7,
+      "type": "cross",
+      "z": 0.162
+    },
+    "PTSD-SUD": {
+      "kappa": 0.5164,
+      "or": 2.8,
+      "type": "cross",
+      "z": 0.444
+    },
+    "BD-OCD": {
+      "kappa": 0.5245,
+      "or": 3.2,
+      "type": "cross",
+      "z": 0.286
+    },
+    "ADHD-SUD": {
+      "kappa": 0.5254,
+      "or": 3.0,
+      "type": "cross",
+      "z": 0.552
+    },
+    "MDD-ADHD": {
+      "kappa": 0.5261,
+      "or": 2.7,
+      "type": "cross",
+      "z": 0.353
+    },
+    "OCD-SCZ": {
+      "kappa": 0.5268,
+      "or": 2.3,
+      "type": "cross",
+      "z": 0.32
+    },
+    "ANX-ASD": {
+      "kappa": 0.5313,
+      "or": 3.0,
+      "type": "cross",
+      "z": 0.617
+    },
+    "MDD-ASD": {
+      "kappa": 0.5393,
+      "or": 3.5,
+      "type": "cross",
+      "z": 0.72
+    },
+    "PTSD-BD": {
+      "kappa": 0.5397,
+      "or": 2.9,
+      "type": "cross",
+      "z": 0.506
+    },
+    "ANX-BD": {
+      "kappa": 0.543,
+      "or": 3.4,
+      "type": "cross",
+      "z": 0.521
+    },
+    "ANX-AN": {
+      "kappa": 0.5467,
+      "or": 2.8,
+      "type": "cross",
+      "z": 0.61
+    },
+    "BD-SUD": {
+      "kappa": 0.552,
+      "or": 3.8,
+      "type": "cross",
+      "z": 0.832
+    },
+    "MDD-AN": {
+      "kappa": 0.5532,
+      "or": 3.1,
+      "type": "cross",
+      "z": 0.691
+    },
+    "MDD-ANX": {
+      "kappa": 0.5533,
+      "or": 5.2,
+      "type": "within",
+      "z": 0.724
+    },
+    "AN-OCD": {
+      "kappa": 0.5589,
+      "or": 3.5,
+      "type": "within",
+      "z": 0.718
+    },
+    "ANX-PTSD": {
+      "kappa": 0.5604,
+      "or": 4.1,
+      "type": "within",
+      "z": 0.813
+    },
+    "BD-ADHD": {
+      "kappa": 0.5619,
+      "or": 4.0,
+      "type": "cross",
+      "z": 0.769
+    },
+    "ADHD-ASD": {
+      "kappa": 0.562,
+      "or": 4.7,
+      "type": "within",
+      "z": 0.943
+    },
+    "ANX-OCD": {
+      "kappa": 0.5623,
+      "or": 5.9,
+      "type": "cross",
+      "z": 0.839
+    },
+    "BD-SCZ": {
+      "kappa": 0.5684,
+      "or": 4.5,
+      "type": "within",
+      "z": 0.849
+    },
+    "MDD-PTSD": {
+      "kappa": 0.5693,
+      "or": 3.7,
+      "type": "within",
+      "z": 0.92
+    },
+    "SCZ-SUD": {
+      "kappa": 0.5777,
+      "or": 4.6,
+      "type": "cross",
+      "z": 1.112
+    },
+    "MDD-BD": {
+      "kappa": 0.5824,
+      "or": 6.1,
+      "type": "cross",
+      "z": 1.07
+    }
+  }
+}

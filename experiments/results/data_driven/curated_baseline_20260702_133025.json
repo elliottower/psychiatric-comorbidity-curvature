@@ -1,0 +1,725 @@
+{
+  "metadata": {
+    "graph_name": "curated_baseline",
+    "n_nodes": 130,
+    "n_edges": 218,
+    "weighted": false,
+    "alpha": 0.5,
+    "n_perms": 200,
+    "timestamp": "20260702_133025"
+  },
+  "edge_features_summary": {
+    "orc": {
+      "mean": 0.055478771992533656,
+      "std": 0.3013259998056432,
+      "min": -0.8674242424242413,
+      "max": 1.0
+    },
+    "jaccard": {
+      "mean": 0.12874192259432984,
+      "std": 0.09566631156117587,
+      "min": 0.0,
+      "max": 0.7142857142857143
+    },
+    "betweenness": {
+      "mean": 0.012142149863506809,
+      "std": 0.021103059121248748,
+      "min": 0.00011926058437686345,
+      "max": 0.16249254621347645
+    },
+    "clustering": {
+      "mean": 0.7924048683222995,
+      "std": 0.3444788272203855,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "spectral_gap": {
+      "mean": 2.5463830840026528e-18,
+      "std": 2.6462789262159132e-17,
+      "min": 0.0,
+      "max": 2.7755575615628914e-16
+    }
+  },
+  "degree_curvature": {
+    "r": -0.5691584726860223,
+    "p": 0.00010307946913179986,
+    "n_nodes": 41
+  },
+  "edge_null": {
+    "n_tested": 118,
+    "n_bottleneck": 5,
+    "n_redundant": 36,
+    "bottleneck_edges": {
+      "('Depression', 'depression_convergence')": {
+        "kappa_obs": -0.8674242424242413,
+        "z": -4.406405885879611,
+        "mean_null": -0.40521452846219164,
+        "std_null": 0.10489494747708267,
+        "n_samples": 107
+      },
+      "('Depression', 'metabolic')": {
+        "kappa_obs": -0.7803030303030298,
+        "z": -3.649862900188003,
+        "mean_null": -0.39902115211521105,
+        "std_null": 0.10446471240554792,
+        "n_samples": 101
+      },
+      "('Depression', 'circadian')": {
+        "kappa_obs": -0.6749999999999996,
+        "z": -2.759189895618913,
+        "mean_null": -0.41028645833333305,
+        "std_null": 0.09593886310144259,
+        "n_samples": 96
+      },
+      "('Bipolar', 'metabolic')": {
+        "kappa_obs": -0.6931818181818179,
+        "z": -2.652763974491865,
+        "mean_null": -0.430681818181818,
+        "std_null": 0.09895339446860574,
+        "n_samples": 40
+      },
+      "('Depression', 'IL6_inflammation')": {
+        "kappa_obs": -0.5714285714285712,
+        "z": -2.0035701288555026,
+        "mean_null": -0.39157383136740914,
+        "std_null": 0.08976712992017918,
+        "n_samples": 109
+      }
+    },
+    "redundant_edges": {
+      "('Autoimmune', 'autoimmune')": {
+        "kappa_obs": 0.5833333333333333,
+        "z": 7.426139036107964,
+        "mean_null": -0.3833333333333332,
+        "std_null": 0.1301708279317776,
+        "n_samples": 10
+      },
+      "('Thyroid-Metabolic', 'thyroid')": {
+        "kappa_obs": 0.10000000000000009,
+        "z": 7.00201178334373,
+        "mean_null": -0.3916666666666668,
+        "std_null": 0.07021791477646973,
+        "n_samples": 24
+      },
+      "('FKBP5', 'claim_015')": {
+        "kappa_obs": 0.16666666666666674,
+        "z": 4.393880718307459,
+        "mean_null": -0.3376623376623375,
+        "std_null": 0.11477985786634505,
+        "n_samples": 11
+      },
+      "('ASD', 'claim_038')": {
+        "kappa_obs": 0.04166666666666652,
+        "z": 4.230210628370101,
+        "mean_null": -0.2994791666666665,
+        "std_null": 0.08064511753751051,
+        "n_samples": 16
+      },
+      "('FKBP5', 'claim_004')": {
+        "kappa_obs": 0.16666666666666663,
+        "z": 4.066229617344658,
+        "mean_null": -0.31135531135531125,
+        "std_null": 0.11755902224088793,
+        "n_samples": 13
+      },
+      "('HPA_axis', 'claim_015')": {
+        "kappa_obs": 0.10416666666666674,
+        "z": 4.013109716196288,
+        "mean_null": -0.25378787878787873,
+        "std_null": 0.08919630181300463,
+        "n_samples": 11
+      },
+      "('circadian', 'claim_047')": {
+        "kappa_obs": 0.10000000000000009,
+        "z": 3.504262746642216,
+        "mean_null": -0.3149999999999999,
+        "std_null": 0.11842719282327015,
+        "n_samples": 10
+      },
+      "('PTSD', 'claim_017')": {
+        "kappa_obs": 0.10416666666666685,
+        "z": 3.4631956123459697,
+        "mean_null": -0.3333333333333331,
+        "std_null": 0.12632841137831002,
+        "n_samples": 13
+      },
+      "('ASD', 'claim_037-inst')": {
+        "kappa_obs": 0.16666666666666674,
+        "z": 3.4234649695622954,
+        "mean_null": -0.3486111111111111,
+        "std_null": 0.1505135242682674,
+        "n_samples": 15
+      },
+      "('HPA_axis', 'claim_041')": {
+        "kappa_obs": 0.0,
+        "z": 3.401680257083045,
+        "mean_null": -0.3068181818181818,
+        "std_null": 0.0901960674226565,
+        "n_samples": 11
+      },
+      "('Sleep-Mood', 'circadian')": {
+        "kappa_obs": 0.10000000000000009,
+        "z": 3.164522169460945,
+        "mean_null": -0.37799999999999995,
+        "std_null": 0.15104966070799375,
+        "n_samples": 25
+      },
+      "('claim_066', 'metabolic')": {
+        "kappa_obs": 0.06818181818181857,
+        "z": 3.154731621900287,
+        "mean_null": -0.2744755244755238,
+        "std_null": 0.10861695501404933,
+        "n_samples": 13
+      },
+      "('Thyroid-Metabolic', 'claim_069')": {
+        "kappa_obs": 0.10000000000000009,
+        "z": 3.0096603051498647,
+        "mean_null": -0.29500000000000004,
+        "std_null": 0.1312440474840669,
+        "n_samples": 10
+      },
+      "('IL6_inflammation', 'Mediator')": {
+        "kappa_obs": -0.10714285714285698,
+        "z": 2.97356776670011,
+        "mean_null": -0.3798701298701296,
+        "std_null": 0.09171718760925675,
+        "n_samples": 11
+      },
+      "('circadian', 'claim_046')": {
+        "kappa_obs": 0.10000000000000009,
+        "z": 2.9203289743158445,
+        "mean_null": -0.2791666666666667,
+        "std_null": 0.12983697042402403,
+        "n_samples": 12
+      },
+      "('claim_025', 'dopamine')": {
+        "kappa_obs": 2.220446049250313e-16,
+        "z": 2.8312667533405302,
+        "mean_null": -0.3045454545454542,
+        "std_null": 0.10756508696544752,
+        "n_samples": 11
+      },
+      "('HPA_axis', 'claim_004')": {
+        "kappa_obs": 0.10416666666666674,
+        "z": 2.828294306680105,
+        "mean_null": -0.30208333333333315,
+        "std_null": 0.14363780991266864,
+        "n_samples": 14
+      },
+      "('FKBP5', 'claim_017')": {
+        "kappa_obs": 0.11904761904761907,
+        "z": 2.7633178336686965,
+        "mean_null": -0.3047619047619046,
+        "std_null": 0.15336980735468145,
+        "n_samples": 15
+      },
+      "('ASD', 'synaptic_pruning')": {
+        "kappa_obs": 0.06250000000000033,
+        "z": 2.7223992698236708,
+        "mean_null": -0.36363636363636337,
+        "std_null": 0.15652970832010416,
+        "n_samples": 11
+      },
+      "('HPA_axis', 'claim_017')": {
+        "kappa_obs": 0.14583333333333337,
+        "z": 2.6539165196919496,
+        "mean_null": -0.2274305555555555,
+        "std_null": 0.14064643183735676,
+        "n_samples": 12
+      }
+    }
+  },
+  "method_comparison": {
+    "mean_orc": {
+      "U": 233.5,
+      "p": 0.011297132569784329,
+      "cohens_d": 0.7337047631727852,
+      "mean_threshold": 0.05238471019721036,
+      "mean_rest": 0.17173408189033207,
+      "n_threshold": 12,
+      "n_rest": 72
+    },
+    "degree": {
+      "U": 372.5,
+      "p": 0.3018727467930107,
+      "cohens_d": 0.32483249311935347,
+      "mean_threshold": 1.8333333333333333,
+      "mean_rest": 1.9861111111111112,
+      "n_threshold": 12,
+      "n_rest": 72
+    },
+    "betweenness": {
+      "U": 423.5,
+      "p": 0.8408492090985891,
+      "cohens_d": 0.18926087992556362,
+      "mean_threshold": 4.037467700258397e-05,
+      "mean_rest": 0.00018406288843335946,
+      "n_threshold": 12,
+      "n_rest": 72
+    },
+    "clustering": {
+      "U": 371.5,
+      "p": 0.29375286274178725,
+      "cohens_d": 0.400903022657149,
+      "mean_threshold": 0.7222222222222222,
+      "mean_rest": 0.8564814814814814,
+      "n_threshold": 12,
+      "n_rest": 72
+    },
+    "mean_jaccard": {
+      "U": 395.5,
+      "p": 0.6411672595581779,
+      "cohens_d": 0.1375287381308106,
+      "mean_threshold": 0.07394300144300145,
+      "mean_rest": 0.08240099599474598,
+      "n_threshold": 12,
+      "n_rest": 72
+    },
+    "mean_spectral_gap": {
+      "U": 432.0,
+      "p": NaN,
+      "cohens_d": 0.0,
+      "mean_threshold": 0.0,
+      "mean_rest": 0.0,
+      "n_threshold": 12,
+      "n_rest": 72
+    }
+  },
+  "verdict_prediction": {
+    "auc": 0.6122685185185185,
+    "accuracy": 0.8571428571428571,
+    "n_positive": 12,
+    "n_total": 84,
+    "feature_names": [
+      "mean_orc",
+      "min_orc",
+      "max_orc",
+      "std_orc",
+      "degree",
+      "clustering",
+      "mean_neighbor_degree"
+    ],
+    "predictions": [
+      {
+        "node": "claim_001",
+        "true": 1,
+        "pred_prob": 0.27176289724284963
+      },
+      {
+        "node": "claim_003",
+        "true": 1,
+        "pred_prob": 0.21995910952668948
+      },
+      {
+        "node": "claim_004",
+        "true": 1,
+        "pred_prob": 0.0451104664326586
+      },
+      {
+        "node": "claim_006a",
+        "true": 0,
+        "pred_prob": 0.40695028882777423
+      },
+      {
+        "node": "claim_006b",
+        "true": 1,
+        "pred_prob": 0.2937720078691025
+      },
+      {
+        "node": "claim_008",
+        "true": 1,
+        "pred_prob": 0.27176289724284236
+      },
+      {
+        "node": "claim_008b",
+        "true": 0,
+        "pred_prob": 0.4628820901170385
+      },
+      {
+        "node": "claim_010",
+        "true": 0,
+        "pred_prob": 0.46288209011703835
+      },
+      {
+        "node": "claim_011",
+        "true": 0,
+        "pred_prob": 0.28401906949870104
+      },
+      {
+        "node": "claim_012",
+        "true": 0,
+        "pred_prob": 0.3363257639276804
+      },
+      {
+        "node": "claim_012a",
+        "true": 0,
+        "pred_prob": 0.3363257639276804
+      },
+      {
+        "node": "claim_013",
+        "true": 0,
+        "pred_prob": 0.1814066457772806
+      },
+      {
+        "node": "claim_014",
+        "true": 0,
+        "pred_prob": 0.4391112949215973
+      },
+      {
+        "node": "claim_015",
+        "true": 0,
+        "pred_prob": 0.17332676604004416
+      },
+      {
+        "node": "claim_016",
+        "true": 0,
+        "pred_prob": 0.46288209011703824
+      },
+      {
+        "node": "claim_017",
+        "true": 0,
+        "pred_prob": 0.09846463446770026
+      },
+      {
+        "node": "claim_018",
+        "true": 0,
+        "pred_prob": 0.10940239247416667
+      },
+      {
+        "node": "claim_019",
+        "true": 0,
+        "pred_prob": 0.19122415603694487
+      },
+      {
+        "node": "claim_020",
+        "true": 0,
+        "pred_prob": 0.18390976587294436
+      },
+      {
+        "node": "claim_021a",
+        "true": 0,
+        "pred_prob": 0.26542612534118065
+      },
+      {
+        "node": "claim_021b",
+        "true": 1,
+        "pred_prob": 0.10632009622048037
+      },
+      {
+        "node": "claim_022",
+        "true": 0,
+        "pred_prob": 0.10940239247416667
+      },
+      {
+        "node": "claim_023",
+        "true": 1,
+        "pred_prob": 0.15200184949048273
+      },
+      {
+        "node": "claim_024",
+        "true": 0,
+        "pred_prob": 0.19122415603694504
+      },
+      {
+        "node": "claim_025",
+        "true": 0,
+        "pred_prob": 0.2690319048305764
+      },
+      {
+        "node": "claim_025-orig",
+        "true": 1,
+        "pred_prob": 0.21674326952906386
+      },
+      {
+        "node": "claim_026",
+        "true": 0,
+        "pred_prob": 0.36412255284577805
+      },
+      {
+        "node": "claim_027",
+        "true": 0,
+        "pred_prob": 0.17988279214411076
+      },
+      {
+        "node": "claim_028",
+        "true": 0,
+        "pred_prob": 0.11805473470403893
+      },
+      {
+        "node": "claim_029",
+        "true": 0,
+        "pred_prob": 0.12775379075702473
+      },
+      {
+        "node": "claim_030",
+        "true": 0,
+        "pred_prob": 0.10940239247416667
+      },
+      {
+        "node": "claim_031a",
+        "true": 0,
+        "pred_prob": 0.20824739223957367
+      },
+      {
+        "node": "claim_031b",
+        "true": 1,
+        "pred_prob": 0.17309316959683657
+      },
+      {
+        "node": "claim_032",
+        "true": 0,
+        "pred_prob": 0.2654261253411472
+      },
+      {
+        "node": "claim_033",
+        "true": 0,
+        "pred_prob": 0.2654261253411472
+      },
+      {
+        "node": "claim_034",
+        "true": 0,
+        "pred_prob": 0.015088114416451382
+      },
+      {
+        "node": "claim_035",
+        "true": 1,
+        "pred_prob": 0.1177293173816387
+      },
+      {
+        "node": "claim_036",
+        "true": 0,
+        "pred_prob": 0.2229890690916598
+      },
+      {
+        "node": "claim_037",
+        "true": 0,
+        "pred_prob": 0.21856345521343903
+      },
+      {
+        "node": "claim_037-inst",
+        "true": 0,
+        "pred_prob": 0.11239474828595182
+      },
+      {
+        "node": "claim_038",
+        "true": 0,
+        "pred_prob": 0.1487146124873066
+      },
+      {
+        "node": "claim_039",
+        "true": 0,
+        "pred_prob": 0.09643254260323009
+      },
+      {
+        "node": "claim_040",
+        "true": 0,
+        "pred_prob": 0.11159131692666559
+      },
+      {
+        "node": "claim_041",
+        "true": 0,
+        "pred_prob": 0.15292396616181983
+      },
+      {
+        "node": "claim_042",
+        "true": 0,
+        "pred_prob": 0.1115913169266655
+      },
+      {
+        "node": "claim_043",
+        "true": 0,
+        "pred_prob": 0.11760854793433835
+      },
+      {
+        "node": "claim_044",
+        "true": 0,
+        "pred_prob": 0.12869791101533296
+      },
+      {
+        "node": "claim_045",
+        "true": 0,
+        "pred_prob": 0.07661513607418981
+      },
+      {
+        "node": "claim_046",
+        "true": 0,
+        "pred_prob": 0.07661513607418981
+      },
+      {
+        "node": "claim_047",
+        "true": 0,
+        "pred_prob": 0.07661513607418981
+      },
+      {
+        "node": "claim_048",
+        "true": 0,
+        "pred_prob": 0.07661513607418981
+      },
+      {
+        "node": "claim_049",
+        "true": 0,
+        "pred_prob": 0.02260877053605577
+      },
+      {
+        "node": "claim_050",
+        "true": 0,
+        "pred_prob": 0.022608770536055752
+      },
+      {
+        "node": "claim_051",
+        "true": 0,
+        "pred_prob": 0.02260877053605577
+      },
+      {
+        "node": "claim_052",
+        "true": 0,
+        "pred_prob": 0.022608770536055735
+      },
+      {
+        "node": "claim_053",
+        "true": 0,
+        "pred_prob": 0.022608770536055735
+      },
+      {
+        "node": "claim_054",
+        "true": 0,
+        "pred_prob": 0.021442955437396823
+      },
+      {
+        "node": "claim_055",
+        "true": 0,
+        "pred_prob": 0.022608770536055752
+      },
+      {
+        "node": "claim_056",
+        "true": 0,
+        "pred_prob": 0.0010643331127341508
+      },
+      {
+        "node": "claim_057",
+        "true": 0,
+        "pred_prob": 0.022608770536055752
+      },
+      {
+        "node": "claim_058",
+        "true": 0,
+        "pred_prob": 0.01702384681336447
+      },
+      {
+        "node": "claim_059",
+        "true": 0,
+        "pred_prob": 0.0819701183182371
+      },
+      {
+        "node": "claim_060",
+        "true": 1,
+        "pred_prob": 0.04818489308936948
+      },
+      {
+        "node": "claim_061",
+        "true": 0,
+        "pred_prob": 0.0819701183182371
+      },
+      {
+        "node": "claim_062",
+        "true": 0,
+        "pred_prob": 0.02572487294532487
+      },
+      {
+        "node": "claim_063",
+        "true": 0,
+        "pred_prob": 0.02572487294532487
+      },
+      {
+        "node": "claim_064",
+        "true": 0,
+        "pred_prob": 0.025557282908077676
+      },
+      {
+        "node": "claim_065",
+        "true": 0,
+        "pred_prob": 0.012798445491906016
+      },
+      {
+        "node": "claim_066",
+        "true": 0,
+        "pred_prob": 0.16660142100845715
+      },
+      {
+        "node": "claim_067",
+        "true": 0,
+        "pred_prob": 0.16660142100845718
+      },
+      {
+        "node": "claim_068",
+        "true": 0,
+        "pred_prob": 0.16660142100845723
+      },
+      {
+        "node": "claim_069",
+        "true": 0,
+        "pred_prob": 0.07661513607418981
+      },
+      {
+        "node": "claim_070",
+        "true": 0,
+        "pred_prob": 0.07661513607418981
+      },
+      {
+        "node": "claim_071",
+        "true": 0,
+        "pred_prob": 0.07661513607418981
+      },
+      {
+        "node": "claim_072",
+        "true": 1,
+        "pred_prob": 0.05428319763410858
+      },
+      {
+        "node": "claim_073",
+        "true": 0,
+        "pred_prob": 0.1666014210084573
+      },
+      {
+        "node": "claim_074",
+        "true": 0,
+        "pred_prob": 0.06585165274689096
+      },
+      {
+        "node": "claim_075",
+        "true": 0,
+        "pred_prob": 0.06585165274689096
+      },
+      {
+        "node": "claim_076",
+        "true": 0,
+        "pred_prob": 0.06585165274689096
+      },
+      {
+        "node": "claim_077",
+        "true": 0,
+        "pred_prob": 0.06585165274689096
+      },
+      {
+        "node": "claim_078",
+        "true": 0,
+        "pred_prob": 0.06585165274689096
+      },
+      {
+        "node": "claim_079",
+        "true": 0,
+        "pred_prob": 0.03093097098145726
+      },
+      {
+        "node": "claim_080",
+        "true": 0,
+        "pred_prob": 0.03093097098145726
+      },
+      {
+        "node": "claim_081",
+        "true": 0,
+        "pred_prob": 0.03093097098145726
+      }
+    ]
+  }
+}

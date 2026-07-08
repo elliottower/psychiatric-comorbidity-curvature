@@ -1,0 +1,256 @@
+{
+  "data_source": "PGC Cross-Disorder 2019, shared GWAS loci",
+  "graph_type": "gene-sharing (Jaccard of shared loci)",
+  "timestamp": "20260702_141056",
+  "n_nodes": 9,
+  "n_edges": 28,
+  "density": 0.778,
+  "n_within": 6,
+  "n_cross": 22,
+  "within_mean": 0.5842,
+  "cross_mean": 0.2622,
+  "within_std": 0.061,
+  "cross_std": 0.2928,
+  "U": 11.0,
+  "p": 0.000897,
+  "cohens_d": 1.523,
+  "node_curvature": {
+    "OCD": -0.0197,
+    "SCZ": 0.1741,
+    "PTSD": 0.247,
+    "TS": 0.2536,
+    "BD": 0.3489,
+    "MDD": 0.3744,
+    "ASD": 0.4558,
+    "AN": 0.4769,
+    "ADHD": 0.5135
+  },
+  "edge_zscores": {
+    "SCZ-BD": 1.378,
+    "SCZ-MDD": 0.331,
+    "SCZ-ADHD": -0.085,
+    "SCZ-ASD": -0.573,
+    "SCZ-AN": -0.345,
+    "SCZ-TS": -1.473,
+    "SCZ-OCD": -2.163,
+    "SCZ-PTSD": -2.275,
+    "BD-MDD": 0.614,
+    "BD-ADHD": 0.612,
+    "BD-ASD": -0.008,
+    "BD-AN": 0.394,
+    "BD-TS": -0.437,
+    "BD-OCD": -1.895,
+    "BD-PTSD": -0.05,
+    "MDD-ADHD": 0.774,
+    "MDD-ASD": 0.024,
+    "MDD-AN": 0.709,
+    "MDD-TS": -1.188,
+    "MDD-OCD": -1.096,
+    "MDD-PTSD": 0.706,
+    "ADHD-ASD": 0.992,
+    "ADHD-AN": 0.601,
+    "ADHD-TS": 0.554,
+    "ADHD-PTSD": 0.589,
+    "ASD-AN": 0.565,
+    "ASD-TS": 0.92,
+    "AN-OCD": 0.707
+  },
+  "edges": {
+    "SCZ-OCD": {
+      "kappa": -0.3422,
+      "shared_loci": 2,
+      "jaccard": 0.0136,
+      "type": "cross",
+      "z": -2.163
+    },
+    "SCZ-PTSD": {
+      "kappa": -0.3102,
+      "shared_loci": 2,
+      "jaccard": 0.0134,
+      "type": "cross",
+      "z": -2.275
+    },
+    "BD-OCD": {
+      "kappa": -0.278,
+      "shared_loci": 1,
+      "jaccard": 0.0149,
+      "type": "cross",
+      "z": -1.895
+    },
+    "SCZ-TS": {
+      "kappa": -0.0663,
+      "shared_loci": 3,
+      "jaccard": 0.0204,
+      "type": "cross",
+      "z": -1.473
+    },
+    "MDD-OCD": {
+      "kappa": -0.0298,
+      "shared_loci": 1,
+      "jaccard": 0.0213,
+      "type": "cross",
+      "z": -1.096
+    },
+    "MDD-TS": {
+      "kappa": -0.0072,
+      "shared_loci": 1,
+      "jaccard": 0.0208,
+      "type": "cross",
+      "z": -1.188
+    },
+    "BD-TS": {
+      "kappa": 0.1985,
+      "shared_loci": 2,
+      "jaccard": 0.0299,
+      "type": "cross",
+      "z": -0.437
+    },
+    "SCZ-ASD": {
+      "kappa": 0.2407,
+      "shared_loci": 5,
+      "jaccard": 0.0345,
+      "type": "cross",
+      "z": -0.573
+    },
+    "BD-PTSD": {
+      "kappa": 0.2803,
+      "shared_loci": 2,
+      "jaccard": 0.0294,
+      "type": "cross",
+      "z": -0.05
+    },
+    "SCZ-AN": {
+      "kappa": 0.2914,
+      "shared_loci": 4,
+      "jaccard": 0.0268,
+      "type": "cross",
+      "z": -0.345
+    },
+    "BD-ASD": {
+      "kappa": 0.3742,
+      "shared_loci": 3,
+      "jaccard": 0.0455,
+      "type": "cross",
+      "z": -0.008
+    },
+    "MDD-ASD": {
+      "kappa": 0.3782,
+      "shared_loci": 2,
+      "jaccard": 0.0426,
+      "type": "cross",
+      "z": 0.024
+    },
+    "SCZ-ADHD": {
+      "kappa": 0.3991,
+      "shared_loci": 7,
+      "jaccard": 0.0467,
+      "type": "cross",
+      "z": -0.085
+    },
+    "BD-AN": {
+      "kappa": 0.4677,
+      "shared_loci": 3,
+      "jaccard": 0.0435,
+      "type": "cross",
+      "z": 0.394
+    },
+    "ADHD-AN": {
+      "kappa": 0.4796,
+      "shared_loci": 1,
+      "jaccard": 0.0526,
+      "type": "cross",
+      "z": 0.601
+    },
+    "MDD-PTSD": {
+      "kappa": 0.5021,
+      "shared_loci": 3,
+      "jaccard": 0.0638,
+      "type": "within",
+      "z": 0.706
+    },
+    "ASD-AN": {
+      "kappa": 0.5035,
+      "shared_loci": 1,
+      "jaccard": 0.0833,
+      "type": "cross",
+      "z": 0.565
+    },
+    "SCZ-MDD": {
+      "kappa": 0.504,
+      "shared_loci": 14,
+      "jaccard": 0.08,
+      "type": "cross",
+      "z": 0.331
+    },
+    "ADHD-PTSD": {
+      "kappa": 0.5157,
+      "shared_loci": 1,
+      "jaccard": 0.0588,
+      "type": "cross",
+      "z": 0.589
+    },
+    "ADHD-TS": {
+      "kappa": 0.5177,
+      "shared_loci": 1,
+      "jaccard": 0.0625,
+      "type": "within",
+      "z": 0.554
+    },
+    "BD-ADHD": {
+      "kappa": 0.5212,
+      "shared_loci": 5,
+      "jaccard": 0.0704,
+      "type": "cross",
+      "z": 0.612
+    },
+    "MDD-AN": {
+      "kappa": 0.5485,
+      "shared_loci": 3,
+      "jaccard": 0.0612,
+      "type": "cross",
+      "z": 0.709
+    },
+    "MDD-ADHD": {
+      "kappa": 0.5488,
+      "shared_loci": 4,
+      "jaccard": 0.0769,
+      "type": "cross",
+      "z": 0.774
+    },
+    "BD-MDD": {
+      "kappa": 0.5507,
+      "shared_loci": 11,
+      "jaccard": 0.1134,
+      "type": "cross",
+      "z": 0.614
+    },
+    "AN-OCD": {
+      "kappa": 0.5711,
+      "shared_loci": 1,
+      "jaccard": 0.0909,
+      "type": "within",
+      "z": 0.707
+    },
+    "ADHD-ASD": {
+      "kappa": 0.6126,
+      "shared_loci": 2,
+      "jaccard": 0.1333,
+      "type": "within",
+      "z": 0.992
+    },
+    "ASD-TS": {
+      "kappa": 0.6255,
+      "shared_loci": 1,
+      "jaccard": 0.1111,
+      "type": "within",
+      "z": 0.92
+    },
+    "SCZ-BD": {
+      "kappa": 0.6763,
+      "shared_loci": 34,
+      "jaccard": 0.1943,
+      "type": "within",
+      "z": 1.378
+    }
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "psychiatric": {
+    "domain": "psychiatric",
+    "sources": "Lee2019, Grotzinger2022",
+    "n_nodes": 11,
+    "n_edges": 36,
+    "density": 0.655,
+    "n_within": 6,
+    "n_cross": 30,
+    "within_mean": 0.5514,
+    "cross_mean": 0.3279,
+    "within_std": 0.0631,
+    "cross_std": 0.2103,
+    "U": 19.0,
+    "p": 0.001264,
+    "cohens_d": 1.44,
+    "node_curvature": {
+      "OCD": 0.1011,
+      "SCZ": 0.2739,
+      "ASD": 0.3362,
+      "AN": 0.3531,
+      "PTSD": 0.3581,
+      "TS": 0.3673,
+      "BD": 0.3749,
+      "MDD": 0.447,
+      "ADHD": 0.4475,
+      "ALCH": 0.455,
+      "ANX": 0.4741
+    },
+    "edges": {
+      "BD-OCD": {
+        "kappa": -0.2356,
+        "rg": 0.13,
+        "type": "cross"
+      },
+      "PTSD-OCD": {
+        "kappa": -0.1416,
+        "rg": 0.15,
+        "type": "cross"
+      },
+      "SCZ-OCD": {
+        "kappa": -0.1125,
+        "rg": 0.14,
+        "type": "cross"
+      },
+      "MDD-OCD": {
+        "kappa": 0.0866,
+        "rg": 0.21,
+        "type": "cross"
+      },
+      "SCZ-ALCH": {
+        "kappa": 0.1237,
+        "rg": 0.1,
+        "type": "cross"
+      },
+      "ADHD-SCZ": {
+        "kappa": 0.1841,
+        "rg": 0.12,
+        "type": "cross"
+      },
+      "ASD-SCZ": {
+        "kappa": 0.1925,
+        "rg": 0.16,
+        "type": "cross"
+      },
+      "SCZ-PTSD": {
+        "kappa": 0.2133,
+        "rg": 0.13,
+        "type": "cross"
+      },
+      "PTSD-AN": {
+        "kappa": 0.2338,
+        "rg": 0.15,
+        "type": "cross"
+      },
+      "ASD-MDD": {
+        "kappa": 0.289,
+        "rg": 0.19,
+        "type": "cross"
+      },
+      "ANX-OCD": {
+        "kappa": 0.3204,
+        "rg": 0.35,
+        "type": "cross"
+      },
+      "SCZ-AN": {
+        "kappa": 0.3298,
+        "rg": 0.19,
+        "type": "cross"
+      },
+      "ASD-ANX": {
+        "kappa": 0.341,
+        "rg": 0.22,
+        "type": "cross"
+      },
+      "MDD-AN": {
+        "kappa": 0.3517,
+        "rg": 0.21,
+        "type": "cross"
+      },
+      "ADHD-BD": {
+        "kappa": 0.3537,
+        "rg": 0.16,
+        "type": "cross"
+      },
+      "OCD-TS": {
+        "kappa": 0.3673,
+        "rg": 0.41,
+        "type": "cross"
+      },
+      "BD-PTSD": {
+        "kappa": 0.3833,
+        "rg": 0.19,
+        "type": "cross"
+      },
+      "AN-OCD": {
+        "kappa": 0.4229,
+        "rg": 0.49,
+        "type": "within"
+      },
+      "ANX-AN": {
+        "kappa": 0.4273,
+        "rg": 0.28,
+        "type": "cross"
+      },
+      "SCZ-ANX": {
+        "kappa": 0.4377,
+        "rg": 0.24,
+        "type": "cross"
+      },
+      "ADHD-ALCH": {
+        "kappa": 0.4752,
+        "rg": 0.4,
+        "type": "cross"
+      },
+      "ADHD-PTSD": {
+        "kappa": 0.4859,
+        "rg": 0.4,
+        "type": "cross"
+      },
+      "BD-ANX": {
+        "kappa": 0.4922,
+        "rg": 0.33,
+        "type": "cross"
+      },
+      "MDD-SCZ": {
+        "kappa": 0.4945,
+        "rg": 0.32,
+        "type": "cross"
+      },
+      "BD-MDD": {
+        "kappa": 0.5022,
+        "rg": 0.35,
+        "type": "cross"
+      },
+      "ADHD-ASD": {
+        "kappa": 0.5224,
+        "rg": 0.36,
+        "type": "within"
+      },
+      "PTSD-ALCH": {
+        "kappa": 0.5245,
+        "rg": 0.55,
+        "type": "cross"
+      },
+      "ANX-ALCH": {
+        "kappa": 0.5259,
+        "rg": 0.41,
+        "type": "cross"
+      },
+      "BD-ALCH": {
+        "kappa": 0.5263,
+        "rg": 0.27,
+        "type": "cross"
+      },
+      "ADHD-ANX": {
+        "kappa": 0.5461,
+        "rg": 0.56,
+        "type": "cross"
+      },
+      "MDD-ALCH": {
+        "kappa": 0.5544,
+        "rg": 0.5,
+        "type": "cross"
+      },
+      "ADHD-MDD": {
+        "kappa": 0.565,
+        "rg": 0.44,
+        "type": "cross"
+      },
+      "ANX-PTSD": {
+        "kappa": 0.5812,
+        "rg": 0.72,
+        "type": "within"
+      },
+      "MDD-PTSD": {
+        "kappa": 0.5847,
+        "rg": 0.71,
+        "type": "within"
+      },
+      "MDD-ANX": {
+        "kappa": 0.5952,
+        "rg": 0.81,
+        "type": "within"
+      },
+      "BD-SCZ": {
+        "kappa": 0.6022,
+        "rg": 0.68,
+        "type": "within"
+      }
+    }
+  },
+  "autoimmune": {
+    "domain": "autoimmune",
+    "sources": "BulikSullivan2015, Ellinghaus2016",
+    "n_nodes": 9,
+    "n_edges": 26,
+    "density": 0.722,
+    "n_within": 4,
+    "n_cross": 22,
+    "within_mean": 0.4559,
+    "cross_mean": 0.3931,
+    "within_std": 0.0956,
+    "cross_std": 0.1648,
+    "U": 40.0,
+    "p": 0.810702,
+    "cohens_d": 0.466,
+    "node_curvature": {
+      "MS": 0.2768,
+      "T1D": 0.3685,
+      "Celiac": 0.3828,
+      "RA": 0.3897,
+      "UC": 0.4182,
+      "AS": 0.4378,
+      "Crohn": 0.4462,
+      "Lupus": 0.4491,
+      "Psoriasis": 0.4703
+    },
+    "edges": {
+      "Crohn-T1D": {
+        "kappa": 0.0526,
+        "rg": 0.13,
+        "type": "cross"
+      },
+      "UC-MS": {
+        "kappa": 0.0832,
+        "rg": 0.14,
+        "type": "cross"
+      },
+      "RA-MS": {
+        "kappa": 0.1294,
+        "rg": 0.12,
+        "type": "cross"
+      },
+      "Celiac-AS": {
+        "kappa": 0.1708,
+        "rg": 0.15,
+        "type": "cross"
+      },
+      "Celiac-MS": {
+        "kappa": 0.1841,
+        "rg": 0.12,
+        "type": "cross"
+      },
+      "UC-Lupus": {
+        "kappa": 0.3063,
+        "rg": 0.21,
+        "type": "cross"
+      },
+      "RA-Psoriasis": {
+        "kappa": 0.321,
+        "rg": 0.19,
+        "type": "cross"
+      },
+      "T1D-MS": {
+        "kappa": 0.3514,
+        "rg": 0.17,
+        "type": "within"
+      },
+      "Celiac-Lupus": {
+        "kappa": 0.3642,
+        "rg": 0.18,
+        "type": "cross"
+      },
+      "RA-AS": {
+        "kappa": 0.4,
+        "rg": 0.21,
+        "type": "within"
+      },
+      "T1D-RA": {
+        "kappa": 0.4167,
+        "rg": 0.23,
+        "type": "cross"
+      },
+      "Crohn-RA": {
+        "kappa": 0.4538,
+        "rg": 0.24,
+        "type": "cross"
+      },
+      "UC-Celiac": {
+        "kappa": 0.4558,
+        "rg": 0.36,
+        "type": "cross"
+      },
+      "UC-RA": {
+        "kappa": 0.4573,
+        "rg": 0.18,
+        "type": "cross"
+      },
+      "RA-Lupus": {
+        "kappa": 0.4666,
+        "rg": 0.29,
+        "type": "within"
+      },
+      "Celiac-RA": {
+        "kappa": 0.4724,
+        "rg": 0.28,
+        "type": "cross"
+      },
+      "T1D-Lupus": {
+        "kappa": 0.4729,
+        "rg": 0.26,
+        "type": "cross"
+      },
+      "Crohn-Celiac": {
+        "kappa": 0.4833,
+        "rg": 0.3,
+        "type": "cross"
+      },
+      "UC-Psoriasis": {
+        "kappa": 0.5014,
+        "rg": 0.32,
+        "type": "cross"
+      },
+      "UC-AS": {
+        "kappa": 0.5179,
+        "rg": 0.27,
+        "type": "cross"
+      },
+      "Crohn-Psoriasis": {
+        "kappa": 0.52,
+        "rg": 0.29,
+        "type": "cross"
+      },
+      "Psoriasis-AS": {
+        "kappa": 0.5387,
+        "rg": 0.24,
+        "type": "cross"
+      },
+      "Celiac-T1D": {
+        "kappa": 0.549,
+        "rg": 0.42,
+        "type": "cross"
+      },
+      "Crohn-AS": {
+        "kappa": 0.5617,
+        "rg": 0.32,
+        "type": "cross"
+      },
+      "Crohn-UC": {
+        "kappa": 0.6056,
+        "rg": 0.56,
+        "type": "within"
+      },
+      "MS-Lupus": {
+        "kappa": 0.6357,
+        "rg": 0.26,
+        "type": "cross"
+      }
+    }
+  },
+  "cardiometabolic": {
+    "domain": "cardiometabolic",
+    "sources": "BulikSullivan2015, Evangelou2018",
+    "n_nodes": 9,
+    "n_edges": 31,
+    "density": 0.861,
+    "n_within": 6,
+    "n_cross": 25,
+    "within_mean": 0.5089,
+    "cross_mean": 0.3876,
+    "within_std": 0.1685,
+    "cross_std": 0.1468,
+    "U": 43.0,
+    "p": 0.117118,
+    "cohens_d": 0.767,
+    "node_curvature": {
+      "DBP": 0.2758,
+      "LDL": 0.3288,
+      "HDL": 0.3553,
+      "TG": 0.4207,
+      "WHR": 0.4255,
+      "SBP": 0.4425,
+      "CAD": 0.446,
+      "T2D": 0.4647,
+      "BMI": 0.4949
+    },
+    "edges": {
+      "HDL-DBP": {
+        "kappa": -0.1343,
+        "rg": -0.06,
+        "type": "cross"
+      },
+      "DBP-WHR": {
+        "kappa": 0.17,
+        "rg": 0.1,
+        "type": "cross"
+      },
+      "TG-DBP": {
+        "kappa": 0.2121,
+        "rg": 0.1,
+        "type": "cross"
+      },
+      "T2D-DBP": {
+        "kappa": 0.2599,
+        "rg": 0.12,
+        "type": "cross"
+      },
+      "HDL-SBP": {
+        "kappa": 0.2668,
+        "rg": -0.1,
+        "type": "cross"
+      },
+      "LDL-TG": {
+        "kappa": 0.2787,
+        "rg": 0.17,
+        "type": "within"
+      },
+      "LDL-HDL": {
+        "kappa": 0.2909,
+        "rg": -0.18,
+        "type": "within"
+      },
+      "CAD-DBP": {
+        "kappa": 0.2927,
+        "rg": 0.15,
+        "type": "cross"
+      },
+      "SBP-WHR": {
+        "kappa": 0.3593,
+        "rg": 0.14,
+        "type": "cross"
+      },
+      "TG-SBP": {
+        "kappa": 0.37,
+        "rg": 0.13,
+        "type": "cross"
+      },
+      "HDL-WHR": {
+        "kappa": 0.3875,
+        "rg": -0.37,
+        "type": "cross"
+      },
+      "CAD-BMI": {
+        "kappa": 0.3901,
+        "rg": 0.17,
+        "type": "cross"
+      },
+      "BMI-DBP": {
+        "kappa": 0.4103,
+        "rg": 0.19,
+        "type": "cross"
+      },
+      "CAD-LDL": {
+        "kappa": 0.4169,
+        "rg": 0.25,
+        "type": "cross"
+      },
+      "TG-WHR": {
+        "kappa": 0.4247,
+        "rg": 0.29,
+        "type": "cross"
+      },
+      "T2D-SBP": {
+        "kappa": 0.4312,
+        "rg": 0.17,
+        "type": "cross"
+      },
+      "T2D-HDL": {
+        "kappa": 0.443,
+        "rg": -0.29,
+        "type": "cross"
+      },
+      "CAD-WHR": {
+        "kappa": 0.4547,
+        "rg": 0.22,
+        "type": "cross"
+      },
+      "CAD-SBP": {
+        "kappa": 0.4568,
+        "rg": 0.22,
+        "type": "cross"
+      },
+      "T2D-TG": {
+        "kappa": 0.4668,
+        "rg": 0.27,
+        "type": "cross"
+      },
+      "BMI-HDL": {
+        "kappa": 0.4736,
+        "rg": -0.3,
+        "type": "cross"
+      },
+      "BMI-TG": {
+        "kappa": 0.4806,
+        "rg": 0.28,
+        "type": "cross"
+      },
+      "BMI-SBP": {
+        "kappa": 0.4939,
+        "rg": 0.24,
+        "type": "cross"
+      },
+      "CAD-HDL": {
+        "kappa": 0.5079,
+        "rg": -0.32,
+        "type": "cross"
+      },
+      "CAD-T2D": {
+        "kappa": 0.5227,
+        "rg": 0.39,
+        "type": "within"
+      },
+      "CAD-TG": {
+        "kappa": 0.5261,
+        "rg": 0.28,
+        "type": "cross"
+      },
+      "T2D-WHR": {
+        "kappa": 0.5477,
+        "rg": 0.37,
+        "type": "cross"
+      },
+      "T2D-BMI": {
+        "kappa": 0.5814,
+        "rg": 0.4,
+        "type": "cross"
+      },
+      "HDL-TG": {
+        "kappa": 0.6069,
+        "rg": -0.54,
+        "type": "within"
+      },
+      "BMI-WHR": {
+        "kappa": 0.6342,
+        "rg": 0.61,
+        "type": "within"
+      },
+      "SBP-DBP": {
+        "kappa": 0.7198,
+        "rg": 0.72,
+        "type": "within"
+      }
+    }
+  },
+  "summary": {
+    "timestamp": "20260702_140445",
+    "n_domains": 2,
+    "n_replicated": 3,
+    "n_significant": 1
+  }
+}

@@ -1,80 +1,79 @@
-"""Robustness experiments for comorbidity curvature paper.
+"""Robustness experiments for the curvature paper.
 
-Runs locally on CPU (23-node graph = instant).
-Produces results/robustness/robustness_results.json
+Three experiments:
+  1. Catalog perturbation: subsample 40/47 entries 500 times, recompute
+     edge-level curvature z-scores, report fraction of iterations each
+     key edge survives at |z| > 1.96.
+  2. Leave-one-family-out: drop each of 9 disorder families, recompute
+     curvature + permutation null, check if bottleneck edges survive.
+  3. Edge betweenness comparison: compute edge betweenness centrality,
+     correlate with edge curvature, test whether ORC identifies edges
+     that betweenness misses.
 
-Experiments:
-1. Alpha sweep (0.1 to 0.9)
-2. Edge perturbation sensitivity (100 trials, 10-20% perturbation)
-3. Ricci flow convergence trajectory
-4. Louvain/spectral community comparison
-5. Clinical novelty: curvature reranking vs betweenness
+Usage:
+    uv run --no-project --with numpy --with scipy --with networkx --with pot --with tqdm --with matplotlib \
+        python psych/experiments/robustness_experiments.py
 """
 import json
+import sys
+from datetime import datetime
+from pathlib import Path
+
 import numpy as np
 import networkx as nx
 import ot
-import community as community_louvain
-from pathlib import Path
-from collections import Counter
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from scipy import stats
+from tqdm import tqdm
 
-EDGES = [
-    ("MDD", "GAD", "Kessler 2005; Moffitt 2007"),
-    ("MDD", "insomnia", "Baglioni 2011"),
-    ("MDD", "SUD", "Davis 2008"),
-    ("MDD", "anhedonia", "Pizzagalli 2014"),
-    ("MDD", "suicide_ideation", "Nock 2008"),
-    ("MDD", "PTSD", "Flory 2015"),
-    ("MDD", "SCZ", "Buckley 2009"),
-    ("MDD", "BIP", "Hirschfeld 2003"),
-    ("MDD", "BPD", "Gunderson 2008"),
-    ("MDD", "fatigue", "Demyttenaere 2005"),
-    ("MDD", "cortisol", "Pariante 2008"),
-    ("MDD", "inflammation", "Dowlati 2010"),
-    ("MDD", "OCD", "Brakoulias 2017"),
-    ("GAD", "panic", "Brown 2001"),
-    ("GAD", "somatic", "Kroenke 2007"),
-    ("GAD", "social_anxiety", "Mennin 2008"),
-    ("GAD", "PTSD", "Ginzburg 2010"),
-    ("GAD", "ADHD", "Kessler 2006"),
-    ("GAD", "ASD", "van Steensel 2011"),
-    ("GAD", "OCD", "Abramowitz 2003"),
-    ("insomnia", "fatigue", "Lichstein 1997"),
-    ("insomnia", "cortisol", "Vgontzas 2001"),
-    ("panic", "agoraphobia", "APA DSM-5 2013"),
-    ("SUD", "psychosis", "Niemi-Pynttari 2013"),
-    ("SUD", "suicide_ideation", "Wilcox 2004"),
-    ("SUD", "PTSD", "Jacobsen 2001"),
-    ("SUD", "BIP", "Regier 1990"),
-    ("SUD", "ADHD", "Lee 2011"),
-    ("SUD", "anhedonia", "Garfield 2014"),
-    ("SUD", "BPD", "Trull 2000"),
-    ("SUD", "inflammation", "Crews 2006"),
-    ("PTSD", "dissociation", "Lanius 2010"),
-    ("PTSD", "cortisol", "Yehuda 2006"),
-    ("SCZ", "psychosis", "APA DSM-5 2013"),
-    ("ADHD", "ASD", "Rommelse 2010"),
-    ("dissociation", "BPD", "Zanarini 2000"),
-    ("BPD", "suicide_ideation", "Soloff 2000"),
-    ("fatigue", "inflammation", "Bower 2009"),
-    ("social_anxiety", "avoidance", "Hofmann 2007"),
-]
+sys.path.insert(0, str(Path(__file__).parent))
+from catalog_data import ENTRIES, SHARED_NODES, FAMILIES, VERDICTS
 
-def build_graph():
+
+def build_graph(entries=None):
+    if entries is None:
+        entries = ENTRIES
     G = nx.Graph()
-    for u, v, cite in EDGES:
-        G.add_edge(u, v, citation=cite)
+    for fam in FAMILIES:
+        G.add_node(f"family:{fam}", layer="family")
+
+    used_mechanisms = set()
+    for entry in entries:
+        for node in entry["shared_nodes"]:
+            used_mechanisms.add(node)
+
+    for node_name, info in SHARED_NODES.items():
+        if node_name in used_mechanisms:
+            G.add_node(f"mechanism:{node_name}", layer="mechanism",
+                       n_disorders=len(info["disorders"]))
+            for disorder in info["disorders"]:
+                G.add_edge(f"family:{disorder}", f"mechanism:{node_name}")
+
+    for entry in entries:
+        eid = f"claim:{entry['id']}"
+        G.add_node(eid, layer="claim",
+                   verdict=entry["verdict"],
+                   verdict_score=VERDICTS.get(entry["verdict"], 2),
+                   family=entry["family"])
+        G.add_edge(eid, f"family:{entry['family']}")
+        for node in entry["shared_nodes"]:
+            if f"mechanism:{node}" in G:
+                G.add_edge(eid, f"mechanism:{node}")
+
+    G.remove_nodes_from(list(nx.isolates(G)))
     return G
 
 
-def compute_orc(G, alpha=0.5):
+def compute_curvatures(G, alpha=0.5):
     sp = dict(nx.all_pairs_shortest_path_length(G))
     curvatures = {}
     for u, v in G.edges():
         nb_u = list(G.neighbors(u))
         nb_v = list(G.neighbors(v))
         all_nodes = sorted(set([u] + nb_u + [v] + nb_v))
-        idx = {nd: i for i, nd in enumerate(all_nodes)}
+        idx = {n: i for i, n in enumerate(all_nodes)}
 
         mu = np.zeros(len(all_nodes))
         mu[idx[u]] = alpha
@@ -87,9 +86,9 @@ def compute_orc(G, alpha=0.5):
             nu[idx[nb]] += (1 - alpha) / len(nb_v)
 
         cost = np.zeros((len(all_nodes), len(all_nodes)))
-        for ci, ni in enumerate(all_nodes):
-            for cj, nj in enumerate(all_nodes):
-                cost[ci, cj] = sp.get(ni, {}).get(nj, 100)
+        for i, ni in enumerate(all_nodes):
+            for j, nj in enumerate(all_nodes):
+                cost[i, j] = sp.get(ni, {}).get(nj, 100)
 
         W1 = ot.emd2(mu, nu, cost)
         d_uv = sp[u][v]
@@ -97,385 +96,294 @@ def compute_orc(G, alpha=0.5):
     return curvatures
 
 
-def node_mean_curvature(G, curvatures):
-    result = {}
-    for node in G.nodes():
-        incident = []
-        for (u, v), k in curvatures.items():
-            if u == node or v == node:
-                incident.append(k)
-        result[node] = float(np.mean(incident)) if incident else 0.0
-    return result
+def degree_preserving_rewire(G, n_swaps=None):
+    H = G.copy()
+    if n_swaps is None:
+        n_swaps = H.number_of_edges() * 10
+    nx.double_edge_swap(H, nswap=n_swaps, max_tries=n_swaps * 10, seed=None)
+    return H
 
 
-def get_bridge_ranking(G, curvatures):
-    nmc = node_mean_curvature(G, curvatures)
-    return sorted(nmc.items(), key=lambda x: x[1])
-
-
-# ============================================================
-# Experiment 1: Alpha sweep
-# ============================================================
-def run_alpha_sweep(G):
-    print("=== Alpha sweep ===")
-    results = {}
-    for alpha in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]:
-        curv = compute_orc(G, alpha=alpha)
-        nmc = node_mean_curvature(G, curv)
-        ranking = sorted(nmc.items(), key=lambda x: x[1])
-        top_bridge = ranking[0][0]
-        top3 = [r[0] for r in ranking[:3]]
-
-        most_neg_edges = sorted(curv.items(), key=lambda x: x[1])[:3]
-        most_neg_edge_strs = [f"{u}--{v}: {k:.3f}" for (u, v), k in most_neg_edges]
-
-        results[str(alpha)] = {
-            "top_bridge": top_bridge,
-            "top3_bridges": top3,
-            "top_bridge_curvature": float(ranking[0][1]),
-            "mean_curvature": float(np.mean(list(curv.values()))),
-            "most_negative_edges": most_neg_edge_strs,
-        }
-        print(f"  α={alpha:.1f}: top bridge={top_bridge} "
-              f"(κ_avg={ranking[0][1]:+.3f}), "
-              f"mean κ={np.mean(list(curv.values())):+.4f}")
-    return results
-
-
-# ============================================================
-# Experiment 2: Edge perturbation sensitivity
-# ============================================================
-def run_edge_perturbation(G, n_trials=200):
-    print("\n=== Edge perturbation (200 trials) ===")
-    rng = np.random.default_rng(42)
-    all_nodes = sorted(G.nodes())
+def edge_zscores(G, n_perms=100):
+    """Compute per-edge z-scores against degree-preserving null."""
+    obs_curvatures = compute_curvatures(G)
     edges = list(G.edges())
-    n_edges = len(edges)
+    null_curvatures = {e: [] for e in edges}
 
-    possible_edges = []
-    for i, u in enumerate(all_nodes):
-        for v in all_nodes[i+1:]:
-            if not G.has_edge(u, v):
-                possible_edges.append((u, v))
-
-    gad_rank1_count = 0
-    gad_top3_count = 0
-    top_bridge_counts = Counter()
-
-    for trial in range(n_trials):
-        G_pert = G.copy()
-        n_remove = rng.integers(1, max(2, int(0.2 * n_edges)) + 1)
-        n_add = rng.integers(0, max(1, int(0.1 * n_edges)) + 1)
-
-        remove_idx = rng.choice(n_edges, size=min(n_remove, n_edges - 1), replace=False)
-        for idx in remove_idx:
-            u, v = edges[idx]
-            if G_pert.has_edge(u, v) and G_pert.degree(u) > 1 and G_pert.degree(v) > 1:
-                G_pert.remove_edge(u, v)
-
-        if possible_edges and n_add > 0:
-            add_idx = rng.choice(len(possible_edges), size=min(n_add, len(possible_edges)), replace=False)
-            for idx in add_idx:
-                u, v = possible_edges[idx]
-                G_pert.add_edge(u, v)
-
-        if G_pert.number_of_edges() < 5:
+    for _ in range(n_perms):
+        try:
+            H = degree_preserving_rewire(G)
+            perm_curv = compute_curvatures(H)
+            for u, v in edges:
+                c = perm_curv.get((u, v), perm_curv.get((v, u), None))
+                if c is not None:
+                    null_curvatures[(u, v)].append(c)
+        except nx.NetworkXError:
             continue
 
-        curv = compute_orc(G_pert)
-        ranking = get_bridge_ranking(G_pert, curv)
-        top = ranking[0][0]
-        top3 = [r[0] for r in ranking[:3]]
-
-        top_bridge_counts[top] += 1
-        if top == "GAD":
-            gad_rank1_count += 1
-        if "GAD" in top3:
-            gad_top3_count += 1
-
-    total = sum(top_bridge_counts.values())
-    results = {
-        "n_trials": total,
-        "gad_rank1_fraction": gad_rank1_count / total if total > 0 else 0,
-        "gad_top3_fraction": gad_top3_count / total if total > 0 else 0,
-        "top_bridge_distribution": {k: v / total for k, v in top_bridge_counts.most_common()},
-    }
-    print(f"  GAD rank #1: {gad_rank1_count}/{total} "
-          f"({100 * results['gad_rank1_fraction']:.1f}%)")
-    print(f"  GAD in top 3: {gad_top3_count}/{total} "
-          f"({100 * results['gad_top3_fraction']:.1f}%)")
-    print(f"  Top bridge distribution: "
-          f"{dict(top_bridge_counts.most_common(5))}")
+    results = {}
+    for (u, v) in edges:
+        obs = obs_curvatures.get((u, v), obs_curvatures.get((v, u), 0))
+        null = np.array(null_curvatures[(u, v)])
+        if len(null) < 10:
+            continue
+        null_mean = np.mean(null)
+        null_std = np.std(null)
+        z = (obs - null_mean) / null_std if null_std > 0 else 0.0
+        results[(u, v)] = {"obs": obs, "null_mean": null_mean, "null_std": null_std, "z": z}
     return results
 
 
-# ============================================================
-# Experiment 3: Ricci flow convergence
-# ============================================================
-def run_ricci_flow_convergence(G):
-    print("\n=== Ricci flow convergence ===")
-    G_flow = G.copy()
-    trajectory = []
-    n_iters = 80
-    tau = 0.3
+def edge_key_short(u, v):
+    """Human-readable edge label."""
+    def short(n):
+        if n.startswith("family:"):
+            return n.replace("family:", "")
+        if n.startswith("mechanism:"):
+            return n.replace("mechanism:", "")
+        if n.startswith("claim:"):
+            return n.replace("claim:", "c")
+        return n
+    return f"{short(u)}--{short(v)}"
 
-    for it in range(n_iters):
-        curv = compute_orc(G_flow)
-        vals = list(curv.values())
-        n_comp = nx.number_connected_components(G_flow)
-        trajectory.append({
-            "iteration": it,
-            "mean_curvature": float(np.mean(vals)),
-            "std_curvature": float(np.std(vals)),
-            "n_edges": G_flow.number_of_edges(),
-            "n_components": n_comp,
-            "n_negative": int(np.sum(np.array(vals) < -0.01)),
-        })
 
-        edges_to_remove = []
-        for (u, v), k in curv.items():
-            old_w = G_flow[u][v].get("weight", 1.0)
-            new_w = old_w * (1.0 - tau * k)
-            new_w = max(new_w, 0.01)
-            if new_w > 20.0:
-                edges_to_remove.append((u, v))
-            else:
-                G_flow[u][v]["weight"] = new_w
+KEY_EDGES = [
+    ("family:Depression", "mechanism:HPA_axis"),
+    ("family:Depression", "mechanism:circadian"),
+    ("family:Depression", "mechanism:serotonin"),
+    ("family:Addiction", "mechanism:HPA_axis"),
+    ("family:Addiction", "mechanism:dopamine"),
+    ("mechanism:circadian", "claim:031b"),
+    ("claim:004", "mechanism:FKBP5"),
+    ("mechanism:MIA_prenatal", "claim:029"),
+    ("mechanism:MIA_prenatal", "claim:028"),
+    ("mechanism:synaptic_pruning", "claim:039"),
+    ("mechanism:CSTC_circuit", "claim:034"),
+]
 
-        for u, v in edges_to_remove:
-            G_flow.remove_edge(u, v)
 
-        if it % 10 == 0:
-            print(f"  iter {it:3d}: mean_κ={np.mean(vals):+.4f} "
-                  f"edges={G_flow.number_of_edges()} components={n_comp}")
+def experiment_1_catalog_perturbation(n_bootstrap=500, subsample_size=40, n_null_perms=50):
+    """Subsample 40/47 entries, rebuild graph, recompute edge z-scores."""
+    print(f"\n{'='*80}")
+    print(f"  EXPERIMENT 1: Catalog Perturbation ({n_bootstrap} iterations, {subsample_size}/{len(ENTRIES)} entries)")
+    print(f"{'='*80}")
 
-        if n_comp >= 4 and G_flow.number_of_edges() < 30:
-            # Record remaining trajectory as stable
-            for it2 in range(it + 1, n_iters):
-                trajectory.append(trajectory[-1].copy())
-                trajectory[-1]["iteration"] = it2
-            break
+    edge_survival = {}
+    edge_z_distributions = {}
 
-    components = list(nx.connected_components(G_flow))
-    communities = {}
-    for i, comp in enumerate(sorted(components, key=len, reverse=True)):
-        communities[f"community_{i}"] = sorted(comp)
+    for i in tqdm(range(n_bootstrap), desc="Bootstrap iterations"):
+        indices = np.random.choice(len(ENTRIES), size=subsample_size, replace=False)
+        subset = [ENTRIES[j] for j in indices]
+        G_sub = build_graph(subset)
 
-    # At what iteration did we first get >1 component?
-    first_split = None
-    for t in trajectory:
-        if t["n_components"] > 1:
-            first_split = t["iteration"]
-            break
+        if G_sub.number_of_edges() < 5:
+            continue
 
-    results = {
-        "trajectory": trajectory,
-        "final_communities": communities,
-        "first_split_iteration": first_split,
-        "converged_by": trajectory[-1]["iteration"],
-    }
-    print(f"  First split at iteration {first_split}")
-    print(f"  Final communities: {communities}")
+        obs_curvatures = compute_curvatures(G_sub)
+
+        null_curvatures = {e: [] for e in G_sub.edges()}
+        for _ in range(n_null_perms):
+            try:
+                H = degree_preserving_rewire(G_sub)
+                pc = compute_curvatures(H)
+                for u, v in G_sub.edges():
+                    c = pc.get((u, v), pc.get((v, u), None))
+                    if c is not None:
+                        null_curvatures[(u, v)].append(c)
+            except nx.NetworkXError:
+                continue
+
+        for u, v in G_sub.edges():
+            obs = obs_curvatures.get((u, v), obs_curvatures.get((v, u), 0))
+            null = np.array(null_curvatures[(u, v)])
+            if len(null) < 5:
+                continue
+            z = (obs - np.mean(null)) / np.std(null) if np.std(null) > 0 else 0.0
+
+            ek = edge_key_short(u, v)
+            ek_rev = edge_key_short(v, u)
+            key = ek if ek < ek_rev else ek_rev
+            if key not in edge_survival:
+                edge_survival[key] = {"present": 0, "significant": 0, "z_values": []}
+            edge_survival[key]["present"] += 1
+            edge_survival[key]["z_values"].append(z)
+            if abs(z) > 1.96:
+                edge_survival[key]["significant"] += 1
+
+    print(f"\n  Key edge survival rates (present in subsample & |z|>1.96):")
+    key_edge_labels = set()
+    for u, v in KEY_EDGES:
+        ek = edge_key_short(u, v)
+        ek_rev = edge_key_short(v, u)
+        key_edge_labels.add(ek if ek < ek_rev else ek_rev)
+
+    results = {}
+    for key in sorted(edge_survival.keys()):
+        s = edge_survival[key]
+        if s["present"] < 10:
+            continue
+        rate = s["significant"] / s["present"]
+        mean_z = np.mean(s["z_values"])
+        marker = " <-- KEY" if key in key_edge_labels else ""
+        if key in key_edge_labels or rate > 0.5:
+            print(f"    {key:50s}: {s['significant']:3d}/{s['present']:3d} = {rate:.1%}  mean_z={mean_z:+.2f}{marker}")
+        results[key] = {
+            "n_present": s["present"],
+            "n_significant": s["significant"],
+            "survival_rate": rate,
+            "mean_z": float(mean_z),
+            "std_z": float(np.std(s["z_values"])),
+        }
     return results
 
 
-# ============================================================
-# Experiment 4: Louvain / spectral comparison
-# ============================================================
-def run_community_comparison(G, ricci_communities):
-    print("\n=== Community detection comparison ===")
+def experiment_2_leave_one_family_out(n_null_perms=100):
+    """Drop each disorder family, recompute curvature z-scores."""
+    print(f"\n{'='*80}")
+    print(f"  EXPERIMENT 2: Leave-One-Family-Out")
+    print(f"{'='*80}")
 
-    # Louvain
-    louvain_partition = community_louvain.best_partition(G, random_state=42)
-    louvain_comms = {}
-    for node, comm_id in louvain_partition.items():
-        louvain_comms.setdefault(comm_id, []).append(node)
-    louvain_comms = {f"community_{i}": sorted(v)
-                     for i, v in enumerate(sorted(louvain_comms.values(),
-                                                   key=len, reverse=True))}
+    full_G = build_graph()
+    full_zscores = edge_zscores(full_G, n_perms=n_null_perms)
 
-    # Spectral (using Fiedler vector for bisection, then recursive)
-    L = nx.laplacian_matrix(G).toarray().astype(float)
-    eigenvalues, eigenvectors = np.linalg.eigh(L)
-    fiedler = eigenvectors[:, 1]
-    nodes = sorted(G.nodes())
-    spectral_partition = {}
-    for i, node in enumerate(nodes):
-        spectral_partition[node] = 0 if fiedler[i] < 0 else 1
-    spectral_comms = {}
-    for node, comm_id in spectral_partition.items():
-        spectral_comms.setdefault(comm_id, []).append(node)
-    spectral_comms = {f"community_{i}": sorted(v)
-                      for i, v in enumerate(sorted(spectral_comms.values(),
-                                                    key=len, reverse=True))}
+    results = {}
+    for drop_family in FAMILIES:
+        subset = [e for e in ENTRIES if e["family"] != drop_family]
+        G_sub = build_graph(subset)
+        print(f"\n  Dropping {drop_family}: {G_sub.number_of_nodes()} nodes, {G_sub.number_of_edges()} edges")
 
-    # Normalized Mutual Information between partitions
-    def partition_to_labels(partition, nodes):
-        labels = []
-        for node in nodes:
-            for comm_name, members in partition.items():
-                if node in members:
-                    labels.append(comm_name)
-                    break
-        return labels
+        sub_zscores = edge_zscores(G_sub, n_perms=n_null_perms)
 
-    def nmi(labels_a, labels_b):
-        from collections import Counter
-        n = len(labels_a)
-        counts_a = Counter(labels_a)
-        counts_b = Counter(labels_b)
-        joint = Counter(zip(labels_a, labels_b))
+        surviving = []
+        lost = []
+        for (u, v), data in sub_zscores.items():
+            ek = edge_key_short(u, v)
+            if abs(data["z"]) > 1.96:
+                surviving.append((ek, data["z"]))
 
-        mi = 0.0
-        for (a, b), n_ab in joint.items():
-            if n_ab > 0:
-                mi += (n_ab / n) * np.log2((n * n_ab) / (counts_a[a] * counts_b[b]))
+        for (u, v), data in full_zscores.items():
+            if abs(data["z"]) > 1.96:
+                ek = edge_key_short(u, v)
+                found = any(edge_key_short(su, sv) == ek or edge_key_short(sv, su) == ek
+                           for (su, sv) in sub_zscores)
+                if not found:
+                    lost.append((ek, data["z"]))
 
-        def entropy(counts):
-            return -sum((c / n) * np.log2(c / n) for c in counts.values() if c > 0)
+        print(f"    Surviving significant edges: {len(surviving)}")
+        for ek, z in sorted(surviving, key=lambda x: x[1]):
+            print(f"      {ek:50s}: z={z:+.2f}")
+        if lost:
+            print(f"    Lost edges (only exist with {drop_family}):")
+            for ek, z in lost:
+                print(f"      {ek:50s}: z={z:+.2f}")
 
-        h_a = entropy(counts_a)
-        h_b = entropy(counts_b)
-        if h_a + h_b == 0:
-            return 1.0
-        return 2 * mi / (h_a + h_b)
-
-    nodes_list = sorted(G.nodes())
-    ricci_labels = partition_to_labels(ricci_communities, nodes_list)
-    louvain_labels = partition_to_labels(louvain_comms, nodes_list)
-    spectral_labels = partition_to_labels(spectral_comms, nodes_list)
-
-    nmi_ricci_louvain = nmi(ricci_labels, louvain_labels)
-    nmi_ricci_spectral = nmi(ricci_labels, spectral_labels)
-    nmi_louvain_spectral = nmi(louvain_labels, spectral_labels)
-
-    results = {
-        "ricci_communities": ricci_communities,
-        "louvain_communities": louvain_comms,
-        "spectral_communities": spectral_comms,
-        "n_ricci": len(ricci_communities),
-        "n_louvain": len(louvain_comms),
-        "n_spectral": len(spectral_comms),
-        "nmi_ricci_louvain": float(nmi_ricci_louvain),
-        "nmi_ricci_spectral": float(nmi_ricci_spectral),
-        "nmi_louvain_spectral": float(nmi_louvain_spectral),
-    }
-
-    print(f"  Ricci: {len(ricci_communities)} communities")
-    for name, members in ricci_communities.items():
-        print(f"    {name}: {members}")
-    print(f"  Louvain: {len(louvain_comms)} communities")
-    for name, members in louvain_comms.items():
-        print(f"    {name}: {members}")
-    print(f"  Spectral (bisection): {len(spectral_comms)} communities")
-    for name, members in spectral_comms.items():
-        print(f"    {name}: {members}")
-    print(f"  NMI(Ricci, Louvain)  = {nmi_ricci_louvain:.3f}")
-    print(f"  NMI(Ricci, Spectral) = {nmi_ricci_spectral:.3f}")
-    print(f"  NMI(Louvain, Spectral) = {nmi_louvain_spectral:.3f}")
+        results[drop_family] = {
+            "n_nodes": G_sub.number_of_nodes(),
+            "n_edges": G_sub.number_of_edges(),
+            "n_surviving_sig": len(surviving),
+            "n_lost": len(lost),
+            "surviving": {ek: float(z) for ek, z in surviving},
+            "lost": {ek: float(z) for ek, z in lost},
+        }
     return results
 
 
-# ============================================================
-# Experiment 5: Clinical novelty — reranking vs betweenness
-# ============================================================
-def run_clinical_novelty(G, curvatures):
-    print("\n=== Clinical novelty: curvature vs betweenness reranking ===")
-    betweenness = nx.betweenness_centrality(G)
-    nmc = node_mean_curvature(G, curvatures)
+def experiment_3_betweenness_comparison():
+    """Compare edge curvature with edge betweenness centrality."""
+    print(f"\n{'='*80}")
+    print(f"  EXPERIMENT 3: Edge Betweenness vs Edge Curvature")
+    print(f"{'='*80}")
 
-    btwn_ranking = sorted(betweenness.items(), key=lambda x: -x[1])
-    curv_ranking = sorted(nmc.items(), key=lambda x: x[1])
-
-    btwn_ranks = {node: i for i, (node, _) in enumerate(btwn_ranking)}
-    curv_ranks = {node: i for i, (node, _) in enumerate(curv_ranking)}
-
-    reranking = []
-    for node in sorted(G.nodes()):
-        delta = btwn_ranks[node] - curv_ranks[node]
-        reranking.append({
-            "node": node,
-            "betweenness_rank": btwn_ranks[node] + 1,
-            "curvature_bridge_rank": curv_ranks[node] + 1,
-            "rank_change": delta,
-            "betweenness": float(betweenness[node]),
-            "mean_curvature": float(nmc[node]),
-            "degree": G.degree(node),
-        })
-
-    reranking.sort(key=lambda x: abs(x["rank_change"]), reverse=True)
-
-    print(f"  {'Node':20s} {'Btwn rank':>10s} {'Curv rank':>10s} {'Δ':>5s}  "
-          f"{'Btwn':>6s} {'κ_avg':>8s}")
-    for r in reranking:
-        print(f"  {r['node']:20s} {r['betweenness_rank']:10d} "
-              f"{r['curvature_bridge_rank']:10d} {r['rank_change']:+5d}  "
-              f"{r['betweenness']:6.3f} {r['mean_curvature']:+8.4f}")
-
-    biggest_movers = [r for r in reranking if abs(r["rank_change"]) >= 3]
-
-    results = {
-        "full_reranking": reranking,
-        "biggest_movers": biggest_movers,
-        "gad_betweenness_rank": btwn_ranks["GAD"] + 1,
-        "gad_curvature_rank": curv_ranks["GAD"] + 1,
-        "mdd_betweenness_rank": btwn_ranks["MDD"] + 1,
-        "mdd_curvature_rank": curv_ranks["MDD"] + 1,
-    }
-
-    print(f"\n  GAD: betweenness #{btwn_ranks['GAD']+1} → "
-          f"curvature bridge #{curv_ranks['GAD']+1}")
-    print(f"  MDD: betweenness #{btwn_ranks['MDD']+1} → "
-          f"curvature bridge #{curv_ranks['MDD']+1}")
-    if biggest_movers:
-        print(f"  Biggest movers (|Δ| ≥ 3):")
-        for m in biggest_movers:
-            print(f"    {m['node']}: {m['rank_change']:+d} ranks")
-    return results
-
-
-# ============================================================
-# Main
-# ============================================================
-def main():
     G = build_graph()
-    print(f"Network: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    obs_curvatures = compute_curvatures(G)
+    edge_betweenness = nx.edge_betweenness_centrality(G)
 
-    # Baseline curvatures (α=0.5)
-    base_curv = compute_orc(G, alpha=0.5)
+    curvs = []
+    betws = []
+    labels = []
+    for (u, v) in G.edges():
+        c = obs_curvatures.get((u, v), obs_curvatures.get((v, u), None))
+        b = edge_betweenness.get((u, v), edge_betweenness.get((v, u), None))
+        if c is not None and b is not None:
+            curvs.append(c)
+            betws.append(b)
+            labels.append(edge_key_short(u, v))
 
-    # Run all experiments
-    alpha_results = run_alpha_sweep(G)
-    perturbation_results = run_edge_perturbation(G)
-    flow_results = run_ricci_flow_convergence(G)
-    community_results = run_community_comparison(G, flow_results["final_communities"])
-    novelty_results = run_clinical_novelty(G, base_curv)
+    curvs = np.array(curvs)
+    betws = np.array(betws)
 
-    # Edge list with citations
-    edge_list = []
-    for u, v, cite in EDGES:
-        k = base_curv.get((u, v), base_curv.get((v, u), None))
-        edge_list.append({
-            "node_a": u, "node_b": v,
-            "curvature": float(k) if k is not None else None,
-            "citation": cite,
-        })
+    r, p = stats.pearsonr(curvs, betws)
+    rho, p_rho = stats.spearmanr(curvs, betws)
+    print(f"\n  Pearson  r = {r:.3f}, p = {p:.4f}")
+    print(f"  Spearman ρ = {rho:.3f}, p = {p_rho:.4f}")
 
-    results = {
-        "edge_list": edge_list,
-        "alpha_sweep": alpha_results,
-        "edge_perturbation": perturbation_results,
-        "ricci_flow_convergence": flow_results,
-        "community_comparison": community_results,
-        "clinical_novelty": novelty_results,
+    # Find edges where curvature and betweenness disagree
+    curv_rank = stats.rankdata(-curvs)  # high curvature = low rank
+    betw_rank = stats.rankdata(-betws)  # high betweenness = low rank
+    rank_diff = curv_rank - betw_rank
+
+    print(f"\n  Edges where curvature identifies anomaly but betweenness does not:")
+    print(f"  (high negative curvature but low betweenness)")
+    disagree = sorted(zip(rank_diff, labels, curvs, betws), key=lambda x: x[0])
+    for rd, label, c, b in disagree[:10]:
+        print(f"    {label:50s}: curv={c:+.4f} betw={b:.4f} rank_diff={rd:+.0f}")
+
+    print(f"\n  Edges where betweenness ranks high but curvature does not:")
+    for rd, label, c, b in disagree[-10:]:
+        print(f"    {label:50s}: curv={c:+.4f} betw={b:.4f} rank_diff={rd:+.0f}")
+
+    # Plot
+    fig, ax = plt.subplots(figsize=(8, 6))
+    ax.scatter(betws, curvs, alpha=0.5, s=20, c="steelblue")
+    ax.set_xlabel("Edge betweenness centrality", fontsize=12)
+    ax.set_ylabel("Ollivier-Ricci curvature", fontsize=12)
+    ax.set_title(f"Edge betweenness vs curvature (r = {r:.3f}, ρ = {rho:.3f})", fontsize=13)
+
+    # Label outlier edges
+    for i, label in enumerate(labels):
+        if abs(rank_diff[i]) > len(labels) * 0.6:
+            ax.annotate(label, (betws[i], curvs[i]), fontsize=6, alpha=0.7,
+                       xytext=(5, 5), textcoords="offset points")
+
+    ax.axhline(0, color="gray", linestyle="--", alpha=0.3)
+    fig.tight_layout()
+    fig_path = Path("psych/experiments/figures/fig_betweenness_vs_curvature.pdf")
+    fig_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(fig_path, dpi=150, bbox_inches="tight")
+    print(f"\n  Saved: {fig_path}")
+
+    return {
+        "pearson_r": float(r), "pearson_p": float(p),
+        "spearman_rho": float(rho), "spearman_p": float(p_rho),
+        "n_edges": len(curvs),
     }
 
-    out_dir = Path("results/robustness")
+
+def main():
+    print(f"[{datetime.now():%H:%M:%S}] Starting robustness experiments")
+    print(f"  Catalog: {len(ENTRIES)} entries, {len(FAMILIES)} families")
+
+    results = {}
+
+    # Experiment 3 is fast — run first
+    results["betweenness_comparison"] = experiment_3_betweenness_comparison()
+
+    # Experiment 1: catalog perturbation (this is the heavy one)
+    results["catalog_perturbation"] = experiment_1_catalog_perturbation(
+        n_bootstrap=500, subsample_size=40, n_null_perms=50
+    )
+
+    # Experiment 2: leave-one-family-out
+    results["leave_one_family_out"] = experiment_2_leave_one_family_out(n_null_perms=100)
+
+    # Save all results
+    out_dir = Path("results/psych/psych/robustness")
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / "robustness_results.json"
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    out_path = out_dir / f"robustness_experiments_{ts}.json"
     with open(out_path, "w") as f:
         json.dump(results, f, indent=2, default=str)
-    print(f"\nSaved: {out_path}")
+    print(f"\n[{datetime.now():%H:%M:%S}] All results saved: {out_path}")
 
 
 if __name__ == "__main__":
