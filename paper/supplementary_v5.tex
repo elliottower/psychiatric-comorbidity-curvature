@@ -1,0 +1,274 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{xcolor}
+
+\renewcommand{\arraystretch}{1.3}
+
+\title{Supplementary Materials:\\Edge-Level Discrete Curvature Decomposes Bridge Structure Across Disease Networks}
+
+\author{Elliot Tower}
+\date{}
+
+\begin{document}
+\maketitle
+
+\setcounter{section}{0}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+\section{Full MR Results}
+\label{app:mr}
+
+Table~\ref{tab:mr_full} reports IVW, MR-Egger, and weighted median estimates for all 49 completed cross-disorder MR pairs. Seven ASD-as-exposure pairs are omitted (insufficient instruments). PTSD-as-exposure betas are inflated by Z-to-beta conversion and should not be compared in magnitude to OR-scale GWAS. Egger intercept $p$-values test for directional pleiotropy; values $< 0.05$ suggest the IVW estimate may be biased. $I^2$ values are available only for pairs with $\geq 25$ instruments.
+
+\begin{table}[h]
+\centering
+\caption{Full cross-disorder MR results (49 pairs). $k$: number of independent instruments after LD clumping. $^{\dagger}$Egger intercept $p < 0.05$, indicating possible directional pleiotropy; IVW estimate should be interpreted cautiously. PTSD-as-exposure betas are inflated by Z-to-beta conversion.}
+\label{tab:mr_full}
+\footnotesize
+\begin{tabular}{llccccccc}
+\toprule
+Pair & $k$ & IVW $\beta$ & 95\% CI & Egger $\beta$ & Egger int.\ $p$ & WM $\beta$ & $I^2$\% \\
+\midrule
+ADHD $\to$ ANX & 25 & 0.167 & [0.135, 0.199] & -- & 0.303 & 0.183 & -- \\
+ADHD $\to$ ASD & 25 & 0.482 & [0.391, 0.573] & -- & 0.080 & 0.469 & -- \\
+ADHD $\to$ BIP & 24 & 0.182 & [0.131, 0.232] & -- & 0.732 & 0.128 & -- \\
+ADHD $\to$ MDD & 22 & 0.130 & [0.110, 0.150] & -- & 0.164 & 0.119 & -- \\
+ADHD $\to$ PTSD & 24 & 0.084 & [0.073, 0.096] & -- & 0.574 & 0.079 & -- \\
+ADHD $\to$ SCZ & 25 & 0.303 & [0.246, 0.359] & -- & 0.174 & 0.259 & -- \\
+ADHD $\to$ SUD & 8 & 0.064 & [0.038, 0.089] & -- & 0.597 & 0.071 & -- \\
+\midrule
+ANX $\to$ ADHD & 47 & 0.535 & [0.446, 0.623] & -- & 0.234 & 0.397 & -- \\
+ANX $\to$ ASD & 49 & 0.402 & [0.273, 0.530] & -- & 0.682 & 0.402 & -- \\
+ANX $\to$ BIP & 46 & 0.588 & [0.515, 0.660] & -- & 0.637 & 0.531 & -- \\
+ANX $\to$ MDD & 43 & 0.509 & [0.480, 0.537] & -- & 0.329 & 0.517 & -- \\
+ANX $\to$ PTSD & 46 & 0.251 & [0.234, 0.268] & -- & 0.457 & 0.245 & -- \\
+ANX $\to$ SCZ & 48 & 0.773 & [0.692, 0.855] & -- & 0.513 & 0.641 & -- \\
+ANX $\to$ SUD & 14 & 0.135 & [0.096, 0.175] & -- & 0.738 & 0.145 & -- \\
+\midrule
+BIP $\to$ ADHD & 58 & 0.136 & [0.085, 0.187] & -- & 0.707 & 0.126 & -- \\
+BIP $\to$ ANX & 55 & 0.176 & [0.148, 0.203] & -- & 0.886 & 0.183 & -- \\
+BIP $\to$ ASD & 58 & 0.219 & [0.145, 0.294] & -- & 0.029 & 0.208 & -- \\
+BIP $\to$ MDD & 47 & 0.169 & [0.152, 0.186] & -- & 0.084 & 0.167 & -- \\
+BIP $\to$ PTSD & 53 & 0.072 & [0.062, 0.082] & -- & 0.955 & 0.064 & -- \\
+BIP $\to$ SCZ & 60 & 0.634 & [0.588, 0.680] & -- & 0.532 & 0.613 & -- \\
+BIP $\to$ SUD & 14 & 0.050 & [0.026, 0.074] & -- & 0.343 & 0.043 & -- \\
+\midrule
+MDD $\to$ ADHD & 124 & 0.959 & [0.875, 1.043] & 0.960 & 0.928 & 0.971 & 58 \\
+MDD $\to$ ANX & 128 & 0.862 & [0.819, 0.905] & 0.857 & 0.419 & 0.874 & 47 \\
+MDD $\to$ ASD & 126 & 0.572 & [0.448, 0.695] & 0.587 & 0.312 & 0.472 & 34 \\
+MDD $\to$ BIP$^{\dagger}$ & 126 & 0.774 & [0.708, 0.841] & 0.743 & \textbf{0.008} & 0.803 & 69 \\
+MDD $\to$ PTSD & 125 & 0.339 & [0.323, 0.355] & 0.337 & 0.467 & 0.334 & 46 \\
+MDD $\to$ SCZ & 128 & 0.909 & [0.833, 0.985] & 0.897 & 0.520 & 0.825 & 85 \\
+MDD $\to$ SUD & 59 & 0.240 & [0.210, 0.269] & 0.243 & 0.568 & 0.252 & 68 \\
+\midrule
+PTSD $\to$ ADHD & 53 & 2.036 & [1.816, 2.256] & -- & 0.950 & 2.223 & -- \\
+PTSD $\to$ ANX & 51 & 1.579 & [1.462, 1.696] & -- & 0.710 & 1.624 & -- \\
+PTSD $\to$ ASD & 53 & 1.158 & [0.837, 1.480] & -- & 0.367 & 1.111 & -- \\
+PTSD $\to$ BIP & 51 & 1.359 & [1.181, 1.536] & -- & 0.582 & 1.623 & -- \\
+PTSD $\to$ MDD & 44 & 1.394 & [1.320, 1.468] & -- & 0.447 & 1.318 & -- \\
+PTSD $\to$ SCZ & 54 & 1.706 & [1.506, 1.905] & -- & 0.564 & 1.810 & -- \\
+PTSD $\to$ SUD & 25 & 0.455 & [0.383, 0.527] & -- & 0.395 & 0.498 & -- \\
+\midrule
+SCZ $\to$ ADHD & 105 & 0.083 & [0.054, 0.113] & -- & 0.858 & 0.083 & -- \\
+SCZ $\to$ ANX & 103 & 0.137 & [0.122, 0.153] & -- & 0.674 & 0.128 & -- \\
+SCZ $\to$ ASD & 106 & 0.153 & [0.109, 0.196] & -- & 0.981 & 0.137 & -- \\
+SCZ $\to$ BIP & 103 & 0.334 & [0.310, 0.359] & -- & 0.115 & 0.326 & -- \\
+SCZ $\to$ MDD & 98 & 0.091 & [0.082, 0.100] & -- & 0.754 & 0.097 & -- \\
+SCZ $\to$ PTSD & 102 & 0.050 & [0.044, 0.055] & -- & 0.719 & 0.046 & -- \\
+SCZ $\to$ SUD & 55 & 0.051 & [0.041, 0.061] & -- & 0.683 & 0.042 & -- \\
+\midrule
+SUD $\to$ ADHD & 15 & 0.963 & [0.629, 1.296] & -- & 0.844 & 1.338 & -- \\
+SUD $\to$ ANX & 15 & 0.443 & [0.275, 0.610] & -- & 0.062 & 0.498 & -- \\
+SUD $\to$ ASD & 15 & 0.709 & [0.219, 1.198] & -- & 0.645 & 0.896 & -- \\
+SUD $\to$ BIP & 14 & 0.362 & [0.089, 0.634] & -- & 0.051 & 0.412 & -- \\
+SUD $\to$ MDD & 13 & 0.638 & [0.532, 0.745] & -- & 0.731 & 0.960 & -- \\
+SUD $\to$ PTSD & 15 & 0.250 & [0.188, 0.313] & -- & 0.643 & 0.209 & -- \\
+SUD $\to$ SCZ & 15 & 1.166 & [0.862, 1.469] & -- & 0.756 & 0.378 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Significant Edge-Level Curvature $z$-Scores}
+\label{app:edges}
+
+Table~\ref{tab:edge_full} lists the 32 edges with $|z| > 1.96$ against the degree-preserving null (200 permutations) in the expanded 84-entry graph. All four bottleneck edges involve depression or bipolar disorder bridging cross-domain mechanisms. The 28 redundant edges include domain-specific clusters (autoimmune, thyroid, microbiome) and encapsulated claims.
+
+\begin{table}[h]
+\centering
+\caption{Significant edge-level curvature $z$-scores (32 of 103 tested edges). Sorted by $z$-score.}
+\label{tab:edge_full}
+\small
+\begin{tabular}{lccc}
+\toprule
+Edge & $\kappa_{\text{obs}}$ & $z$ \\
+\midrule
+\multicolumn{3}{l}{\emph{Bottleneck edges ($z < -1.96$)}} \\
+Depression -- convergence hub & $-0.867$ & $\mathbf{-5.46}$ \\
+Depression -- metabolic & $-0.780$ & $\mathbf{-3.93}$ \\
+Bipolar -- metabolic & $-0.693$ & $-3.33$ \\
+Depression -- circadian & $-0.675$ & $-2.62$ \\
+\midrule
+\multicolumn{3}{l}{\emph{Top redundant edges ($z > +1.96$; 28 total)}} \\
+Autoimmune cluster & $+0.583$ & $\mathbf{+9.40}$ \\
+FKBP5 -- claim 004 & $+0.167$ & $+5.09$ \\
+ASD -- claim 037-inst & $+0.167$ & $+4.15$ \\
+HPA axis -- claim 004 & $+0.104$ & $+4.09$ \\
+Thyroid-Metabolic -- thyroid & $+0.100$ & $+3.60$ \\
+Microbiome -- gut-brain & $+0.267$ & $+3.43$ \\
+Anxiety -- claim 023 & $+0.000$ & $+3.39$ \\
+Autoimmune -- claim 076 & $+0.250$ & $+3.38$ \\
+Sleep-Mood -- circadian & $+0.100$ & $+3.26$ \\
+Schizophrenia -- claim 029 & $-0.015$ & $+3.14$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Mechanism Catalog}
+\label{app:catalog}
+
+Table~\ref{tab:catalog} lists all 47 entries in the literature-derived catalog from which the mechanism network is constructed. Verdict tiers range from Disconfirmed (lowest) to Validated (highest). Shared mechanism nodes link claims across disorder families; entries with no shared nodes connect only to their disorder family.
+
+\begin{table}[h]
+\centering
+\caption{Full mechanism catalog (47 entries). Verdict tiers: D = Disconfirmed, U = Underdetermined, I = Inconclusive, CS = Causally Suggestive, MS = Mechanistically Supported, V = Validated.}
+\label{tab:catalog}
+\footnotesize
+\begin{tabular}{llll}
+\toprule
+ID & Family & Verdict & Shared mechanisms \\
+\midrule
+001 & Depression & D & -- \\
+003 & Depression & D & Serotonin \\
+004 & Depression & D & HPA axis, FKBP5 \\
+006a & Depression & CS & IL-6 \\
+006b & Depression & D & IL-6 \\
+008 & Depression & D & -- \\
+008b & Depression & MS & -- \\
+010 & Depression & I & -- \\
+011 & Depression & CS & NMDA/Glu, IL-6 \\
+012 & Depression & U & NMDA/Glu \\
+012a & Depression & MS & NMDA/Glu \\
+013 & Depression & U & Mitochondrial \\
+014 & Depression & CS & Circadian \\
+015 & Depression & CS & FKBP5, HPA axis \\
+016 & Depression & CS & -- \\
+\midrule
+017 & PTSD & CS & FKBP5, HPA axis \\
+018 & PTSD & MS & Fear circuit \\
+019 & PTSD & CS & Noradrenergic \\
+020 & PTSD & U & HPA axis \\
+\midrule
+021a & Anxiety & V & -- \\
+021b & Anxiety & D & -- \\
+022 & Anxiety & MS & Fear circuit \\
+023 & Anxiety & D & Serotonin \\
+024 & Anxiety & CS & Noradrenergic \\
+\midrule
+025 & Schizophrenia & MS & Dopamine \\
+025-orig & Schizophrenia & D & Dopamine \\
+026 & Schizophrenia & CS & NMDA/Glu \\
+027 & Schizophrenia & MS & Syn.\ pruning \\
+028 & Schizophrenia & CS & MIA/prenatal \\
+029 & Schizophrenia & CS & MIA/prenatal, IL-6 \\
+\midrule
+030 & Bipolar & CS & Mitochondrial \\
+031a & Bipolar & CS & Circadian \\
+031b & Bipolar & D & Circadian \\
+032 & Bipolar & CS & -- \\
+033 & Bipolar & I & -- \\
+\midrule
+034 & OCD & MS & CSTC circuit \\
+035 & OCD & D & Serotonin \\
+036 & OCD & U & NMDA/Glu \\
+\midrule
+037 & ASD & CS & NMDA/Glu \\
+037-inst & ASD & MS & NMDA/Glu, Syn.\ pruning \\
+038 & ASD & CS & MIA/prenatal, IL-6 \\
+039 & ASD & MS & Syn.\ pruning \\
+\midrule
+040 & Addiction & MS & Dopamine \\
+041 & Addiction & CS & HPA axis \\
+042 & Addiction & CS & Dopamine \\
+\midrule
+043 & ADHD & CS & Noradrenergic, Dopamine \\
+044 & ADHD & CS & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Robustness Details}
+\label{app:robustness}
+
+Table~\ref{tab:perturbation} reports catalog-perturbation survival rates for the expanded 84-entry graph (100 subsamples of 71/84 entries, 20 null permutations per subsample).
+
+\begin{table}[h]
+\centering
+\caption{Catalog perturbation survival rates (100 subsamples of 71/84 entries). Survival = fraction of iterations where the edge reaches $|z| > 1.96$. Only edges with $> 50\%$ survival shown.}
+\label{tab:perturbation}
+\small
+\begin{tabular}{lcc}
+\toprule
+Edge & Survival & Present \\
+\midrule
+\multicolumn{3}{l}{\emph{Bottleneck edges}} \\
+Depression--convergence hub & 100.0\% & 99 \\
+Depression--metabolic & 100.0\% & 96 \\
+Bipolar--metabolic & 81.8\% & 22 \\
+Depression--circadian & 76.3\% & 97 \\
+\midrule
+\multicolumn{3}{l}{\emph{Redundant edges}} \\
+Claim 011--Depression & 78.1\% & 32 \\
+IL-6--Inflammation & 71.4\% & 14 \\
+Claim 015--Depression & 60.6\% & 33 \\
+Depression--IL-6/inflammation & 53.0\% & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Expanded Catalog: Cross-Domain Entries}
+\label{app:expanded}
+
+Table~\ref{tab:expanded} lists the 37 cross-domain MR entries added to the core 47-entry catalog. These entries span sleep--mood, metabolic, personality, substance use, inflammation, microbiome, thyroid, autoimmune, and neuroimaging domains.
+
+\begin{table}[h]
+\centering
+\caption{Cross-domain MR catalog entries (37 entries). Verdict abbreviations as in Table~\ref{tab:catalog}.}
+\label{tab:expanded}
+\footnotesize
+\begin{tabular}{llll}
+\toprule
+ID & Family & Verdict & Shared mechanisms \\
+\midrule
+045--048 & Sleep-Mood & CS/U & Circadian \\
+049 & Eating & MS & Metabolic \\
+050 & Eating-Mood & CS & Metabolic \\
+051 & Personality & MS & Depression convergence \\
+052--053 & Personality-Social, Social & CS & Depression convergence \\
+054 & Substance-Neurodev & MS & Dopamine \\
+055 & Substance-Mood & CS & Depression convergence \\
+056 & Substance & U & -- \\
+057 & Neurodev-Mood & CS & Depression convergence \\
+058 & Stress-Mood & CS & FKBP5 \\
+059--061 & Inflammation & CS/D & IL-6/inflammation \\
+062--063 & Microbiome & U & Microbiome-gut-brain \\
+064 & Mediator & MS & IL-6/inflammation \\
+065 & Microbiome-Neuro & CS & Microbiome-gut-brain \\
+066--068 & Thyroid-Metabolic & CS/U & Metabolic \\
+069--072 & Thyroid-Metabolic & CS/D & Thyroid \\
+073 & Thyroid-Metabolic & CS & Metabolic \\
+074--078 & Autoimmune & CS/MS/U & Autoimmune \\
+079--081 & Neuroimaging-endo & CS & Neuroimaging \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

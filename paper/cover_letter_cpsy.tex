@@ -1,0 +1,30 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+
+\signature{Elliot Tower\\Independent researcher\\elliot@elliottower.ai\\ORCID: 0000-0001-7004-8884}
+\address{Elliot Tower\\Independent researcher\\elliot@elliottower.ai}
+
+\begin{document}
+
+\begin{letter}{Editorial Board\\Computational Psychiatry}
+
+\opening{Dear Editors,}
+
+I am submitting ``Degree-Aware Edge Curvature Decomposes Transdiagnostic Bridge Structure Across Disease Networks'' for consideration as a \textbf{Tools and Methods} article in \emph{Computational Psychiatry}.
+
+This paper identifies a pervasive methodological problem in biomedical applications of Ollivier-Ricci curvature: node-level curvature on unweighted graphs is a degree artifact ($r = -0.71$), yet the standard practice of reporting it without a null model persists across brain, cancer, and autism network studies. We present an edge-level correction with degree-preserving and weight-permutation null models, validate it across seven graphs spanning five data types and three disease domains (psychiatric, autoimmune, cardiometabolic), and use it to clarify transdiagnostic bridge structure and redundancy in a 130-node psychiatric mechanism network where, in this curated representation, it identifies depression as a convergence bottleneck and discriminates disconfirmed claims from higher-verdict claims ($p = 0.007$, $d = 0.89$).
+
+The paper fits the Tools and Methods scope because its primary contribution is methodological: a critique of existing practice (node-level ORC without null models) and a corrected alternative (edge-level ORC with appropriate nulls), validated on psychiatric data. The psychiatric applications demonstrate the tool rather than constituting the main contribution.
+
+All analysis code, the mechanism catalog, precomputed curvatures, permutation distributions, and MR results are publicly available at \url{https://github.com/elliottower/psychiatric-comorbidity-curvature}, with a DOI-versioned archive at \url{https://doi.org/10.5281/zenodo.21251608}.
+
+I am an independent researcher without institutional affiliation or grant funding. I respectfully request consideration for an article processing charge waiver or reduction, as permitted under the journal's policy for unfunded researchers.
+
+I am happy for reviewer reports to be published alongside the article, in keeping with the journal's open peer review policy. This manuscript is not under consideration at any other journal. The author declares no competing interests.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

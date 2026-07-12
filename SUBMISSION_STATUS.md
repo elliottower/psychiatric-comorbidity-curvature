@@ -5,4 +5,5 @@
 
 | Date | Venue | Status | Notes |
 |------|-------|--------|-------|
-| 2026-07-08 | GigaScience | New Submission | Portal: https://www.editorialmanager.com/giga/default2.aspx |
+| 2026-07-08 | GigaScience (GIGA-D-26-00233) | Desk rejected | Scope/breadth |
+| 2026-07-11 | Computational Psychiatry (Tools and Methods) | Preparing | Portal: https://cpsyjournal.org |
