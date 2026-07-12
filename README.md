@@ -1,10 +1,6 @@
 # Psychiatric Comorbidity Curvature
 
-Code and data for the paper:
-
-**Edge-Level Discrete Curvature Identifies Structurally Anomalous Connections in a Psychiatric Mechanism Network**
-
-Elliot Tower
+Code and data for "Edge-Level Discrete Curvature Identifies Structurally Anomalous Connections in a Psychiatric Mechanism Network."
 
 ## Summary
 
@@ -15,7 +11,6 @@ On an expert-curated psychiatric knowledge graph (130 nodes, 218 edges), ORC is 
 ## Repository structure
 
 ```
-paper/                       LaTeX source, references, compiled PDF
 experiments/
   catalog_data.py            Expert-curated psychiatric knowledge graph
   catalog_data_expanded.py   Expanded catalog with cross-domain MR entries

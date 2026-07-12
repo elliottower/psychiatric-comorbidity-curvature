@@ -103,7 +103,7 @@ def main():
     if not data_path.exists():
         data_path = Path("../../data/mcgrath2020/comorbidity_hazard_ratios.csv")
     if not data_path.exists():
-        data_path = Path("/Users/elliottower/Documents/GitHub/psychiatric-comorbidity-curvature/experiments/data/mcgrath2020/comorbidity_hazard_ratios.csv")
+        data_path = Path(__file__).parent.parent / "data" / "mcgrath2020" / "comorbidity_hazard_ratios.csv"
 
     output_dir = Path("../../results/psych/data_driven")
     output_dir.mkdir(parents=True, exist_ok=True)
